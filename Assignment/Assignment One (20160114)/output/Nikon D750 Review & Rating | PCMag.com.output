@@ -1,66 +1,1386 @@
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	9	Sensor	includes	optical low-pass filter	0	1	1	2	2	5	0.9032188706142626	Sensor includes optical low-pass filter .	NN VBZ JJ JJ NN .	B-NP B-VP B-NP I-NP I-NP O	sensor	include	optical low-pass filter
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	11	GPS module	is	a pricey add-on	0	2	2	3	3	6	0.8957128721901888	GPS module is a pricey add-on .	NNP NN VBZ DT JJ NN .	B-NP I-NP B-VP B-NP I-NP I-NP O	gps module	be	a pricey add-on
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	12	Wi-Fi remote function	needs	improvement	0	3	3	4	4	5	0.8957128721901888	Wi-Fi remote function needs improvement .	NNP JJ NN VBZ NN .	B-NP I-NP I-NP B-VP B-NP O	wi-fi remote function	need	improvement
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	14	The Nikon D750	is	the company 's second real effort	0	3	3	4	4	10	0.7692020121215642	The Nikon D750 is the company 's second real effort at making an affordable full-frame D-SLR.	DT NNP NNP VBZ DT NN POS JJ JJ NN IN VBG DT JJ JJ .	B-NP I-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP B-PP B-VP B-NP I-NP I-NP O	the nikon d750	be	the company 's second real effort
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	15	you	add integrated	Wi-Fi	1	2	2	4	4	5	0.4021753873194268	When you add integrated Wi-Fi for remote control and on-the-go file transfer , and a tilting rear display that 's a great help for video capture , you 've got a camera that is worthy of being called our Editors ' Choice .	WRB PRP VBP VBN NNP IN JJ NN CC JJ NN NN , CC DT JJ JJ NN WDT VBZ DT JJ NN IN NN NN , PRP VBP VBD DT NN WDT VBZ JJ IN VBG VBN PRP$ NNP POS NN .	B-ADVP B-NP B-VP I-VP B-NP B-PP B-NP I-NP O B-NP I-NP I-NP O O B-NP I-NP I-NP I-NP B-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP O B-NP B-VP I-VP B-NP I-NP B-NP B-VP B-ADJP B-PP B-VP I-VP B-NP I-NP I-NP I-NP O	you	add integrate	wi-fi
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	15	a tilting rear display	's a great help for	video capture	14	18	19	24	24	26	0.2443532840567651	When you add integrated Wi-Fi for remote control and on-the-go file transfer , and a tilting rear display that 's a great help for video capture , you 've got a camera that is worthy of being called our Editors ' Choice .	WRB PRP VBP VBN NNP IN JJ NN CC JJ NN NN , CC DT JJ JJ NN WDT VBZ DT JJ NN IN NN NN , PRP VBP VBD DT NN WDT VBZ JJ IN VBG VBN PRP$ NNP POS NN .	B-ADVP B-NP B-VP I-VP B-NP B-PP B-NP I-NP O B-NP I-NP I-NP O O B-NP I-NP I-NP I-NP B-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP O B-NP B-VP I-VP B-NP I-NP B-NP B-VP B-ADJP B-PP B-VP I-VP B-NP I-NP I-NP I-NP O	a tilting rear display	be help for	video capture
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	15	you	've got	a camera	27	28	28	30	30	32	0.017686548048503996	When you add integrated Wi-Fi for remote control and on-the-go file transfer , and a tilting rear display that 's a great help for video capture , you 've got a camera that is worthy of being called our Editors ' Choice .	WRB PRP VBP VBN NNP IN JJ NN CC JJ NN NN , CC DT JJ JJ NN WDT VBZ DT JJ NN IN NN NN , PRP VBP VBD DT NN WDT VBZ JJ IN VBG VBN PRP$ NNP POS NN .	B-ADVP B-NP B-VP I-VP B-NP B-PP B-NP I-NP O B-NP I-NP I-NP O O B-NP I-NP I-NP I-NP B-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP O B-NP B-VP I-VP B-NP I-NP B-NP B-VP B-ADJP B-PP B-VP I-VP B-NP I-NP I-NP I-NP O	you	get	a camera
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	15	a camera	is worthy of being called	our Editors ' Choice	30	32	33	38	38	42	0.5071227684219354	When you add integrated Wi-Fi for remote control and on-the-go file transfer , and a tilting rear display that 's a great help for video capture , you 've got a camera that is worthy of being called our Editors ' Choice .	WRB PRP VBP VBN NNP IN JJ NN CC JJ NN NN , CC DT JJ JJ NN WDT VBZ DT JJ NN IN NN NN , PRP VBP VBD DT NN WDT VBZ JJ IN VBG VBN PRP$ NNP POS NN .	B-ADVP B-NP B-VP I-VP B-NP B-PP B-NP I-NP O B-NP I-NP I-NP O O B-NP I-NP I-NP I-NP B-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP O B-NP B-VP I-VP B-NP I-NP B-NP B-VP B-ADJP B-PP B-VP I-VP B-NP I-NP I-NP I-NP O	a camera	be worthy of be call	our editors ' choice
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	17	The D750	measures	4.4	0	2	2	3	3	4	0.7692020121215642	The D750 measures 4.4 by 5.5 by 3.1 inches and weighs 1.7 pounds .	DT NNP VBZ CD IN CD IN CD NNS CC VBZ CD NNS .	B-NP I-NP B-VP B-NP B-PP B-NP B-PP B-NP I-NP O B-VP B-NP I-NP O	the d750	measure	#
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	17	5.5	weighs	1.7 pounds	5	6	10	11	11	13	0.720825237070968	The D750 measures 4.4 by 5.5 by 3.1 inches and weighs 1.7 pounds .	DT NNP VBZ CD IN CD IN CD NNS CC VBZ CD NNS .	B-NP I-NP B-VP B-NP B-PP B-NP B-PP B-NP I-NP O B-VP B-NP I-NP O	#	weigh	# pounds
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	18	It	's	smaller all	0	1	1	2	2	4	0.464308768969765	It 's smaller all around than the D810 and about a third of a pound lighter .	PRP VBZ JJR DT IN IN DT NNP CC IN DT JJ IN DT NN JJR .	B-NP B-VP B-NP I-NP B-PP B-PP B-NP I-NP B-PP B-PP B-NP I-NP I-NP I-NP I-NP B-ADJP O	it	be	smaller all
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	19	you	'll find with	the D810	11	12	12	15	15	17	0.35351283998340893	The camera 's chassis is n't entirely magnesium alloy , as you 'll find with the D810 .	DT NN POS NN VBZ RB RB JJ NN , IN PRP MD VB IN DT NNP .	B-NP I-NP I-NP I-NP B-VP O B-ADVP B-NP I-NP O B-SBAR B-NP B-VP I-VP B-PP B-NP I-NP O	you	find with	the d810
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	20	its rear and top	are	magnesium alloy	2	6	6	7	7	9	0.8257740327247234	Instead , its rear and top are magnesium alloy , while the front and front cover use a mixture of carbon fiber and thermoplastics .	RB , PRP$ NN CC NN VBP JJ NN , IN DT NN CC JJ NN NN DT NN IN NN NN CC NNS .	B-ADVP O B-NP I-NP I-NP I-NP B-VP B-NP I-NP O B-SBAR B-NP I-NP I-NP I-NP I-NP I-NP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O	its rear and top	be	magnesium alloy
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	21	The seals	protect the body from	dust and splashes	0	2	3	7	7	10	0.14494230659261095	The seals that protect the body from dust and splashes are of the same quality as the D810 .	DT NNS IN VBP DT NN IN NN CC NNS VBP IN DT JJ NN IN DT NNP .	B-NP I-NP B-ADVP B-VP B-NP I-NP B-PP B-NP I-NP I-NP B-VP B-PP B-NP I-NP I-NP B-PP B-NP I-NP O	the seals	protect body from	dust and splashes
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	21	dust and splashes	are of	the same quality	7	10	10	12	12	15	0.575089957359449	The seals that protect the body from dust and splashes are of the same quality as the D810 .	DT NNS IN VBP DT NN IN NN CC NNS VBP IN DT JJ NN IN DT NNP .	B-NP I-NP B-ADVP B-VP B-NP I-NP B-PP B-NP I-NP I-NP B-VP B-PP B-NP I-NP I-NP B-PP B-NP I-NP O	dust and splashes	be of	the same quality
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	22	programmable Fn buttons	are located next to	the lens mount	4	7	7	11	11	14	0.8877329241047572	The depth-of-field preview and programmable Fn buttons are located next to the lens mount , positioned so you can access them with your right hand .	DT JJ NN CC JJ JJ NNS VBP VBN JJ TO DT NN NN , VBN IN PRP MD VB PRP IN PRP$ JJ NN .	B-NP I-NP I-NP O B-NP I-NP I-NP B-VP I-VP B-ADVP B-PP B-NP I-NP I-NP O B-VP B-SBAR B-NP B-VP I-VP B-NP B-PP B-NP I-NP I-NP O	programmable fn buttons	locate next to	the lens mount
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	22	you	can access	them	17	18	18	20	20	21	0.050155631651757966	The depth-of-field preview and programmable Fn buttons are located next to the lens mount , positioned so you can access them with your right hand .	DT JJ NN CC JJ JJ NNS VBP VBN JJ TO DT NN NN , VBN IN PRP MD VB PRP IN PRP$ JJ NN .	B-NP I-NP I-NP O B-NP I-NP I-NP B-VP I-VP B-ADVP B-PP B-NP I-NP I-NP O B-VP B-SBAR B-NP B-VP I-VP B-NP B-PP B-NP I-NP I-NP O	you	access	them
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	23	Left-handed controls	include	the focus mode toggle switch	0	2	2	3	3	8	0.8272943972768722	Left-handed controls include the focus mode toggle switch ; it can flip back and forth to quickly move between autofocus and manual focus .	JJ NNS VBP DT NN NN JJ NN : PRP MD VB RB CC RB TO RB VB IN NN CC JJ NN .	B-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP O B-NP B-VP I-VP B-ADVP I-ADVP I-ADVP B-VP I-VP I-VP B-PP B-NP I-NP I-NP I-NP O	left-handed controls	include	the focus mode toggle switch
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	24	it	includes	a button	1	2	2	3	3	5	0.04023088017131817	And it includes a button that can adjust the active focus points and change between single and continuous focus modes , when held down and used in conjunction with the front and rear command dials .	CC PRP VBZ DT NN WDT MD VB DT JJ NN NNS CC NN IN JJ CC JJ NN NNS , WRB VBN RB CC VBN IN NN IN DT NN CC JJ NN NNS .	O B-NP B-VP B-NP I-NP B-NP B-VP I-VP B-NP I-NP I-NP I-NP O B-NP B-PP B-NP I-NP I-NP I-NP I-NP O B-ADVP B-VP B-ADVP O B-VP B-PP B-NP B-PP B-NP I-NP I-NP I-NP I-NP I-NP O	it	include	a button
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	24	a button	can adjust	the active focus points	3	5	6	8	8	12	0.21210902291953684	And it includes a button that can adjust the active focus points and change between single and continuous focus modes , when held down and used in conjunction with the front and rear command dials .	CC PRP VBZ DT NN WDT MD VB DT JJ NN NNS CC NN IN JJ CC JJ NN NNS , WRB VBN RB CC VBN IN NN IN DT NN CC JJ NN NNS .	O B-NP B-VP B-NP I-NP B-NP B-VP I-VP B-NP I-NP I-NP I-NP O B-NP B-PP B-NP I-NP I-NP I-NP I-NP O B-ADVP B-VP B-ADVP O B-VP B-PP B-NP B-PP B-NP I-NP I-NP I-NP I-NP I-NP O	a button	adjust	the active focus points
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	25	>Shooters	are used to	the D810 's control scheme	5	6	7	10	10	15	0.8020068490967766	'1000' , '667' ) " >Shooters who are used to the D810 's control scheme will notice one big difference between the two cameras on the top plate : The D750 has a mode dial at the left of its eyepiece .	JJ , JJ -RRB- `` NNS WP VBP VBN TO DT NNP POS NN NN MD VB CD JJ NN IN DT CD NNS IN DT NN NN : DT NNP VBZ DT NN NN IN DT NN IN PRP$ NN .	B-NP I-NP I-NP I-NP O B-NP B-NP B-VP I-VP B-PP B-NP I-NP I-NP I-NP I-NP B-VP I-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP B-PP B-NP I-NP I-NP O B-NP I-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP I-NP I-NP O	>shooters	use to	the d810 's control scheme
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	25	the D810 's control scheme	will notice	one big difference	10	15	15	17	17	20	0.3624765887523965	'1000' , '667' ) " >Shooters who are used to the D810 's control scheme will notice one big difference between the two cameras on the top plate : The D750 has a mode dial at the left of its eyepiece .	JJ , JJ -RRB- `` NNS WP VBP VBN TO DT NNP POS NN NN MD VB CD JJ NN IN DT CD NNS IN DT NN NN : DT NNP VBZ DT NN NN IN DT NN IN PRP$ NN .	B-NP I-NP I-NP I-NP O B-NP B-NP B-VP I-VP B-PP B-NP I-NP I-NP I-NP I-NP B-VP I-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP B-PP B-NP I-NP I-NP O B-NP I-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP I-NP I-NP O	the d810 's control scheme	notice	# big difference
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	25	The D750	has	a mode dial	29	31	31	32	32	35	0.4581834270210148	'1000' , '667' ) " >Shooters who are used to the D810 's control scheme will notice one big difference between the two cameras on the top plate : The D750 has a mode dial at the left of its eyepiece .	JJ , JJ -RRB- `` NNS WP VBP VBN TO DT NNP POS NN NN MD VB CD JJ NN IN DT CD NNS IN DT NN NN : DT NNP VBZ DT NN NN IN DT NN IN PRP$ NN .	B-NP I-NP I-NP I-NP O B-NP B-NP B-VP I-VP B-PP B-NP I-NP I-NP I-NP I-NP B-VP I-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP B-PP B-NP I-NP I-NP O B-NP I-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP I-NP I-NP O	the d750	have	a mode dial
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	26	It	's got	the standard P	0	1	1	3	3	6	0.9535732274806713	It 's got the standard P , A , S , and M modes , as well as settings for full automatic operation , full automatic mode with disabled flash , art filter Effects , Scene modes , and two customizable User modes .	PRP VBZ VBD DT JJ NNP , NNP , NNP , CC NNP NNS , RB RB IN NNS IN JJ JJ NN , JJ JJ NN IN JJ NN , NN NN NNS , NN NNS , CC CD JJ NN NNS .	B-NP B-VP I-VP B-NP I-NP I-NP O B-NP O B-NP O O B-NP I-NP O B-CONJP I-CONJP I-CONJP B-NP B-PP B-NP I-NP I-NP O B-NP I-NP I-NP B-PP B-NP I-NP O B-NP I-NP I-NP O B-NP I-NP O O B-NP I-NP I-NP I-NP O	it	get	the standard p
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	27	It	's	a locking dial	0	1	1	2	2	5	0.665602681808491	It 's a locking dial , so you 'll need to hold down the button at its center point in order to turn it .	PRP VBZ DT VBG NN , RB PRP MD VB TO VB RP DT NN IN PRP$ NN NN IN NN TO VB PRP .	B-NP B-VP B-NP I-NP I-NP O O B-NP B-VP I-VP I-VP I-VP B-PRT B-NP I-NP B-PP B-NP I-NP I-NP B-SBAR O B-VP I-VP B-NP O	it	be	a locking dial
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	27	you	'll need to hold down	the button	7	8	8	13	13	15	0.25991006582446274	It 's a locking dial , so you 'll need to hold down the button at its center point in order to turn it .	PRP VBZ DT VBG NN , RB PRP MD VB TO VB RP DT NN IN PRP$ NN NN IN NN TO VB PRP .	B-NP B-VP B-NP I-NP I-NP O O B-NP B-VP I-VP I-VP I-VP B-PRT B-NP I-NP B-PP B-NP I-NP I-NP B-SBAR O B-VP I-VP B-NP O	you	need to hold down	the button
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	28	The D810	has	a button	0	2	2	3	3	5	0.38275339046886747	The D810 has a button to adjust modes , and does n't include in-camera filters , Scene modes , or fully automatic operation .	DT NNP VBZ DT NN TO VB NNS , CC VBZ RB VB JJ NNS , NN NNS , CC RB JJ NN .	B-NP I-NP B-VP B-NP I-NP B-VP I-VP B-NP O O B-VP I-VP I-VP B-NP I-NP O B-NP I-NP O O B-NP I-NP I-NP O	the d810	have	a button
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	28	a button	does n't include	in-camera filters	3	5	10	13	13	15	0.9013782197054762	The D810 has a button to adjust modes , and does n't include in-camera filters , Scene modes , or fully automatic operation .	DT NNP VBZ DT NN TO VB NNS , CC VBZ RB VB JJ NNS , NN NNS , CC RB JJ NN .	B-NP I-NP B-VP B-NP I-NP B-VP I-VP B-NP O O B-VP I-VP I-VP B-NP I-NP O B-NP I-NP O O B-NP I-NP I-NP O	a button	include	in-camera filters
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	29	the mode dial	is	another locking dial	1	4	4	5	5	8	0.674312720413159	Below the mode dial is another locking dial ; this one controls the camera 's drive mode .	IN DT NN NN VBZ DT VBG NN : DT CD VBZ DT NN POS NN NN .	B-PP B-NP I-NP I-NP B-VP B-NP I-NP I-NP O B-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP O	the mode dial	be	another locking dial
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	29	this one	controls	the camera 's drive mode	9	11	11	12	12	17	0.6770816707489083	Below the mode dial is another locking dial ; this one controls the camera 's drive mode .	IN DT NN NN VBZ DT VBG NN : DT CD VBZ DT NN POS NN NN .	B-PP B-NP I-NP I-NP B-VP B-NP I-NP I-NP O B-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP O	this #	control	the camera 's drive mode
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	30	It	has settings for	Single	0	1	1	4	4	5	0.9751252826461256	It has settings for Single , Continuous Low , Self-Timer , and Mirror Lock Up .	PRP VBZ NNS IN NNP , NNP NNP , NNP , CC NNP NNP IN .	B-NP B-VP B-NP B-PP B-NP O B-NP I-NP O B-NP O O B-NP I-NP I-NP O	it	have setting for	single
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	31	buttons	start	video recording	8	9	15	16	16	18	0.6762063378378925	To the right of the viewfinder there are buttons to adjust the metering pattern , start video recording , and set exposure compensation .	TO DT NN IN DT NN EX VBP NNS TO VB DT NN NN , VB NN NN , CC VBN NN NN .	B-PP B-NP I-NP I-NP I-NP I-NP B-NP B-VP B-NP B-VP I-VP B-NP I-NP I-NP O B-VP B-NP I-NP O O B-NP I-NP I-NP O	buttons	start	video recording
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	33	'1000' , '667' ) ">A column of buttons	runs down	the rear side	0	8	8	10	10	13	0.9227709077707019	'1000' , '667' ) ">A column of buttons runs down the rear side , to the left of the hinged LC D ; a few of these serve double duty on the D810 , depending on how the camera is set .	JJ , JJ -RRB- NN NN IN NNS VBZ IN DT JJ NN , TO DT NN IN DT JJ NNP NNP : DT JJ IN DT VBP JJ NN IN DT NNP , VBG IN WRB DT NN VBZ VBN .	B-NP I-NP I-NP I-NP I-NP I-NP I-NP I-NP B-VP B-PP B-NP I-NP I-NP O B-PP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O B-NP I-NP I-NP I-NP B-VP B-NP I-NP B-PP B-NP I-NP O B-VP B-PP B-ADVP B-NP I-NP B-VP I-VP O	'1000' , '667' ) ">a column of buttons	run down	the rear side
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	33	a few of these	serve	double duty	23	27	27	28	28	30	0.6481116159674875	'1000' , '667' ) ">A column of buttons runs down the rear side , to the left of the hinged LC D ; a few of these serve double duty on the D810 , depending on how the camera is set .	JJ , JJ -RRB- NN NN IN NNS VBZ IN DT JJ NN , TO DT NN IN DT JJ NNP NNP : DT JJ IN DT VBP JJ NN IN DT NNP , VBG IN WRB DT NN VBZ VBN .	B-NP I-NP I-NP I-NP I-NP I-NP I-NP I-NP B-VP B-PP B-NP I-NP I-NP O B-PP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O B-NP I-NP I-NP I-NP B-VP B-NP I-NP B-PP B-NP I-NP O B-VP B-PP B-ADVP B-NP I-NP B-VP I-VP O	a few of these	serve	double duty
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	34	The Menu button	always takes	you	0	3	3	5	5	6	0.10332167193987757	The Menu button always takes you to the menu , and the button always brings up an on-screen display to change settings .	DT NNP NN RB VBZ PRP TO DT NN , CC DT NN RB VBZ RP DT JJ NN TO VB NNS .	B-NP I-NP I-NP B-ADVP B-VP B-NP B-PP B-NP I-NP O O B-NP I-NP B-ADVP B-VP B-PRT B-NP I-NP I-NP B-VP I-VP B-NP O	the menu button	take	you
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	34	the button	always brings up	an on-screen display	11	13	13	16	16	19	0.29624869303428936	The Menu button always takes you to the menu , and the button always brings up an on-screen display to change settings .	DT NNP NN RB VBZ PRP TO DT NN , CC DT NN RB VBZ RP DT JJ NN TO VB NNS .	B-NP I-NP I-NP B-ADVP B-VP B-NP B-PP B-NP I-NP O O B-NP I-NP B-ADVP B-VP B-PRT B-NP I-NP I-NP B-VP I-VP B-NP O	the button	bring up	an on-screen display
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	35	The ?/Lock button	protects	images	0	3	3	4	4	5	0.7836138335460466	The ?/Lock button protects images from being deleted when in playback mode , brings up on-screen help when navigating the menu , and adjusts White Balance in all other modes .	DT NN NN VBZ NNS IN VBG VBN WRB IN NN NN , VBZ RP JJ NN WRB VBG DT NN , CC NNS NNP NNP IN DT JJ NNS .	B-NP I-NP I-NP B-VP B-NP B-PP B-VP I-VP B-ADVP B-PP B-NP I-NP O B-VP B-NP I-NP I-NP B-ADVP B-VP B-NP I-NP O O B-NP I-NP I-NP B-PP B-NP I-NP I-NP O	the ?/lock button	protect	images
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	35	images	brings up	on-screen help	4	5	13	15	15	17	0.7147524971927521	The ?/Lock button protects images from being deleted when in playback mode , brings up on-screen help when navigating the menu , and adjusts White Balance in all other modes .	DT NN NN VBZ NNS IN VBG VBN WRB IN NN NN , VBZ RP JJ NN WRB VBG DT NN , CC NNS NNP NNP IN DT JJ NNS .	B-NP I-NP I-NP B-VP B-NP B-PP B-VP I-VP B-ADVP B-PP B-NP I-NP O B-VP B-NP I-NP I-NP B-ADVP B-VP B-NP I-NP O O B-NP I-NP I-NP B-PP B-NP I-NP I-NP O	images	bring up	on-screen help
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	36	The + button	magnifies	an image	0	3	3	4	4	6	0.7836138335460466	The + button magnifies an image during playback and zooms in on the Live View feed to as a focus aid , but if you 're shooting using the optical finder , it allows you to adjust image quality settings .	DT NN NN VBZ DT NN IN NN CC NNS IN IN DT JJ NN NN TO IN DT NN NN , CC IN PRP VBP VBG VBG DT JJ NN , PRP VBZ PRP TO VB NN NN NNS .	B-NP I-NP I-NP B-VP B-NP I-NP B-PP B-NP I-NP I-NP B-PP B-PP B-NP I-NP I-NP I-NP B-PP B-PP B-NP I-NP I-NP O O B-SBAR B-NP B-VP I-VP I-VP B-NP I-NP I-NP O B-NP B-VP B-NP B-VP I-VP B-NP I-NP I-NP O	the + button	magnify	an image
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	36	you	're shooting using	the optical finder	24	25	25	28	28	31	0.06245675474902836	The + button magnifies an image during playback and zooms in on the Live View feed to as a focus aid , but if you 're shooting using the optical finder , it allows you to adjust image quality settings .	DT NN NN VBZ DT NN IN NN CC NNS IN IN DT JJ NN NN TO IN DT NN NN , CC IN PRP VBP VBG VBG DT JJ NN , PRP VBZ PRP TO VB NN NN NNS .	B-NP I-NP I-NP B-VP B-NP I-NP B-PP B-NP I-NP I-NP B-PP B-PP B-NP I-NP I-NP I-NP B-PP B-PP B-NP I-NP I-NP O O B-SBAR B-NP B-VP I-VP I-VP B-NP I-NP I-NP O B-NP B-VP B-NP B-VP I-VP B-NP I-NP I-NP O	you	shoot use	the optical finder
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	36	it	allows	you	32	33	33	34	34	35	0.0039430102949383995	The + button magnifies an image during playback and zooms in on the Live View feed to as a focus aid , but if you 're shooting using the optical finder , it allows you to adjust image quality settings .	DT NN NN VBZ DT NN IN NN CC NNS IN IN DT JJ NN NN TO IN DT NN NN , CC IN PRP VBP VBG VBG DT JJ NN , PRP VBZ PRP TO VB NN NN NNS .	B-NP I-NP I-NP B-VP B-NP I-NP B-PP B-NP I-NP I-NP B-PP B-PP B-NP I-NP I-NP I-NP B-PP B-PP B-NP I-NP I-NP O O B-SBAR B-NP B-VP I-VP I-VP B-NP I-NP I-NP O B-NP B-VP B-NP B-VP I-VP B-NP I-NP I-NP O	it	allow	you
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	37	Front and rear command dials	are located on	the back right	0	5	5	8	8	11	0.9691674833814712	Front and rear command dials are located on the back right and the front of the handgrip , at your fingertips for easy access .	JJ CC JJ NN NNS VBP VBN IN DT RB JJ CC DT NN IN DT NN , IN PRP$ NNS IN JJ NN .	B-NP I-NP I-NP I-NP I-NP B-VP I-VP B-PP B-NP I-NP I-NP O B-NP I-NP I-NP I-NP I-NP O B-PP B-NP I-NP B-PP B-NP I-NP O	front and rear command dials	locate on	the back right
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	38	">The rear display	is	the same 3.2-inch , 1,229k-dot LCD	4	7	7	8	8	14	0.23918273691118913	'1000' , '667' ) ">The rear display is the same 3.2-inch , 1,229k-dot LCD that 's used on the D810 , but because it 's mounted on a hinge , there 's no protective plastic cover .	JJ , '' -RRB- DT JJ NN VBZ DT JJ JJ , JJ NNP WDT VBZ VBN IN DT NNP , CC IN PRP VBZ VBN IN DT NN , EX VBZ DT JJ NN NN .	B-ADJP O O B-VP B-NP I-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP B-NP B-VP I-VP B-PP B-NP I-NP O O B-SBAR B-NP B-VP I-VP B-PP B-NP I-NP O B-NP B-VP B-NP I-NP I-NP I-NP O	">the rear display	be	the same 3.2-inch , 1,229k-dot lcd
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	38	the same 3.2-inch , 1,229k-dot LCD	's used on	the D810	8	14	15	18	18	20	0.8881521233448295	'1000' , '667' ) ">The rear display is the same 3.2-inch , 1,229k-dot LCD that 's used on the D810 , but because it 's mounted on a hinge , there 's no protective plastic cover .	JJ , '' -RRB- DT JJ NN VBZ DT JJ JJ , JJ NNP WDT VBZ VBN IN DT NNP , CC IN PRP VBZ VBN IN DT NN , EX VBZ DT JJ NN NN .	B-ADJP O O B-VP B-NP I-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP B-NP B-VP I-VP B-PP B-NP I-NP O O B-SBAR B-NP B-VP I-VP B-PP B-NP I-NP O B-NP B-VP B-NP I-NP I-NP I-NP O	the same 3.2-inch , 1,229k-dot lcd	use on	the d810
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	38	it	's mounted on	a hinge	23	24	24	27	27	29	0.8572243740041022	'1000' , '667' ) ">The rear display is the same 3.2-inch , 1,229k-dot LCD that 's used on the D810 , but because it 's mounted on a hinge , there 's no protective plastic cover .	JJ , '' -RRB- DT JJ NN VBZ DT JJ JJ , JJ NNP WDT VBZ VBN IN DT NNP , CC IN PRP VBZ VBN IN DT NN , EX VBZ DT JJ NN NN .	B-ADJP O O B-VP B-NP I-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP B-NP B-VP I-VP B-PP B-NP I-NP O O B-SBAR B-NP B-VP I-VP B-PP B-NP I-NP O B-NP B-VP B-NP I-NP I-NP I-NP O	it	mount on	a hinge
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	39	It	can tilt	90&deg	0	1	1	3	3	4	0.477362300214683	It can tilt 90&deg ; up or down , and delivers plenty of sharpness .	PRP MD VB CD : RB CC RB , CC VBZ NN IN NN .	B-NP B-VP I-VP B-NP O B-ADVP I-ADVP I-ADVP O O B-VP B-NP I-NP I-NP O	it	tilt	#
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	39	90&deg	delivers plenty of	sharpness	3	4	10	13	13	14	0.8055606080377617	It can tilt 90&deg ; up or down , and delivers plenty of sharpness .	PRP MD VB CD : RB CC RB , CC VBZ NN IN NN .	B-NP B-VP I-VP B-NP O B-ADVP I-ADVP I-ADVP O O B-VP B-NP I-NP I-NP O	#	deliver plenty of	sharpness
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	40	I	had	no issues	0	1	1	2	2	4	0.1814670245890577	I had no issues using it for Live View shooting or image review under bright , direct sunlight .	PRP VBD DT NNS VBG PRP IN JJ NNP NN CC NN NN IN JJ , JJ NN .	B-NP B-VP B-NP I-NP B-VP B-NP B-PP B-NP I-NP I-NP I-NP I-NP I-NP B-PP B-NP I-NP I-NP I-NP O	i	have	no issues
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	41	The tilting design	comes in	handy both	0	3	3	5	5	7	0.7873220840403722	The tilting design comes in handy both for video recording and for capturing still images when holding the camera above or below your head .	DT JJ NN VBZ IN JJ CC IN NN NN CC IN VBG RB NNS WRB VBG DT NN JJ CC IN PRP$ NN .	B-NP I-NP I-NP B-VP B-PP B-NP I-NP B-PP B-NP I-NP B-PP B-PP B-VP B-ADVP B-NP B-ADVP B-VP B-NP I-NP B-ADJP O B-SBAR B-NP I-NP O	the tilting design	come in	handy both
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	42	the autofocus system	is marked in	black	7	10	10	13	13	14	0.8574063120225556	The area of the frame covered by the autofocus system is marked in black , and if you opt to manually select a focus point or group of points , they appear as black squares .	DT NN IN DT NN VBN IN DT NN NN VBZ VBN IN JJ , CC IN PRP VBP TO RB VB DT NN NN CC NN IN NNS , PRP VBP IN JJ NNS .	B-NP I-NP I-NP I-NP I-NP B-VP B-PP B-NP I-NP I-NP B-VP I-VP B-PP B-NP O O B-SBAR B-NP B-VP I-VP I-VP I-VP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O B-NP B-VP B-PP B-NP I-NP O	the autofocus system	mark in	black
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	42	they	appear as	black squares	30	31	31	33	33	35	0.10018054432885627	The area of the frame covered by the autofocus system is marked in black , and if you opt to manually select a focus point or group of points , they appear as black squares .	DT NN IN DT NN VBN IN DT NN NN VBZ VBN IN JJ , CC IN PRP VBP TO RB VB DT NN NN CC NN IN NNS , PRP VBP IN JJ NNS .	B-NP I-NP I-NP I-NP I-NP B-VP B-PP B-NP I-NP I-NP B-VP I-VP B-PP B-NP O O B-SBAR B-NP B-VP I-VP I-VP I-VP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O B-NP B-VP B-PP B-NP I-NP O	they	appear as	black squares
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	43	The current shooting settings	are displayed in	blue	0	4	12	15	15	16	0.9174437104072447	The current shooting settings run across the bottom of the finder and are displayed in blue via OLED , just like the D810 .	DT JJ NN NNS VBN IN DT NN IN DT NN CC VBP VBN IN JJ IN NNP , RB IN DT NNP .	B-NP I-NP I-NP I-NP B-VP B-PP B-NP I-NP I-NP I-NP I-NP O B-VP I-VP B-PP B-NP B-PP B-NP O B-ADVP B-PP B-NP I-NP O	the current shooting settings	display in	blue
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	44	You	can select any of	a number of framing aids	0	1	1	5	5	10	0.6773819253057309	You can select any of a number of framing aids , including a virtual level and a rule-of-thirds grid to appear in the finder .	PRP MD VB DT IN DT NN IN NN NNS , VBG DT JJ NN CC DT NNS NN TO VB IN DT NN .	B-NP B-VP I-VP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O B-PP B-NP I-NP I-NP O B-NP I-NP I-NP B-VP I-VP B-PP B-NP I-NP O	you	select of	a number of framing aids
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	45	Jim Fisher	is a graduate of	the Rensselaer Polytechnic Institute	12	14	14	18	18	22	0.9258604162402155	Senior digital camera analyst for the PCMag consumer electronics reviews team , Jim Fisher is a graduate of the Rensselaer Polytechnic Institute , where he concentrated on documentary video production .	JJ JJ NN NN IN DT NN NN NNS NNS NN , NNP NNP VBZ DT NN IN DT NNP NNP NNP , WRB PRP VBD IN JJ NN NN .	B-NP I-NP I-NP I-NP B-PP B-NP I-NP I-NP I-NP I-NP I-NP O B-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O B-ADVP B-NP B-VP B-PP B-NP I-NP I-NP O	jim fisher	be graduate of	the rensselaer polytechnic institute
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	45	he	concentrated on	documentary video production	24	25	25	27	27	30	0.7192987313489666	Senior digital camera analyst for the PCMag consumer electronics reviews team , Jim Fisher is a graduate of the Rensselaer Polytechnic Institute , where he concentrated on documentary video production .	JJ JJ NN NN IN DT NN NN NNS NNS NN , NNP NNP VBZ DT NN IN DT NNP NNP NNP , WRB PRP VBD IN JJ NN NN .	B-NP I-NP I-NP I-NP B-PP B-NP I-NP I-NP I-NP I-NP I-NP O B-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O B-ADVP B-NP B-VP B-PP B-NP I-NP I-NP O	he	concentrate on	documentary video production
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	46	he	borrowed	his father 's Hasselblad 500C	9	10	10	11	11	16	0.6663603065490504	Jim 's interest in photography really took off when he borrowed his father 's Hasselblad 500C and light meter in 2007 .	NNP POS NN IN NN RB VBD RP WRB PRP VBD PRP$ NN POS NNP CD CC JJ NN IN CD .	B-NP I-NP I-NP B-PP B-NP B-VP I-VP B-PRT B-ADVP B-NP B-VP B-NP I-NP I-NP I-NP I-NP O B-NP I-NP B-PP B-NP O	he	borrow	his father 's hasselblad #
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	47	He	honed	his writing skills	0	1	1	2	2	5	0.599696813754029	He honed his writing skills at retailer B&H Photo , where he wrote thousands upon thousands of product descriptions , blog posts , and reviews .	PRP VBD PRP$ NN NNS IN NN NNP NNP , WRB PRP VBD NNS IN NNS IN NN NNS , NN NNS , CC NNS .	B-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP O B-ADVP B-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP O B-NP I-NP O O B-NP O	he	hone	his writing skills
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	47	he	wrote	thousands upon thousands of product descriptions	11	12	12	13	13	19	0.3661140706766206	He honed his writing skills at retailer B&H Photo , where he wrote thousands upon thousands of product descriptions , blog posts , and reviews .	PRP VBD PRP$ NN NNS IN NN NNP NNP , WRB PRP VBD NNS IN NNS IN NN NNS , NN NNS , CC NNS .	B-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP O B-ADVP B-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP O B-NP I-NP O O B-NP O	he	write	thousands upon thousands of product descriptions
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	48	he	's shot with	hundreds of camera models	2	3	3	6	6	10	0.4808953289235952	Since then he 's shot with hundreds of camera models , ranging from pocket point-and-shoots to medium format ...	IN RB PRP VBZ VBN IN NNS IN NN NNS , VBG IN NN NNS TO JJ NN :	B-PP B-NP B-NP B-VP I-VP B-PP B-NP I-NP I-NP I-NP O B-VP B-PP B-NP I-NP B-PP B-NP I-NP O	he	shoot with	hundreds of camera models
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	49	Your subscription	will automatically renew at	the end of the term	0	2	2	6	6	11	0.7150514697524787	Your subscription will automatically renew at the end of the term unless you authorize cancellation .	PRP$ NN MD RB VB IN DT NN IN DT NN IN PRP VB NN .	B-NP I-NP B-VP I-VP I-VP B-PP B-NP I-NP I-NP I-NP I-NP B-SBAR B-NP B-VP B-NP O	your subscription	renew at	the end of the term
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	49	you	authorize	cancellation	12	13	13	14	14	15	0.2195942962010244	Your subscription will automatically renew at the end of the term unless you authorize cancellation .	PRP$ NN MD RB VB IN DT NN IN DT NN IN PRP VB NN .	B-NP I-NP B-VP I-VP I-VP B-PP B-NP I-NP I-NP I-NP I-NP B-SBAR B-NP B-VP B-NP O	you	authorize	cancellation
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	50	you	'll receive	a notice	3	4	4	6	6	8	0.14967082486645858	Each year , you 'll receive a notice and you authorize that your credit/debit card will be charged the annual subscription rate .	DT NN , PRP MD VB DT NN CC PRP VB IN PRP$ NN NN MD VB VBN DT JJ NN NN .	B-NP I-NP O B-NP B-VP I-VP B-NP I-NP O B-NP B-VP B-PRT B-NP I-NP I-NP B-VP I-VP I-VP B-NP I-NP I-NP I-NP O	you	receive	a notice
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	50	your credit/debit card	will be charged	the annual subscription rate	12	15	15	18	18	22	0.46448787436221173	Each year , you 'll receive a notice and you authorize that your credit/debit card will be charged the annual subscription rate .	DT NN , PRP MD VB DT NN CC PRP VB IN PRP$ NN NN MD VB VBN DT JJ NN NN .	B-NP I-NP O B-NP B-VP I-VP B-NP I-NP O B-NP B-VP B-PRT B-NP I-NP I-NP B-VP I-VP I-VP B-NP I-NP I-NP I-NP O	your credit/debit card	charge	the annual subscription rate
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	51	You	may cancel at	any time	0	1	1	4	4	6	0.37523714909636874	You may cancel at any time during your subscription and receive a full refund on all unsent issues .	PRP MD VB IN DT NN IN PRP$ NN CC VB DT JJ NN IN DT JJ NNS .	B-NP B-VP I-VP B-PP B-NP I-NP B-PP B-NP I-NP O B-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP O	you	cancel at	any time
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	51	any time	receive a full refund on	all unsent issues	4	6	10	15	15	18	0.8928867523419713	You may cancel at any time during your subscription and receive a full refund on all unsent issues .	PRP MD VB IN DT NN IN PRP$ NN CC VB DT JJ NN IN DT JJ NNS .	B-NP B-VP I-VP B-PP B-NP I-NP B-PP B-NP I-NP O B-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP O	any time	receive refund on	all unsent issues
-/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html	52	we	will bill	you	13	14	14	16	16	17	0.01606588394735531	If your credit/debit card or other billing method can not be charged , we will bill you directly instead .	IN PRP$ NN NN CC JJ NN NN MD RB VB VBN , PRP MD VB PRP RB RB .	B-SBAR B-NP I-NP I-NP I-NP I-NP I-NP I-NP B-VP I-VP I-VP I-VP O B-NP B-VP I-VP B-NP B-ADVP B-ADVP O	we	bill	you
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+9
+Sensor
+includes
+optical low-pass filter
+0
+1
+1
+2
+2
+5
+0.9032188706142626
+Sensor includes optical low-pass filter .
+NN VBZ JJ JJ NN .
+B-NP B-VP B-NP I-NP I-NP O
+sensor
+include
+optical low-pass filter
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+11
+GPS module
+is
+a pricey add-on
+0
+2
+2
+3
+3
+6
+0.8957128721901888
+GPS module is a pricey add-on .
+NNP NN VBZ DT JJ NN .
+B-NP I-NP B-VP B-NP I-NP I-NP O
+gps module
+be
+a pricey add-on
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+12
+Wi-Fi remote function
+needs
+improvement
+0
+3
+3
+4
+4
+5
+0.8957128721901888
+Wi-Fi remote function needs improvement .
+NNP JJ NN VBZ NN .
+B-NP I-NP I-NP B-VP B-NP O
+wi-fi remote function
+need
+improvement
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+14
+The Nikon D750
+is
+the company 's second real effort
+0
+3
+3
+4
+4
+10
+0.7692020121215642
+The Nikon D750 is the company 's second real effort at making an affordable full-frame D-SLR.
+DT NNP NNP VBZ DT NN POS JJ JJ NN IN VBG DT JJ JJ .
+B-NP I-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP B-PP B-VP B-NP I-NP I-NP O
+the nikon d750
+be
+the company 's second real effort
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+15
+you
+add integrated
+Wi-Fi
+1
+2
+2
+4
+4
+5
+0.4021753873194268
+When you add integrated Wi-Fi for remote control and on-the-go file transfer , and a tilting rear display that 's a great help for video capture , you 've got a camera that is worthy of being called our Editors ' Choice .
+WRB PRP VBP VBN NNP IN JJ NN CC JJ NN NN , CC DT JJ JJ NN WDT VBZ DT JJ NN IN NN NN , PRP VBP VBD DT NN WDT VBZ JJ IN VBG VBN PRP$ NNP POS NN .
+B-ADVP B-NP B-VP I-VP B-NP B-PP B-NP I-NP O B-NP I-NP I-NP O O B-NP I-NP I-NP I-NP B-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP O B-NP B-VP I-VP B-NP I-NP B-NP B-VP B-ADJP B-PP B-VP I-VP B-NP I-NP I-NP I-NP O
+you
+add integrate
+wi-fi
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+15
+a tilting rear display
+'s a great help for
+video capture
+14
+18
+19
+24
+24
+26
+0.2443532840567651
+When you add integrated Wi-Fi for remote control and on-the-go file transfer , and a tilting rear display that 's a great help for video capture , you 've got a camera that is worthy of being called our Editors ' Choice .
+WRB PRP VBP VBN NNP IN JJ NN CC JJ NN NN , CC DT JJ JJ NN WDT VBZ DT JJ NN IN NN NN , PRP VBP VBD DT NN WDT VBZ JJ IN VBG VBN PRP$ NNP POS NN .
+B-ADVP B-NP B-VP I-VP B-NP B-PP B-NP I-NP O B-NP I-NP I-NP O O B-NP I-NP I-NP I-NP B-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP O B-NP B-VP I-VP B-NP I-NP B-NP B-VP B-ADJP B-PP B-VP I-VP B-NP I-NP I-NP I-NP O
+a tilting rear display
+be help for
+video capture
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+15
+you
+'ve got
+a camera
+27
+28
+28
+30
+30
+32
+0.017686548048503996
+When you add integrated Wi-Fi for remote control and on-the-go file transfer , and a tilting rear display that 's a great help for video capture , you 've got a camera that is worthy of being called our Editors ' Choice .
+WRB PRP VBP VBN NNP IN JJ NN CC JJ NN NN , CC DT JJ JJ NN WDT VBZ DT JJ NN IN NN NN , PRP VBP VBD DT NN WDT VBZ JJ IN VBG VBN PRP$ NNP POS NN .
+B-ADVP B-NP B-VP I-VP B-NP B-PP B-NP I-NP O B-NP I-NP I-NP O O B-NP I-NP I-NP I-NP B-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP O B-NP B-VP I-VP B-NP I-NP B-NP B-VP B-ADJP B-PP B-VP I-VP B-NP I-NP I-NP I-NP O
+you
+get
+a camera
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+15
+a camera
+is worthy of being called
+our Editors ' Choice
+30
+32
+33
+38
+38
+42
+0.5071227684219354
+When you add integrated Wi-Fi for remote control and on-the-go file transfer , and a tilting rear display that 's a great help for video capture , you 've got a camera that is worthy of being called our Editors ' Choice .
+WRB PRP VBP VBN NNP IN JJ NN CC JJ NN NN , CC DT JJ JJ NN WDT VBZ DT JJ NN IN NN NN , PRP VBP VBD DT NN WDT VBZ JJ IN VBG VBN PRP$ NNP POS NN .
+B-ADVP B-NP B-VP I-VP B-NP B-PP B-NP I-NP O B-NP I-NP I-NP O O B-NP I-NP I-NP I-NP B-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP O B-NP B-VP I-VP B-NP I-NP B-NP B-VP B-ADJP B-PP B-VP I-VP B-NP I-NP I-NP I-NP O
+a camera
+be worthy of be call
+our editors ' choice
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+17
+The D750
+measures
+4.4
+0
+2
+2
+3
+3
+4
+0.7692020121215642
+The D750 measures 4.4 by 5.5 by 3.1 inches and weighs 1.7 pounds .
+DT NNP VBZ CD IN CD IN CD NNS CC VBZ CD NNS .
+B-NP I-NP B-VP B-NP B-PP B-NP B-PP B-NP I-NP O B-VP B-NP I-NP O
+the d750
+measure
+#
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+17
+5.5
+weighs
+1.7 pounds
+5
+6
+10
+11
+11
+13
+0.720825237070968
+The D750 measures 4.4 by 5.5 by 3.1 inches and weighs 1.7 pounds .
+DT NNP VBZ CD IN CD IN CD NNS CC VBZ CD NNS .
+B-NP I-NP B-VP B-NP B-PP B-NP B-PP B-NP I-NP O B-VP B-NP I-NP O
+#
+weigh
+# pounds
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+18
+It
+'s
+smaller all
+0
+1
+1
+2
+2
+4
+0.464308768969765
+It 's smaller all around than the D810 and about a third of a pound lighter .
+PRP VBZ JJR DT IN IN DT NNP CC IN DT JJ IN DT NN JJR .
+B-NP B-VP B-NP I-NP B-PP B-PP B-NP I-NP B-PP B-PP B-NP I-NP I-NP I-NP I-NP B-ADJP O
+it
+be
+smaller all
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+19
+you
+'ll find with
+the D810
+11
+12
+12
+15
+15
+17
+0.35351283998340893
+The camera 's chassis is n't entirely magnesium alloy , as you 'll find with the D810 .
+DT NN POS NN VBZ RB RB JJ NN , IN PRP MD VB IN DT NNP .
+B-NP I-NP I-NP I-NP B-VP O B-ADVP B-NP I-NP O B-SBAR B-NP B-VP I-VP B-PP B-NP I-NP O
+you
+find with
+the d810
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+20
+its rear and top
+are
+magnesium alloy
+2
+6
+6
+7
+7
+9
+0.8257740327247234
+Instead , its rear and top are magnesium alloy , while the front and front cover use a mixture of carbon fiber and thermoplastics .
+RB , PRP$ NN CC NN VBP JJ NN , IN DT NN CC JJ NN NN DT NN IN NN NN CC NNS .
+B-ADVP O B-NP I-NP I-NP I-NP B-VP B-NP I-NP O B-SBAR B-NP I-NP I-NP I-NP I-NP I-NP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O
+its rear and top
+be
+magnesium alloy
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+21
+The seals
+protect the body from
+dust and splashes
+0
+2
+3
+7
+7
+10
+0.14494230659261095
+The seals that protect the body from dust and splashes are of the same quality as the D810 .
+DT NNS IN VBP DT NN IN NN CC NNS VBP IN DT JJ NN IN DT NNP .
+B-NP I-NP B-ADVP B-VP B-NP I-NP B-PP B-NP I-NP I-NP B-VP B-PP B-NP I-NP I-NP B-PP B-NP I-NP O
+the seals
+protect body from
+dust and splashes
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+21
+dust and splashes
+are of
+the same quality
+7
+10
+10
+12
+12
+15
+0.575089957359449
+The seals that protect the body from dust and splashes are of the same quality as the D810 .
+DT NNS IN VBP DT NN IN NN CC NNS VBP IN DT JJ NN IN DT NNP .
+B-NP I-NP B-ADVP B-VP B-NP I-NP B-PP B-NP I-NP I-NP B-VP B-PP B-NP I-NP I-NP B-PP B-NP I-NP O
+dust and splashes
+be of
+the same quality
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+22
+programmable Fn buttons
+are located next to
+the lens mount
+4
+7
+7
+11
+11
+14
+0.8877329241047572
+The depth-of-field preview and programmable Fn buttons are located next to the lens mount , positioned so you can access them with your right hand .
+DT JJ NN CC JJ JJ NNS VBP VBN JJ TO DT NN NN , VBN IN PRP MD VB PRP IN PRP$ JJ NN .
+B-NP I-NP I-NP O B-NP I-NP I-NP B-VP I-VP B-ADVP B-PP B-NP I-NP I-NP O B-VP B-SBAR B-NP B-VP I-VP B-NP B-PP B-NP I-NP I-NP O
+programmable fn buttons
+locate next to
+the lens mount
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+22
+you
+can access
+them
+17
+18
+18
+20
+20
+21
+0.050155631651757966
+The depth-of-field preview and programmable Fn buttons are located next to the lens mount , positioned so you can access them with your right hand .
+DT JJ NN CC JJ JJ NNS VBP VBN JJ TO DT NN NN , VBN IN PRP MD VB PRP IN PRP$ JJ NN .
+B-NP I-NP I-NP O B-NP I-NP I-NP B-VP I-VP B-ADVP B-PP B-NP I-NP I-NP O B-VP B-SBAR B-NP B-VP I-VP B-NP B-PP B-NP I-NP I-NP O
+you
+access
+them
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+23
+Left-handed controls
+include
+the focus mode toggle switch
+0
+2
+2
+3
+3
+8
+0.8272943972768722
+Left-handed controls include the focus mode toggle switch ; it can flip back and forth to quickly move between autofocus and manual focus .
+JJ NNS VBP DT NN NN JJ NN : PRP MD VB RB CC RB TO RB VB IN NN CC JJ NN .
+B-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP O B-NP B-VP I-VP B-ADVP I-ADVP I-ADVP B-VP I-VP I-VP B-PP B-NP I-NP I-NP I-NP O
+left-handed controls
+include
+the focus mode toggle switch
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+24
+it
+includes
+a button
+1
+2
+2
+3
+3
+5
+0.04023088017131817
+And it includes a button that can adjust the active focus points and change between single and continuous focus modes , when held down and used in conjunction with the front and rear command dials .
+CC PRP VBZ DT NN WDT MD VB DT JJ NN NNS CC NN IN JJ CC JJ NN NNS , WRB VBN RB CC VBN IN NN IN DT NN CC JJ NN NNS .
+O B-NP B-VP B-NP I-NP B-NP B-VP I-VP B-NP I-NP I-NP I-NP O B-NP B-PP B-NP I-NP I-NP I-NP I-NP O B-ADVP B-VP B-ADVP O B-VP B-PP B-NP B-PP B-NP I-NP I-NP I-NP I-NP I-NP O
+it
+include
+a button
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+24
+a button
+can adjust
+the active focus points
+3
+5
+6
+8
+8
+12
+0.21210902291953684
+And it includes a button that can adjust the active focus points and change between single and continuous focus modes , when held down and used in conjunction with the front and rear command dials .
+CC PRP VBZ DT NN WDT MD VB DT JJ NN NNS CC NN IN JJ CC JJ NN NNS , WRB VBN RB CC VBN IN NN IN DT NN CC JJ NN NNS .
+O B-NP B-VP B-NP I-NP B-NP B-VP I-VP B-NP I-NP I-NP I-NP O B-NP B-PP B-NP I-NP I-NP I-NP I-NP O B-ADVP B-VP B-ADVP O B-VP B-PP B-NP B-PP B-NP I-NP I-NP I-NP I-NP I-NP O
+a button
+adjust
+the active focus points
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+25
+>Shooters
+are used to
+the D810 's control scheme
+5
+6
+7
+10
+10
+15
+0.8020068490967766
+'1000' , '667' ) " >Shooters who are used to the D810 's control scheme will notice one big difference between the two cameras on the top plate : The D750 has a mode dial at the left of its eyepiece .
+JJ , JJ -RRB- `` NNS WP VBP VBN TO DT NNP POS NN NN MD VB CD JJ NN IN DT CD NNS IN DT NN NN : DT NNP VBZ DT NN NN IN DT NN IN PRP$ NN .
+B-NP I-NP I-NP I-NP O B-NP B-NP B-VP I-VP B-PP B-NP I-NP I-NP I-NP I-NP B-VP I-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP B-PP B-NP I-NP I-NP O B-NP I-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP I-NP I-NP O
+>shooters
+use to
+the d810 's control scheme
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+25
+the D810 's control scheme
+will notice
+one big difference
+10
+15
+15
+17
+17
+20
+0.3624765887523965
+'1000' , '667' ) " >Shooters who are used to the D810 's control scheme will notice one big difference between the two cameras on the top plate : The D750 has a mode dial at the left of its eyepiece .
+JJ , JJ -RRB- `` NNS WP VBP VBN TO DT NNP POS NN NN MD VB CD JJ NN IN DT CD NNS IN DT NN NN : DT NNP VBZ DT NN NN IN DT NN IN PRP$ NN .
+B-NP I-NP I-NP I-NP O B-NP B-NP B-VP I-VP B-PP B-NP I-NP I-NP I-NP I-NP B-VP I-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP B-PP B-NP I-NP I-NP O B-NP I-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP I-NP I-NP O
+the d810 's control scheme
+notice
+# big difference
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+25
+The D750
+has
+a mode dial
+29
+31
+31
+32
+32
+35
+0.4581834270210148
+'1000' , '667' ) " >Shooters who are used to the D810 's control scheme will notice one big difference between the two cameras on the top plate : The D750 has a mode dial at the left of its eyepiece .
+JJ , JJ -RRB- `` NNS WP VBP VBN TO DT NNP POS NN NN MD VB CD JJ NN IN DT CD NNS IN DT NN NN : DT NNP VBZ DT NN NN IN DT NN IN PRP$ NN .
+B-NP I-NP I-NP I-NP O B-NP B-NP B-VP I-VP B-PP B-NP I-NP I-NP I-NP I-NP B-VP I-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP B-PP B-NP I-NP I-NP O B-NP I-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP I-NP I-NP O
+the d750
+have
+a mode dial
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+26
+It
+'s got
+the standard P
+0
+1
+1
+3
+3
+6
+0.9535732274806713
+It 's got the standard P , A , S , and M modes , as well as settings for full automatic operation , full automatic mode with disabled flash , art filter Effects , Scene modes , and two customizable User modes .
+PRP VBZ VBD DT JJ NNP , NNP , NNP , CC NNP NNS , RB RB IN NNS IN JJ JJ NN , JJ JJ NN IN JJ NN , NN NN NNS , NN NNS , CC CD JJ NN NNS .
+B-NP B-VP I-VP B-NP I-NP I-NP O B-NP O B-NP O O B-NP I-NP O B-CONJP I-CONJP I-CONJP B-NP B-PP B-NP I-NP I-NP O B-NP I-NP I-NP B-PP B-NP I-NP O B-NP I-NP I-NP O B-NP I-NP O O B-NP I-NP I-NP I-NP O
+it
+get
+the standard p
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+27
+It
+'s
+a locking dial
+0
+1
+1
+2
+2
+5
+0.665602681808491
+It 's a locking dial , so you 'll need to hold down the button at its center point in order to turn it .
+PRP VBZ DT VBG NN , RB PRP MD VB TO VB RP DT NN IN PRP$ NN NN IN NN TO VB PRP .
+B-NP B-VP B-NP I-NP I-NP O O B-NP B-VP I-VP I-VP I-VP B-PRT B-NP I-NP B-PP B-NP I-NP I-NP B-SBAR O B-VP I-VP B-NP O
+it
+be
+a locking dial
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+27
+you
+'ll need to hold down
+the button
+7
+8
+8
+13
+13
+15
+0.25991006582446274
+It 's a locking dial , so you 'll need to hold down the button at its center point in order to turn it .
+PRP VBZ DT VBG NN , RB PRP MD VB TO VB RP DT NN IN PRP$ NN NN IN NN TO VB PRP .
+B-NP B-VP B-NP I-NP I-NP O O B-NP B-VP I-VP I-VP I-VP B-PRT B-NP I-NP B-PP B-NP I-NP I-NP B-SBAR O B-VP I-VP B-NP O
+you
+need to hold down
+the button
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+28
+The D810
+has
+a button
+0
+2
+2
+3
+3
+5
+0.38275339046886747
+The D810 has a button to adjust modes , and does n't include in-camera filters , Scene modes , or fully automatic operation .
+DT NNP VBZ DT NN TO VB NNS , CC VBZ RB VB JJ NNS , NN NNS , CC RB JJ NN .
+B-NP I-NP B-VP B-NP I-NP B-VP I-VP B-NP O O B-VP I-VP I-VP B-NP I-NP O B-NP I-NP O O B-NP I-NP I-NP O
+the d810
+have
+a button
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+28
+a button
+does n't include
+in-camera filters
+3
+5
+10
+13
+13
+15
+0.9013782197054762
+The D810 has a button to adjust modes , and does n't include in-camera filters , Scene modes , or fully automatic operation .
+DT NNP VBZ DT NN TO VB NNS , CC VBZ RB VB JJ NNS , NN NNS , CC RB JJ NN .
+B-NP I-NP B-VP B-NP I-NP B-VP I-VP B-NP O O B-VP I-VP I-VP B-NP I-NP O B-NP I-NP O O B-NP I-NP I-NP O
+a button
+include
+in-camera filters
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+29
+the mode dial
+is
+another locking dial
+1
+4
+4
+5
+5
+8
+0.674312720413159
+Below the mode dial is another locking dial ; this one controls the camera 's drive mode .
+IN DT NN NN VBZ DT VBG NN : DT CD VBZ DT NN POS NN NN .
+B-PP B-NP I-NP I-NP B-VP B-NP I-NP I-NP O B-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP O
+the mode dial
+be
+another locking dial
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+29
+this one
+controls
+the camera 's drive mode
+9
+11
+11
+12
+12
+17
+0.6770816707489083
+Below the mode dial is another locking dial ; this one controls the camera 's drive mode .
+IN DT NN NN VBZ DT VBG NN : DT CD VBZ DT NN POS NN NN .
+B-PP B-NP I-NP I-NP B-VP B-NP I-NP I-NP O B-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP O
+this #
+control
+the camera 's drive mode
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+30
+It
+has settings for
+Single
+0
+1
+1
+4
+4
+5
+0.9751252826461256
+It has settings for Single , Continuous Low , Self-Timer , and Mirror Lock Up .
+PRP VBZ NNS IN NNP , NNP NNP , NNP , CC NNP NNP IN .
+B-NP B-VP B-NP B-PP B-NP O B-NP I-NP O B-NP O O B-NP I-NP I-NP O
+it
+have setting for
+single
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+31
+buttons
+start
+video recording
+8
+9
+15
+16
+16
+18
+0.6762063378378925
+To the right of the viewfinder there are buttons to adjust the metering pattern , start video recording , and set exposure compensation .
+TO DT NN IN DT NN EX VBP NNS TO VB DT NN NN , VB NN NN , CC VBN NN NN .
+B-PP B-NP I-NP I-NP I-NP I-NP B-NP B-VP B-NP B-VP I-VP B-NP I-NP I-NP O B-VP B-NP I-NP O O B-NP I-NP I-NP O
+buttons
+start
+video recording
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+33
+'1000' , '667' ) ">A column of buttons
+runs down
+the rear side
+0
+8
+8
+10
+10
+13
+0.9227709077707019
+'1000' , '667' ) ">A column of buttons runs down the rear side , to the left of the hinged LC D ; a few of these serve double duty on the D810 , depending on how the camera is set .
+JJ , JJ -RRB- NN NN IN NNS VBZ IN DT JJ NN , TO DT NN IN DT JJ NNP NNP : DT JJ IN DT VBP JJ NN IN DT NNP , VBG IN WRB DT NN VBZ VBN .
+B-NP I-NP I-NP I-NP I-NP I-NP I-NP I-NP B-VP B-PP B-NP I-NP I-NP O B-PP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O B-NP I-NP I-NP I-NP B-VP B-NP I-NP B-PP B-NP I-NP O B-VP B-PP B-ADVP B-NP I-NP B-VP I-VP O
+'1000' , '667' ) ">a column of buttons
+run down
+the rear side
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+33
+a few of these
+serve
+double duty
+23
+27
+27
+28
+28
+30
+0.6481116159674875
+'1000' , '667' ) ">A column of buttons runs down the rear side , to the left of the hinged LC D ; a few of these serve double duty on the D810 , depending on how the camera is set .
+JJ , JJ -RRB- NN NN IN NNS VBZ IN DT JJ NN , TO DT NN IN DT JJ NNP NNP : DT JJ IN DT VBP JJ NN IN DT NNP , VBG IN WRB DT NN VBZ VBN .
+B-NP I-NP I-NP I-NP I-NP I-NP I-NP I-NP B-VP B-PP B-NP I-NP I-NP O B-PP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O B-NP I-NP I-NP I-NP B-VP B-NP I-NP B-PP B-NP I-NP O B-VP B-PP B-ADVP B-NP I-NP B-VP I-VP O
+a few of these
+serve
+double duty
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+34
+The Menu button
+always takes
+you
+0
+3
+3
+5
+5
+6
+0.10332167193987757
+The Menu button always takes you to the menu , and the button always brings up an on-screen display to change settings .
+DT NNP NN RB VBZ PRP TO DT NN , CC DT NN RB VBZ RP DT JJ NN TO VB NNS .
+B-NP I-NP I-NP B-ADVP B-VP B-NP B-PP B-NP I-NP O O B-NP I-NP B-ADVP B-VP B-PRT B-NP I-NP I-NP B-VP I-VP B-NP O
+the menu button
+take
+you
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+34
+the button
+always brings up
+an on-screen display
+11
+13
+13
+16
+16
+19
+0.29624869303428936
+The Menu button always takes you to the menu , and the button always brings up an on-screen display to change settings .
+DT NNP NN RB VBZ PRP TO DT NN , CC DT NN RB VBZ RP DT JJ NN TO VB NNS .
+B-NP I-NP I-NP B-ADVP B-VP B-NP B-PP B-NP I-NP O O B-NP I-NP B-ADVP B-VP B-PRT B-NP I-NP I-NP B-VP I-VP B-NP O
+the button
+bring up
+an on-screen display
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+35
+The ?/Lock button
+protects
+images
+0
+3
+3
+4
+4
+5
+0.7836138335460466
+The ?/Lock button protects images from being deleted when in playback mode , brings up on-screen help when navigating the menu , and adjusts White Balance in all other modes .
+DT NN NN VBZ NNS IN VBG VBN WRB IN NN NN , VBZ RP JJ NN WRB VBG DT NN , CC NNS NNP NNP IN DT JJ NNS .
+B-NP I-NP I-NP B-VP B-NP B-PP B-VP I-VP B-ADVP B-PP B-NP I-NP O B-VP B-NP I-NP I-NP B-ADVP B-VP B-NP I-NP O O B-NP I-NP I-NP B-PP B-NP I-NP I-NP O
+the ?/lock button
+protect
+images
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+35
+images
+brings up
+on-screen help
+4
+5
+13
+15
+15
+17
+0.7147524971927521
+The ?/Lock button protects images from being deleted when in playback mode , brings up on-screen help when navigating the menu , and adjusts White Balance in all other modes .
+DT NN NN VBZ NNS IN VBG VBN WRB IN NN NN , VBZ RP JJ NN WRB VBG DT NN , CC NNS NNP NNP IN DT JJ NNS .
+B-NP I-NP I-NP B-VP B-NP B-PP B-VP I-VP B-ADVP B-PP B-NP I-NP O B-VP B-NP I-NP I-NP B-ADVP B-VP B-NP I-NP O O B-NP I-NP I-NP B-PP B-NP I-NP I-NP O
+images
+bring up
+on-screen help
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+36
+The + button
+magnifies
+an image
+0
+3
+3
+4
+4
+6
+0.7836138335460466
+The + button magnifies an image during playback and zooms in on the Live View feed to as a focus aid , but if you 're shooting using the optical finder , it allows you to adjust image quality settings .
+DT NN NN VBZ DT NN IN NN CC NNS IN IN DT JJ NN NN TO IN DT NN NN , CC IN PRP VBP VBG VBG DT JJ NN , PRP VBZ PRP TO VB NN NN NNS .
+B-NP I-NP I-NP B-VP B-NP I-NP B-PP B-NP I-NP I-NP B-PP B-PP B-NP I-NP I-NP I-NP B-PP B-PP B-NP I-NP I-NP O O B-SBAR B-NP B-VP I-VP I-VP B-NP I-NP I-NP O B-NP B-VP B-NP B-VP I-VP B-NP I-NP I-NP O
+the + button
+magnify
+an image
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+36
+you
+'re shooting using
+the optical finder
+24
+25
+25
+28
+28
+31
+0.06245675474902836
+The + button magnifies an image during playback and zooms in on the Live View feed to as a focus aid , but if you 're shooting using the optical finder , it allows you to adjust image quality settings .
+DT NN NN VBZ DT NN IN NN CC NNS IN IN DT JJ NN NN TO IN DT NN NN , CC IN PRP VBP VBG VBG DT JJ NN , PRP VBZ PRP TO VB NN NN NNS .
+B-NP I-NP I-NP B-VP B-NP I-NP B-PP B-NP I-NP I-NP B-PP B-PP B-NP I-NP I-NP I-NP B-PP B-PP B-NP I-NP I-NP O O B-SBAR B-NP B-VP I-VP I-VP B-NP I-NP I-NP O B-NP B-VP B-NP B-VP I-VP B-NP I-NP I-NP O
+you
+shoot use
+the optical finder
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+36
+it
+allows
+you
+32
+33
+33
+34
+34
+35
+0.0039430102949383995
+The + button magnifies an image during playback and zooms in on the Live View feed to as a focus aid , but if you 're shooting using the optical finder , it allows you to adjust image quality settings .
+DT NN NN VBZ DT NN IN NN CC NNS IN IN DT JJ NN NN TO IN DT NN NN , CC IN PRP VBP VBG VBG DT JJ NN , PRP VBZ PRP TO VB NN NN NNS .
+B-NP I-NP I-NP B-VP B-NP I-NP B-PP B-NP I-NP I-NP B-PP B-PP B-NP I-NP I-NP I-NP B-PP B-PP B-NP I-NP I-NP O O B-SBAR B-NP B-VP I-VP I-VP B-NP I-NP I-NP O B-NP B-VP B-NP B-VP I-VP B-NP I-NP I-NP O
+it
+allow
+you
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+37
+Front and rear command dials
+are located on
+the back right
+0
+5
+5
+8
+8
+11
+0.9691674833814712
+Front and rear command dials are located on the back right and the front of the handgrip , at your fingertips for easy access .
+JJ CC JJ NN NNS VBP VBN IN DT RB JJ CC DT NN IN DT NN , IN PRP$ NNS IN JJ NN .
+B-NP I-NP I-NP I-NP I-NP B-VP I-VP B-PP B-NP I-NP I-NP O B-NP I-NP I-NP I-NP I-NP O B-PP B-NP I-NP B-PP B-NP I-NP O
+front and rear command dials
+locate on
+the back right
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+38
+">The rear display
+is
+the same 3.2-inch , 1,229k-dot LCD
+4
+7
+7
+8
+8
+14
+0.23918273691118913
+'1000' , '667' ) ">The rear display is the same 3.2-inch , 1,229k-dot LCD that 's used on the D810 , but because it 's mounted on a hinge , there 's no protective plastic cover .
+JJ , '' -RRB- DT JJ NN VBZ DT JJ JJ , JJ NNP WDT VBZ VBN IN DT NNP , CC IN PRP VBZ VBN IN DT NN , EX VBZ DT JJ NN NN .
+B-ADJP O O B-VP B-NP I-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP B-NP B-VP I-VP B-PP B-NP I-NP O O B-SBAR B-NP B-VP I-VP B-PP B-NP I-NP O B-NP B-VP B-NP I-NP I-NP I-NP O
+">the rear display
+be
+the same 3.2-inch , 1,229k-dot lcd
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+38
+the same 3.2-inch , 1,229k-dot LCD
+'s used on
+the D810
+8
+14
+15
+18
+18
+20
+0.8881521233448295
+'1000' , '667' ) ">The rear display is the same 3.2-inch , 1,229k-dot LCD that 's used on the D810 , but because it 's mounted on a hinge , there 's no protective plastic cover .
+JJ , '' -RRB- DT JJ NN VBZ DT JJ JJ , JJ NNP WDT VBZ VBN IN DT NNP , CC IN PRP VBZ VBN IN DT NN , EX VBZ DT JJ NN NN .
+B-ADJP O O B-VP B-NP I-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP B-NP B-VP I-VP B-PP B-NP I-NP O O B-SBAR B-NP B-VP I-VP B-PP B-NP I-NP O B-NP B-VP B-NP I-NP I-NP I-NP O
+the same 3.2-inch , 1,229k-dot lcd
+use on
+the d810
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+38
+it
+'s mounted on
+a hinge
+23
+24
+24
+27
+27
+29
+0.8572243740041022
+'1000' , '667' ) ">The rear display is the same 3.2-inch , 1,229k-dot LCD that 's used on the D810 , but because it 's mounted on a hinge , there 's no protective plastic cover .
+JJ , '' -RRB- DT JJ NN VBZ DT JJ JJ , JJ NNP WDT VBZ VBN IN DT NNP , CC IN PRP VBZ VBN IN DT NN , EX VBZ DT JJ NN NN .
+B-ADJP O O B-VP B-NP I-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP B-NP B-VP I-VP B-PP B-NP I-NP O O B-SBAR B-NP B-VP I-VP B-PP B-NP I-NP O B-NP B-VP B-NP I-NP I-NP I-NP O
+it
+mount on
+a hinge
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+39
+It
+can tilt
+90&deg
+0
+1
+1
+3
+3
+4
+0.477362300214683
+It can tilt 90&deg ; up or down , and delivers plenty of sharpness .
+PRP MD VB CD : RB CC RB , CC VBZ NN IN NN .
+B-NP B-VP I-VP B-NP O B-ADVP I-ADVP I-ADVP O O B-VP B-NP I-NP I-NP O
+it
+tilt
+#
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+39
+90&deg
+delivers plenty of
+sharpness
+3
+4
+10
+13
+13
+14
+0.8055606080377617
+It can tilt 90&deg ; up or down , and delivers plenty of sharpness .
+PRP MD VB CD : RB CC RB , CC VBZ NN IN NN .
+B-NP B-VP I-VP B-NP O B-ADVP I-ADVP I-ADVP O O B-VP B-NP I-NP I-NP O
+#
+deliver plenty of
+sharpness
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+40
+I
+had
+no issues
+0
+1
+1
+2
+2
+4
+0.1814670245890577
+I had no issues using it for Live View shooting or image review under bright , direct sunlight .
+PRP VBD DT NNS VBG PRP IN JJ NNP NN CC NN NN IN JJ , JJ NN .
+B-NP B-VP B-NP I-NP B-VP B-NP B-PP B-NP I-NP I-NP I-NP I-NP I-NP B-PP B-NP I-NP I-NP I-NP O
+i
+have
+no issues
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+41
+The tilting design
+comes in
+handy both
+0
+3
+3
+5
+5
+7
+0.7873220840403722
+The tilting design comes in handy both for video recording and for capturing still images when holding the camera above or below your head .
+DT JJ NN VBZ IN JJ CC IN NN NN CC IN VBG RB NNS WRB VBG DT NN JJ CC IN PRP$ NN .
+B-NP I-NP I-NP B-VP B-PP B-NP I-NP B-PP B-NP I-NP B-PP B-PP B-VP B-ADVP B-NP B-ADVP B-VP B-NP I-NP B-ADJP O B-SBAR B-NP I-NP O
+the tilting design
+come in
+handy both
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+42
+the autofocus system
+is marked in
+black
+7
+10
+10
+13
+13
+14
+0.8574063120225556
+The area of the frame covered by the autofocus system is marked in black , and if you opt to manually select a focus point or group of points , they appear as black squares .
+DT NN IN DT NN VBN IN DT NN NN VBZ VBN IN JJ , CC IN PRP VBP TO RB VB DT NN NN CC NN IN NNS , PRP VBP IN JJ NNS .
+B-NP I-NP I-NP I-NP I-NP B-VP B-PP B-NP I-NP I-NP B-VP I-VP B-PP B-NP O O B-SBAR B-NP B-VP I-VP I-VP I-VP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O B-NP B-VP B-PP B-NP I-NP O
+the autofocus system
+mark in
+black
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+42
+they
+appear as
+black squares
+30
+31
+31
+33
+33
+35
+0.10018054432885627
+The area of the frame covered by the autofocus system is marked in black , and if you opt to manually select a focus point or group of points , they appear as black squares .
+DT NN IN DT NN VBN IN DT NN NN VBZ VBN IN JJ , CC IN PRP VBP TO RB VB DT NN NN CC NN IN NNS , PRP VBP IN JJ NNS .
+B-NP I-NP I-NP I-NP I-NP B-VP B-PP B-NP I-NP I-NP B-VP I-VP B-PP B-NP O O B-SBAR B-NP B-VP I-VP I-VP I-VP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O B-NP B-VP B-PP B-NP I-NP O
+they
+appear as
+black squares
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+43
+The current shooting settings
+are displayed in
+blue
+0
+4
+12
+15
+15
+16
+0.9174437104072447
+The current shooting settings run across the bottom of the finder and are displayed in blue via OLED , just like the D810 .
+DT JJ NN NNS VBN IN DT NN IN DT NN CC VBP VBN IN JJ IN NNP , RB IN DT NNP .
+B-NP I-NP I-NP I-NP B-VP B-PP B-NP I-NP I-NP I-NP I-NP O B-VP I-VP B-PP B-NP B-PP B-NP O B-ADVP B-PP B-NP I-NP O
+the current shooting settings
+display in
+blue
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+44
+You
+can select any of
+a number of framing aids
+0
+1
+1
+5
+5
+10
+0.6773819253057309
+You can select any of a number of framing aids , including a virtual level and a rule-of-thirds grid to appear in the finder .
+PRP MD VB DT IN DT NN IN NN NNS , VBG DT JJ NN CC DT NNS NN TO VB IN DT NN .
+B-NP B-VP I-VP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O B-PP B-NP I-NP I-NP O B-NP I-NP I-NP B-VP I-VP B-PP B-NP I-NP O
+you
+select of
+a number of framing aids
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+45
+Jim Fisher
+is a graduate of
+the Rensselaer Polytechnic Institute
+12
+14
+14
+18
+18
+22
+0.9258604162402155
+Senior digital camera analyst for the PCMag consumer electronics reviews team , Jim Fisher is a graduate of the Rensselaer Polytechnic Institute , where he concentrated on documentary video production .
+JJ JJ NN NN IN DT NN NN NNS NNS NN , NNP NNP VBZ DT NN IN DT NNP NNP NNP , WRB PRP VBD IN JJ NN NN .
+B-NP I-NP I-NP I-NP B-PP B-NP I-NP I-NP I-NP I-NP I-NP O B-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O B-ADVP B-NP B-VP B-PP B-NP I-NP I-NP O
+jim fisher
+be graduate of
+the rensselaer polytechnic institute
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+45
+he
+concentrated on
+documentary video production
+24
+25
+25
+27
+27
+30
+0.7192987313489666
+Senior digital camera analyst for the PCMag consumer electronics reviews team , Jim Fisher is a graduate of the Rensselaer Polytechnic Institute , where he concentrated on documentary video production .
+JJ JJ NN NN IN DT NN NN NNS NNS NN , NNP NNP VBZ DT NN IN DT NNP NNP NNP , WRB PRP VBD IN JJ NN NN .
+B-NP I-NP I-NP I-NP B-PP B-NP I-NP I-NP I-NP I-NP I-NP O B-NP I-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP I-NP O B-ADVP B-NP B-VP B-PP B-NP I-NP I-NP O
+he
+concentrate on
+documentary video production
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+46
+he
+borrowed
+his father 's Hasselblad 500C
+9
+10
+10
+11
+11
+16
+0.6663603065490504
+Jim 's interest in photography really took off when he borrowed his father 's Hasselblad 500C and light meter in 2007 .
+NNP POS NN IN NN RB VBD RP WRB PRP VBD PRP$ NN POS NNP CD CC JJ NN IN CD .
+B-NP I-NP I-NP B-PP B-NP B-VP I-VP B-PRT B-ADVP B-NP B-VP B-NP I-NP I-NP I-NP I-NP O B-NP I-NP B-PP B-NP O
+he
+borrow
+his father 's hasselblad #
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+47
+He
+honed
+his writing skills
+0
+1
+1
+2
+2
+5
+0.599696813754029
+He honed his writing skills at retailer B&H Photo , where he wrote thousands upon thousands of product descriptions , blog posts , and reviews .
+PRP VBD PRP$ NN NNS IN NN NNP NNP , WRB PRP VBD NNS IN NNS IN NN NNS , NN NNS , CC NNS .
+B-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP O B-ADVP B-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP O B-NP I-NP O O B-NP O
+he
+hone
+his writing skills
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+47
+he
+wrote
+thousands upon thousands of product descriptions
+11
+12
+12
+13
+13
+19
+0.3661140706766206
+He honed his writing skills at retailer B&H Photo , where he wrote thousands upon thousands of product descriptions , blog posts , and reviews .
+PRP VBD PRP$ NN NNS IN NN NNP NNP , WRB PRP VBD NNS IN NNS IN NN NNS , NN NNS , CC NNS .
+B-NP B-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP O B-ADVP B-NP B-VP B-NP I-NP I-NP I-NP I-NP I-NP O B-NP I-NP O O B-NP O
+he
+write
+thousands upon thousands of product descriptions
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+48
+he
+'s shot with
+hundreds of camera models
+2
+3
+3
+6
+6
+10
+0.4808953289235952
+Since then he 's shot with hundreds of camera models , ranging from pocket point-and-shoots to medium format ...
+IN RB PRP VBZ VBN IN NNS IN NN NNS , VBG IN NN NNS TO JJ NN :
+B-PP B-NP B-NP B-VP I-VP B-PP B-NP I-NP I-NP I-NP O B-VP B-PP B-NP I-NP B-PP B-NP I-NP O
+he
+shoot with
+hundreds of camera models
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+49
+Your subscription
+will automatically renew at
+the end of the term
+0
+2
+2
+6
+6
+11
+0.7150514697524787
+Your subscription will automatically renew at the end of the term unless you authorize cancellation .
+PRP$ NN MD RB VB IN DT NN IN DT NN IN PRP VB NN .
+B-NP I-NP B-VP I-VP I-VP B-PP B-NP I-NP I-NP I-NP I-NP B-SBAR B-NP B-VP B-NP O
+your subscription
+renew at
+the end of the term
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+49
+you
+authorize
+cancellation
+12
+13
+13
+14
+14
+15
+0.2195942962010244
+Your subscription will automatically renew at the end of the term unless you authorize cancellation .
+PRP$ NN MD RB VB IN DT NN IN DT NN IN PRP VB NN .
+B-NP I-NP B-VP I-VP I-VP B-PP B-NP I-NP I-NP I-NP I-NP B-SBAR B-NP B-VP B-NP O
+you
+authorize
+cancellation
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+50
+you
+'ll receive
+a notice
+3
+4
+4
+6
+6
+8
+0.14967082486645858
+Each year , you 'll receive a notice and you authorize that your credit/debit card will be charged the annual subscription rate .
+DT NN , PRP MD VB DT NN CC PRP VB IN PRP$ NN NN MD VB VBN DT JJ NN NN .
+B-NP I-NP O B-NP B-VP I-VP B-NP I-NP O B-NP B-VP B-PRT B-NP I-NP I-NP B-VP I-VP I-VP B-NP I-NP I-NP I-NP O
+you
+receive
+a notice
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+50
+your credit/debit card
+will be charged
+the annual subscription rate
+12
+15
+15
+18
+18
+22
+0.46448787436221173
+Each year , you 'll receive a notice and you authorize that your credit/debit card will be charged the annual subscription rate .
+DT NN , PRP MD VB DT NN CC PRP VB IN PRP$ NN NN MD VB VBN DT JJ NN NN .
+B-NP I-NP O B-NP B-VP I-VP B-NP I-NP O B-NP B-VP B-PRT B-NP I-NP I-NP B-VP I-VP I-VP B-NP I-NP I-NP I-NP O
+your credit/debit card
+charge
+the annual subscription rate
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+51
+You
+may cancel at
+any time
+0
+1
+1
+4
+4
+6
+0.37523714909636874
+You may cancel at any time during your subscription and receive a full refund on all unsent issues .
+PRP MD VB IN DT NN IN PRP$ NN CC VB DT JJ NN IN DT JJ NNS .
+B-NP B-VP I-VP B-PP B-NP I-NP B-PP B-NP I-NP O B-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP O
+you
+cancel at
+any time
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+51
+any time
+receive a full refund on
+all unsent issues
+4
+6
+10
+15
+15
+18
+0.8928867523419713
+You may cancel at any time during your subscription and receive a full refund on all unsent issues .
+PRP MD VB IN DT NN IN PRP$ NN CC VB DT JJ NN IN DT JJ NNS .
+B-NP B-VP I-VP B-PP B-NP I-NP B-PP B-NP I-NP O B-VP B-NP I-NP I-NP B-PP B-NP I-NP I-NP O
+any time
+receive refund on
+all unsent issues
+
+
+
+/Users/ZwEin/Dropbox/Job/StudentWork at USC-ISI/ISI/Assignment/Assignment One (20160114)/raw/Nikon D750 Review & Rating | PCMag.com.html
+52
+we
+will bill
+you
+13
+14
+14
+16
+16
+17
+0.01606588394735531
+If your credit/debit card or other billing method can not be charged , we will bill you directly instead .
+IN PRP$ NN NN CC JJ NN NN MD RB VB VBN , PRP MD VB PRP RB RB .
+B-SBAR B-NP I-NP I-NP I-NP I-NP I-NP I-NP B-VP I-VP I-VP I-VP O B-NP B-VP I-VP B-NP B-ADVP B-ADVP O
+we
+bill
+you
