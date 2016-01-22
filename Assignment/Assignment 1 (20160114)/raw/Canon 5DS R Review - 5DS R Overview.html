@@ -1,0 +1,2166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgQHUVdUGwIGUFVSDgA="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t,e){function n(){return s}if(t[1]){var r=t[1];if("function"==typeof r){var s=a(r,"nr@wrapped",function(){return i(r,"fn-",n,r.name||"anonymous")});this.wrapped=t[1]=s,o.emit("initEventContext",[t,e],this.wrapped)}else"function"==typeof r.handleEvent&&i.inPlace(r,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:26,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){function r(){return a}this.ctx={};var a={"nr@context":this.ctx};o.emit("initTimerContext",[t,n],a),t[0]=i(t[0],"fn-",r,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:26,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,p,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:26,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1),u=window.XMLHttpRequest;t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof u&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:12,4:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:24,2:25,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:24,2:15,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script>
+    <title>
+        Canon 5DS R Review - 5DS R Overview    </title>
+        <meta name="news_keywords" content="5DS R,Canon 5DS R,Canon EOS 5DS R,Canon EOS 5DS R,5DSR,Canon 5DSR,Canon EOS 5DSR">
+    <meta name="keywords" content="5DS R,Canon 5DS R,Canon EOS 5DS R,Canon EOS 5DS R,5DSR,Canon 5DSR,Canon EOS 5DSR">
+    <meta name="description" content="Canon&#039;s 50MP full-frame EOS 5DS R gets even sharper with no AA filtering. Read our Canon 5DS R Review for all the details!">
+    <link rel="canonical" href="http://www.imaging-resource.com/PRODS/canon-5ds-r/canon-5ds-rA.HTM" />
+
+    <meta property="og:url" content="http://www.imaging-resource.com/PRODS/canon-5ds-r/canon-5ds-rA.HTM"/>
+    <meta property="og:type" content="Review"/>
+    <meta property="og:title" content="Canon 5DS R Review - 5DS R Overview"/>
+    <meta property="og:image" content="http://www.imaging-resource.com/PRODS/canon-5ds-r/ZYFRONT-LG.JPG"/>
+    <meta property="og:description" content="Canon&#039;s 50MP full-frame EOS 5DS R gets even sharper with no AA filtering. Read our Canon 5DS R Review for all the details!"/>
+    <meta property="og:site_name" content="Imaging Resource"/>
+    <meta property="twitter:site" content="@IR_Lab"/>
+    <meta property="twitter:url" content="http://www.imaging-resource.com/PRODS/canon-5ds-r/canon-5ds-rA.HTM"/>
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:title" content="Canon 5DS R Review - 5DS R Overview"/>
+    <meta property="twitter:image" content="http://www.imaging-resource.com/PRODS/canon-5ds-r/ZYFRONT-LG.JPG"/>
+    <meta property="twitter:description" content="Canon&#039;s 50MP full-frame EOS 5DS R gets even sharper with no AA filtering. Read our Canon 5DS R Review for all the details!"/>
+    <meta property="twitter:site" content="@IR_Lab"/>
+        <meta property="og:image:width" content="631"/>
+    <meta property="og:image:height" content="500"/>
+    <meta property="twitter:image:width" content="631"/>
+    <meta property="twitter:image:height" content="500"/>
+
+    <link rel="SHORTCUT ICON" href="http://www.imaging-resource.com/ART/favicon.ico" />
+            <link rel="stylesheet" href="http://www.imaging-resource.com/IN/style-rev.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.imaging-resource.com/features/vlazyload/vlazyload.css" type="text/css" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald:400,300" type="text/css" />
+    <link rel="stylesheet" href="http://www.imaging-resource.com/features/topnav/topnav.css" type="text/css" />
+            <link rel="stylesheet" href="/includes/css/affiliate_review.css" type="text/css" />
+                <link rel="stylesheet" href="http://www.imaging-resource.com/includes/css/review.css" type="text/css" />
+        <link rel="stylesheet" href="https://www.imaging-resource.com/includes/css/footer.css" type="text/css" />
+    
+
+    <link href="/includes/css/aspirational_photo.css" rel="stylesheet" type="text/css" />
+                    <script type="text/javascript" src="//use.typekit.net/xyz0jcd.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script type="text/javascript" src="//www.google.com/jsapi"></script>
+        <script type="text/javascript">google.load("jquery","1.7",{uncompressed:true});</script>
+        <!-- Start Optimizely Tag -->
+        <script type="text/javascript" src="//cdn.optimizely.com/js/2118511010.js"></script>
+        <!-- End Optimizely Tag -->
+                <script type="text/javascript" src="https://www.imaging-resource.com/features/topnav/js/jquery.hoverIntent.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="http://www.imaging-resource.com/features/topnav/js/topnav.js" charset="utf-8"></script>
+        <script type="text/javascript" src="http://www.imaging-resource.com/features/tooltips/js/jquery.wtooltip.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="http://www.imaging-resource.com/features/tooltips/js/inittooltips.js" charset="utf-8"></script>
+        <script type="text/javascript" src="http://www.imaging-resource.com/features/custom-ads/js/waypoints.min.js"></script>
+        <script type="text/javascript" src="http://www.imaging-resource.com/IN/rev.js"></script>
+        <script type="text/javascript" src="http://www.imaging-resource.com/features/vlazyload/vlazyload.js"></script>
+        <!-- BEGIN ADVERTSERVE CODE BLOCK -->
+        <script type="text/javascript">
+        var _avp = _avp || [];
+        (function() {
+            var s = document.createElement('script');
+            s.type = 'text/javascript'; s.async = true; s.src = '/advertpro/js/libcode2.js';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        })();
+        </script>
+        <!-- END ADVERTSERVE CODE BLOCK -->
+        <script type="text/javascript" src="http://www.imaging-resource.com/includes/vendor/typeahead.js/dist/typeahead.bundle.js"></script>
+        <script type="text/javascript" src="https://www.imaging-resource.com/includes/vendor/mustache/mustache.js"></script>
+        <script type="text/javascript" src="https://www.imaging-resource.com/includes/js/search.js"></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-8396527-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    
+    <script type="text/javascript" src="http://www.imaging-resource.com/includes/js/affiliate_review.js"></script>
+    <script type="text/javascript" src="https://www.imaging-resource.com/includes/js/social.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(window).vLazyload({
+                blank: 'https://www.imaging-resource.com/features/vlazyload/images/blank.gif'
+            });
+            $(function() {
+                var stickyAd = new adSticky();
+            });
+        });
+    </script>
+    <!-- Start Hotjar Analytics Code -->
+    <script>
+    (function(f,b){
+        var c;
+        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+        f._hjSettings={hjid:22098, hjsv:3};
+        c=b.createElement("script");c.async=1;
+        c.sc="//static.hotjar.com/c/hotjar-22098.js?sv=3";
+        b.getElementsByTagName("head")[0].appendChild(c);
+    })(window,document);
+    </script>
+    <!-- End Hotjar Analytics Code -->
+    <!-- Start Quantcast Async Tag Part 1 -->
+    <script type="text/javascript">
+        var _qevents = _qevents || [];
+        (function() {
+            var elem = document.createElement('script');
+            elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+            elem.async = true;
+            elem.type = "text/javascript";
+            var scpt = document.getElementsByTagName('script')[0];
+            scpt.parentNode.insertBefore(elem, scpt);
+        })();
+    </script>
+    <!-- End Quantcast Async Tag Part 1 -->
+    <!-- Start Amplitude -->
+    <script type="text/javascript">
+        (function(e,t){var r=e.amplitude||{};var n=t.createElement("script");n.type="text/javascript";
+        n.async=true;n.src="https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-2.2.1-min.gz.js";
+        var s=t.getElementsByTagName("script")[0];s.parentNode.insertBefore(n,s);r._q=[];function a(e){
+        r[e]=function(){r._q.push([e].concat(Array.prototype.slice.call(arguments,0)))}}var i=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties"];
+        for(var o=0;o<i.length;o++){a(i[o])}e.amplitude=r})(window,document);
+
+        amplitude.init("4a56dc7dd5b6485e8f220e20154554c6");
+    </script>
+    <script type="text/javascript" src="https://www.imaging-resource.com/includes/js/amplitude.js"></script>
+    <!-- End Amplitude -->
+    
+    <script type="text/javascript" src="/includes/js/aspirational_photo.js"></script>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" id="overview" class="review" onLoad="MM_preloadImages('ZYFRONT-MD.JPG','ZYBACK-MD.JPG','ZYTOP-MD.JPG','ZYLEFT-MD.JPG','ZYRIGHT-MD.JPG');"
+>
+<script language="JavaScript" type="text/javascript">
+//var randomnumber=Math.floor(Math.random()*101);
+var randomnumber = 11;
+if (randomnumber <= 10) {
+    // Dual ads
+    document.write('<scr'+'ipt src="//ads.imaging-resource.com/advertpro/servlet/view/banner/unique/javascript/strip?zid=182&pid=0&total=2&layout=horizontal&margin=0&padding=27&overlay=true&autoclose=15&spacing=20&bgcolor=%23E0E0EB&random='+Math.floor(89999999*Math.random()+10000000)+'&millis='+new Date().getTime()+'&referrer='+encodeURIComponent(document.location)+'" type="text/javascript"></scr'+'ipt>');
+} else {
+    // Regular single ad
+    if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+        document.write('<SCR'+'IPT src="//ads.imaging-resource.com/advertpro/servlet/view/window/javascript/zone?zid=78&pid=0&random='+Math.floor(89999999*Math.random()+10000000)+'&millis='+new Date().getTime()+'&referrer='+escape(document.location)+'" language="JavaScript" type="text/javascript"><\/SCR'+'IPT>');
+    }
+}
+</script>
+<div id="wrapper">
+    <table id="header">
+        <tr>
+            <td id="logo_divider"><span itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://www.imaging-resource.com"><img itemprop="logo" src="https://www.imaging-resource.com/ART/logo.130.gif" width="130" height="84" alt="Imaging Resource logo" border="0" id="logo"></a></span></td>
+            <td id="leaderboard">
+                            <!-- BEGIN ADVERTSERVE CODE BLOCK: Region 19 / Keyword CanonPro -->
+<div id="avp_zid_19">
+    <script type="text/javascript">
+        _avp.push({ tagid: 'avp_zid_19', alias: '/advertpro', type: 'banner', zid: 19, pid: 0, keywords:'CanonPro' });
+    </script>
+</div>
+<!-- END ADVERTSERVE CODE BLOCK: Region 19 / Keyword CanonPro -->
+
+                </td>
+        </tr>
+    </table>
+    <div id="menu-top">
+        <ul id="navlist">
+            <li class="mega">
+                <a href="/">Home</a>
+            </li>
+            <li class="mega">
+                <a href="/cameras/reviews/">Camera Reviews</a>
+                <div class="megaMenuContainer">
+                    <div class="megaMenuPoint"></div>
+                    <div class="megaSubMenu curved shadow">
+
+                        <!-- Camera mega menu content here -->
+                        <div class="megaMenuCol" style="width:175px;" >
+                            <ul>
+                                <li><a href="/cameras/reviews/">Camera Reviews</a></li>
+                                <li><a href="/WB/WB.HTM">Best Cameras</a> <em>(Dave's Picks)</em></li>
+                            </ul>
+                            <br />
+                            <ul>
+                                <li><a href="/compact-cameras">Compact Cameras</a></li>
+                                <li><a href="/dslr-cameras">DSLR Cameras</a></li>
+                                <li><a href="/mirrorless-cameras">Mirrorless Cameras</a></li>
+                            </ul>
+                            <br />
+                            <ul>
+                                <li><a href="/IMCOMP/COMPS01.HTM">Compare Images</a></li>
+                                <li><a href="/cameras/compare/">Compare Cameras</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="megaMenuCol" style="width:170px;">
+                            <div class="megaMenuHead">Popular Manufacturers</div>
+                            <ul>
+                                <li><a href="/cameras/canon/reviews/">Canon Cameras</a></li>
+                                <li><a href="/cameras/fujifilm/reviews/">Fuji Cameras</a></li>
+                                <li><a href="/cameras/nikon/reviews/">Nikon Cameras</a></li>
+                                <li><a href="/cameras/olympus/reviews/">Olympus Cameras</a></li>
+                                <li><a href="/cameras/panasonic/reviews/">Panasonic Cameras</a></li>
+                                <li><a href="/cameras/pentax/reviews/">Pentax Cameras</a></li>
+                                <li><a href="/cameras/samsung/reviews/">Samsung Cameras</a></li>
+                                <li><a href="/cameras/sony/reviews/">Sony Cameras</a></li>
+                                <li><a href="/cameras/brands/">All Camera Manufacturers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="megaMenuCol" style="width:140px;">
+                            <div class="megaMenuHead">Popular Cameras</div>
+                            <ul>
+                                <!-- DO NOT EDIT BETWEEN THESE LINES -->
+                                <!-- Popular Cameras Start -->      <li><a href="/PRODS/pentax-k3/pentax-k3A.HTM">Pentax K-3</a></li>       <li><a href="/PRODS/sony-rx100-ii/sony-rx100-iiA.HTM">Sony RX100 II</a></li>        <li><a href="/PRODS/panasonic-gm1/panasonic-gm1A.HTM">Panasonic GM1</a></li>        <li><a href="/PRODS/E60D/E60DA.HTM">Canon 60D</a></li>      <li><a href="/PRODS/canon-70d/canon-70dA.HTM">Canon 70D</a></li>        <li><a href="/PRODS/panasonic-gx7/panasonic-gx7A.HTM">Panasonic GX7</a></li>        <li><a href="/PRODS/T3I/T3IA.HTM">Canon T3i</a></li>        <li><a href="/PRODS/canon-5d-mkiii/canon-5d-mkiiiA.HTM">Canon 5D Mark III</a></li>      <li><a href="/PRODS/nikon-d610/nikon-d610A.HTM">Nikon D610</a></li><!-- Popular Cameras End -->
+                                <!-- DO NOT EDIT BETWEEN THESE LINES -->
+                            </ul>
+                        </div>
+
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="mega">
+                <a href="http://www.imaging-resource.com/lenses/reviews/">Lens Reviews</a>
+                <div class="megaMenuContainer">
+                    <div class="megaMenuPoint"></div>
+                    <div class="megaSubMenu curved shadow">
+
+                        <!-- Camera mega menu content here -->
+                        <div class="megaMenuCol" style="width:160px;">
+                            <div class="megaMenuHead">Lens Reviews</div>
+                            <ul>
+                                <li><a href="/lenses/canon/reviews/">Canon Lenses</a></li>
+                                <li><a href="/lenses/nikon/reviews/">Nikon Lenses</a></li>
+                                <li><a href="/lenses/olympus/reviews/">Olympus Lenses</a></li>
+                                <li><a href="/lenses/panasonic/reviews/">Panasonic Lenses</a></li>
+                                <li><a href="/lenses/sigma/reviews/">Sigma Lenses</a></li>
+                                <li><a href="/lenses/sony/reviews/">Sony Lenses</a></li>
+                                <li><a href="/lenses/tamron/reviews/">Tamron Lenses</a></li>
+                                <li><a href="/lenses/reviews/">All lens reviews</a></li>
+                            </ul>
+                        </div>
+
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="mega">
+                <a href="/news">Camera News</a>
+                <div class="megaMenuContainer">
+                    <div class="megaMenuPoint"></div>
+                    <div class="megaSubMenu curved shadow">
+
+                        <!-- Camera mega menu content here -->
+                        <div class="megaMenuCol" style="width:120px;" >
+                            <ul>
+                                <li><a href="/news">IR Photo News</a></li>
+                                <li><a href="/new-on-ir">New on the site</a></li>
+                                <li><a href="/newsletter/">Newsletter</a></li>
+                                <li><a href="/NEWSARCH/news-archive.html">News Archives</a></li>
+                            </ul>
+                        </div>
+
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="mega">
+                <a href="/PRINT.HTM">Printer Reviews</a>
+            </li>
+
+            <li class="mega">
+                <a href="/accessories">Accessories</a>
+                <div class="megaMenuContainer">
+                    <div class="megaMenuPoint"></div>
+                    <div class="megaSubMenu curved shadow">
+
+                        <!-- Camera mega menu content here -->
+                        <div class="megaMenuCol" style="width:150px;" >
+                            <div class="megaMenuHead">Reviews by IR</div>
+                            <ul>
+                                <li><a href="/camera-accessories">Camera Accessories</a></li>
+                                <li><a href="/SCAN1.HTM">Scanners</a></li>
+                                <li><a href="/SOFT.HTM">Software</a></li>
+                            </ul>
+                        </div>
+                        <div class="megaMenuCol" style="width:195px;" >
+                            <div class="megaMenuHead">Reviews by SLR Gear Readers</div>
+                            <ul>
+                                <li><a target="_blank" href="http://www.slrgear.com/reviews/showcat.php/cat/57">Flash Reviews</a></li>
+                                <li><a target="_blank" href="http://www.slrgear.com/reviews/showcat.php/cat/52">Tripod Reviews</a></li>
+                                <li><a target="_blank" href="http://www.slrgear.com/reviews/showcat.php/cat/74">Camera Bag Reviews</a></li>
+                            </ul>
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="navright">
+            <li class="mega">
+                <a href="/about-ir">About IR</a>
+                <div class="megaMenuContainer">
+                    <div class="megaMenuPoint"></div>
+                    <div class="megaSubMenu curved shadow">
+
+                        <div class="megaMenuCol" style="width:90px;" >
+                            <ul>
+                                <li><a href="/about-ir">About IR</a></li>
+                                <li><a href="/about-ir/the-team">The Team</a></li>
+                                <li><a href="/ADINFO.HTM">Advertising</a></li>
+                            </ul>
+                        </div>
+
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!-- end top nav -->
+
+        <script type="text/javascript" src="http://www.imaging-resource.com/features/topnav/js/megamenu.js"></script>
+        <span id="search">
+            <script type="text/javascript" src="//www.google.com/jsapi"></script>
+            <script type="text/javascript">
+                if(typeof jQuery=='undefined') {
+                    google.load("jquery","1.7");
+                }
+                google.load("jqueryui","1");
+            </script>
+
+            <link href="http://www.imaging-resource.com/features/searchbox/searchbox.css" type="text/css" rel="stylesheet" />
+            <script type="text/javascript" src="http://www.imaging-resource.com/features/searchbox/searchbox.js"></script>
+
+            <form action="/search.html" method="get" autocomplete="off">
+                <input placeholder="Search" type="text" name="q" id="searchquery" autocomplete="off" />
+            </form>
+            <div id="search-results">
+                <div id="search-results-list"></div>
+                <div id="search-loading"><img src="https://www.imaging-resource.com/features/searchbox/images/loading.gif" alt="loading ..." /></div>
+                <div id="search-not-found">No Cameras Found</div>
+                <div id="search-more"><a href="">See all results</a></div>
+            </div>
+        </span>
+    </div>
+        
+    <div id="content">
+            <div id="mid-col-2">
+        <div id="bc_r_gradient">
+            <div id="bc_r_masthead">
+                <div id="bc_r_camnamebar">
+                    <h1 itemprop="name" id="bc_r_camname_large"><span class="bc_r_camname_mfr">Canon 5DS R</span> Review</h1>
+                    <span id="bc_r_social">
+                                                <span class="social_wrapper twitter">
+                            <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.imaging-resource.com%2FPRODS%2Fcanon-5ds-r%2Fcanon-5ds-rA.HTM&amp;text=%40IR_Lab%20reviews%20the%20Canon%20EOS%205DS%20R%0A" target="_blank" title="Share on Twitter" class="social_button twitter"><span>Tweet</span></a>
+                            <span class="share_count"></span>
+                        </span>
+                        <span class="social_wrapper facebook">
+                            <a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.imaging-resource.com%2FPRODS%2Fcanon-5ds-r%2Fcanon-5ds-rA.HTM" target="_blank" title="Share on Facebook" class="social_button facebook"><span>Share</span></a>
+                            <span class="share_count"></span>
+                        </span>
+                    </span>
+                    <span style="clear: both;">&nbsp;</span>
+                </div>
+                <span id="bc_r_marker">
+                    <span id="breadcrumbs">
+                        <a itemprop="breadcrumb" href="/cameras/reviews/">Camera Reviews</a>
+                        <span class="bc_divider">/</span>
+                        <a itemprop="breadcrumb" href="/cameras/canon/reviews/">Canon Cameras</a>
+                                                    <span class="bc_divider">/</span>
+                            <a itemprop="breadcrumb" href="/cameras/canon/canon-eos/reviews/">Canon EOS</a>
+                                            </span>
+                </span>
+                <span id="bc_r_description">
+                    <a href="#" class="hastooltip" title="Our standard Review includes a User Report, Gallery shots, our full suite of test shots, and a full analysis of all the important parameters we think you should consider. Be sure to check out the Optics, Exposure, and Performance tabs for our detailed analysis with examples.">i</a>
+                </span>
+                <span id="bc_r_status">Review</span>
+            </div>
+            <div class="r_navigation">
+                <ul class="r_navtab">
+            <li class="here">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-rA.HTM">5DS R Overview</a>
+        </li>
+            <li class="optics">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-rA4.HTM">Optics</a>
+        </li>
+            <li class="exposure">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-rA5.HTM">Exposure</a>
+        </li>
+            <li class="perform">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-rA6.HTM">Performance</a>
+        </li>
+            <li class="samples">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-rA7.HTM">Samples</a>
+        </li>
+            <li class="gallery">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-rGALLERY.HTM">Gallery</a>
+        </li>
+            <li class="shooting">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-r-field-test.htm">Field Test</a>
+        </li>
+            <li class="image_quality">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-r-image-quality.htm">Image Quality</a>
+        </li>
+            <li class="conclusion">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-r-conclusion.htm">Conclusion</a>
+        </li>
+            <li class="deals">
+            <a href="/cameras/canon/5ds-r/deals-and-prices">Prices</a>
+        </li>
+    </ul>
+
+            </div>
+        </div>
+        <div class="subnav-left">
+                                <span><a href="/PRODS/canon-5ds-r/canon-5ds-rA.HTM" class="subtab_active">5DS R Overview</a></span>
+
+                        <span><a href="/PRODS/canon-5ds-r/canon-5ds-rHIGH_RES.HTM">High Res Comparison</a></span>
+
+            
+
+
+
+            <div class="jumpform">
+                <form name="navigation">
+                    <select name="page_to_visit" onchange="window.location.href=this.options[this.selectedIndex].value;">
+                        <option>Navigate Review</option>
+                        <option></option>
+                                            <option value="/PRODS/canon-5ds-r/canon-5ds-rA.HTM">
+        
+        5DS R Overview
+    </option>
+                    <option value="/PRODS/canon-5ds-r/canon-5ds-rHIGH_RES.HTM">
+        &nbsp;&nbsp;&nbsp;
+        High Res Comparison
+    </option>
+        
+
+    
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-rA4.HTM">
+        
+        Optics
+    </option>
+        
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-rA5.HTM">
+        
+        Exposure
+    </option>
+                    <option value="/PRODS/canon-5ds-r/canon-5ds-rHI_ISO_NR.HTM">
+        &nbsp;&nbsp;&nbsp;
+        High ISO NR
+    </option>
+        
+
+    
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-rA6.HTM">
+        
+        Performance
+    </option>
+        
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-rDAT.HTM">
+        
+        Specifications
+    </option>
+        
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-rA7.HTM">
+        
+        Samples
+    </option>
+                    <option value="/PRODS/canon-5ds-r/canon-5ds-rPICS.HTM">
+        &nbsp;&nbsp;&nbsp;
+        Test Shots
+    </option>
+        
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-rTHMB.HTM">
+        &nbsp;&nbsp;&nbsp;
+        Thumbnails
+    </option>
+        
+
+    
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-rGALLERY.HTM">
+        
+        Gallery
+    </option>
+        
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-r-field-test.htm">
+        
+        Field Test
+    </option>
+                    <option value="/PRODS/canon-5ds-r/canon-5ds-r-field-test-part-i.htm">
+        &nbsp;&nbsp;&nbsp;
+        Field Test Part I
+    </option>
+        
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-r-field-test-part-ii.htm">
+        &nbsp;&nbsp;&nbsp;
+        Field Test Part II
+    </option>
+        
+
+    
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-r-image-quality.htm">
+        
+        Image Quality
+    </option>
+        
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-r-conclusion.htm">
+        
+        Conclusion
+    </option>
+        
+
+                <option value="/cameras/canon/5ds-r/deals-and-prices">
+        
+        Prices
+    </option>
+        
+
+    
+
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div id="content-center" itemscope itemtype="http://schema.org/Product">
+            <div class="inset">
+    <div class="affiliate_top">
+    <div class="bundles">
+        <h4>Your purchases support this site</h4>
+                                    <h5>Body Only</h5>
+                                                    <ul id="bundle-0" class="affiliate_bundle" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <li>
+                                                                                
+    <a href="http://www.amazon.com/Canon-Digital-Low-Pass-Filter-Cancellation/dp/B00T3ERT5S?psc=1&amp;SubscriptionId=AKIAJBX6LJVII7QNQNYQ&amp;tag=imgr-reviews-buypod-top-price-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00T3ERT5S" target="_blank" data-link-type="imgr-reviews-buypod-top-price-20">
+                                        <span class="semibold">Amazon</span>
+        
+                <span class="price">
+                                            for                     <span class="semibold">$3,899.00</span>
+                                    </span>
+            </a>
+
+                                            </li>
+                    <li>
+                            
+    <a href="http://adorama.evyy.net/c/60095/29622/1036?aadid=ICA5DSR&amp;u=http%3A%2F%2Fwww.adorama.com%2FICA5DSR.html&amp;subid1=imgr-reviews-buypod-top-price&amp;sharedid=imgr-reviews-buypod-top-price" target="_blank" data-link-type="imgr-reviews-buypod-top-price">
+                                        <span class="semibold">Adorama</span>
+        
+                <span class="price">
+                                            for                     <span class="semibold">$3,899.00</span>
+                                    </span>
+            </a>
+
+                    </li>
+                    <li>
+                            
+    <a href="http://www.bhphotovideo.com/c/product/1119027-REG/canon_0582c002_eos_5ds_r_dslr.html/BI/771/KBID/1047/SID/imgr-reviews-buypod-top-price" target="_blank" data-link-type="imgr-reviews-buypod-top-price" class="with-giftcard">
+                                        <span class="semibold">B&amp;H Photo</span>
+        
+                <span class="price">
+                                            for                     <span class="semibold" itemprop="price">$3,899.00</span>
+                                    </span>
+                    <span class="giftcard">
+                                    <span>Buy here to enter</span> 
+                    <span>drawing <span class="underline">this month</span> for</span>
+                    <span><span class="sup">$</span>500 Gift Card</span>
+                            </span>
+            </a>
+
+                    </li>
+                </ul>
+                                        <span class="all_deals">
+                <a href="/news/2015/11/12/500-monthly-gift-card-drawing-for-making-a-purchase-on-bh-photo">Drawing Info</a>
+                <a href="/cameras/canon/5ds-r/deals-and-prices">5DS R Deals</a>
+            </span>
+            </div>
+</div>
+
+
+    <table class="r_specstable">
+        <tr>
+            <th colspan="2" scope="col" class="r_specstablehead">Basic Specifications </th>
+        </tr>
+        <tr>
+                            <th scope="row">Full model name:</th>
+                <td itemprop="name">Canon EOS 5DS R</td>
+                    </tr>
+        <tr>
+            <th scope="row">Resolution:</th>
+            <td>50.60 Megapixels</td>
+        </tr>
+        <tr>
+            <th scope="row">Sensor size:</th>
+            <td>35mm<br />(36.0mm x 24.0mm)</td>
+        </tr>
+        <tr>
+            <th scope="row">Kit Lens:</th>
+            <td>
+                                    n/a
+                            </td>
+        </tr>
+        <tr>
+            <th scope="row">Viewfinder:</th>
+            <td>
+                Optical /                                                            LCD
+                                                                    </td>
+        </tr>            <tr>
+                <th scope="row">Native ISO: </th>
+                <td>100 - 6400</td>
+            </tr>
+                    <tr>
+                <th scope="row">Extended ISO: </th>
+                <td>50 - 12,800</td>
+            </tr>
+                            <tr>
+                <th scope="row">Shutter:</th>
+                                    <td>1/8000 - 30 seconds</td>
+                            </tr>
+                        <tr>
+            <th scope="row">Dimensions:</th>
+            <td>
+                6.0 x 4.6 x 3.0 in.<br>
+                (152 x 116 x 76 mm)
+                            </td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td itemprop="weight">
+                                    33.4 oz 
+                    (948 g)
+                                            <br />includes batteries
+                                                </td>
+        </tr>
+                <tr>
+            <th scope="row">Availability:</th>
+            <td itemprop="releaseDate">06/2015</td>
+        </tr>
+        <tr>
+            <th scope="row">Manufacturer:</th>
+            <td itemprop="manufacturer" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Canon</span></td>
+        </tr>
+        <tr>
+            <th scope="row">Full specs:</th>
+            <td><a href=" /PRODS/canon-5ds-r/canon-5ds-rDAT.HTM ">Canon 5DS R specifications</a></td>
+        </tr>
+    </table>
+</div>
+
+<div id="r_campics">
+    <table class="r_camtable">
+        <tr>
+            <th scope="col" class="first">
+                50.60<br>
+                Megapixels
+            </th>
+            <th>
+                                    Canon EF
+                            </th>
+            <th>
+                35mm<br>
+                size sensor
+            </th>
+        </tr>
+        <tr>
+            <td colspan="3" scope="col">
+                <img itemprop="image" src="https://www.imaging-resource.com/PRODS/canon-5ds-r/ZYFRONT-MD.JPG" alt="image of Canon EOS 5DS R" name="Image-large" width="289" height="190" border="0" class="r_camtable_img"  onClick="MM_openBrWindow(this.src,'camlarge','width=300,height=300')">
+            </td>
+        </tr>
+    </table>
+
+                                                                
+<table class="r_camtablethumbs">
+    <tr>
+                    
+        <td scope="col">
+        <a href="#" onMouseOver="MM_swapImage('Image-large','','https://www.imaging-resource.com/PRODS/canon-5ds-r/ZYFRONT-MD.JPG',1)">
+            <img src="http://www.imaging-resource.com/PRODS/canon-5ds-r/ZYFRONT-SM.JPG" width="60" height="48" border="0" alt="Front side of Canon 5DS R digital camera">
+        </a>
+    </td>
+
+                    
+        <td scope="col">
+        <a href="#" onMouseOver="MM_swapImage('Image-large','','http://www.imaging-resource.com/PRODS/canon-5ds-r/ZYBACK-MD.JPG',1)">
+            <img src="https://www.imaging-resource.com/PRODS/canon-5ds-r/ZYBACK-SM.JPG" width="60" height="48" border="0" alt="Front side of Canon 5DS R digital camera">
+        </a>
+    </td>
+
+                    
+        <td scope="col">
+        <a href="#" onMouseOver="MM_swapImage('Image-large','','http://www.imaging-resource.com/PRODS/canon-5ds-r/ZYTOP-MD.JPG',1)">
+            <img src="http://www.imaging-resource.com/PRODS/canon-5ds-r/ZYTOP-SM.JPG" width="60" height="33" border="0" alt="Front side of Canon 5DS R digital camera">
+        </a>
+    </td>
+
+                    
+        <td scope="col">
+        <a href="#" onMouseOver="MM_swapImage('Image-large','','https://www.imaging-resource.com/PRODS/canon-5ds-r/ZYLEFT-MD.JPG',1)">
+            <img src="http://www.imaging-resource.com/PRODS/canon-5ds-r/ZYLEFT-SM.JPG" width="30" height="47" border="0" alt="Front side of Canon 5DS R digital camera">
+        </a>
+    </td>
+
+                    
+        <td scope="col">
+        <a href="#" onMouseOver="MM_swapImage('Image-large','','http://www.imaging-resource.com/PRODS/canon-5ds-r/ZYRIGHT-MD.JPG',1)">
+            <img src="https://www.imaging-resource.com/PRODS/canon-5ds-r/ZYRIGHT-SM.JPG" width="32" height="47" border="0" alt="Front side of Canon 5DS R digital camera">
+        </a>
+    </td>
+
+            </tr>
+</table>
+
+</div>
+
+<div id="review-microformat" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+    <div id="review-summary">
+                    <h2>5DS R Summary</h2>
+            <p>The Canon 5DS R, the highest-resolution EOS body to date, is an all-around striking camera that captures some seriously impressive, incredibly detailed photographs. The higher resolution sensor does make shooting technique more crucial though, and the video features and ISO range are limited compared to other full-frame cameras, so the camera is certainly not everyone. For professional and advanced enthusiast portrait, editorial, landscape and nature photographers looking for extreme image detail in a tried-and-true Canon DSLR package -- without jumping to a digital medium format system -- the Canon 5DS R is the answer.</p>
+                            <span class="review_summary_headline">Pros</span>
+            <p>Phenomenal resolution and sharpness; Fine Detail Picture Style is like in-camera Unsharp Mask; Excellent print quality; Decent high ISO performance; Improved normalized dynamic range compared to 5D Mark III; Decent burst speed with good buffer depths; Built-in intervalometer &amp; timelapse movie mode.</p>
+                            <span class="review_summary_headline">Cons</span>
+            <p>AF speed tested closer to consumer-level DSLRs; Dynamic range lower than competing models from Nikon &amp; Sony; Lack of OLPF means subject to more aliasing artifacts with some subjects; No 60p video frame rate; No headphone jack; Timelapse video is only 1080p.</p>
+                            <span class="review_summary_headline">Price and availability</span>
+            <p>Available since June 2015, the Canon 5DS R is priced as a body-only configuration at an MSRP of US$3,899, which is a $200 premium over the AA-filtered 5DS.</p>
+                            <span class="review_summary_headline">Imaging Resource rating</span>
+            <p>
+                <span itemprop="reviewRating">5.0</span>
+                out of 5.0
+            </p>
+            </div>
+
+            <script type="text/javascript">
+    var similarity = {"domain":"api.imaging-resource.com","camera_id":2632,"manufacturer_name":"Canon","model_number":"5DS R","model_name":"Canon EOS 5DS R","has_viewfinder":"Optical","date_available":"2015-06-15","ccd_size_in_decimal":"1.70","pg_avg_price":"4020.18","weight_in_grams":"948.00","volume":1351729.92,"ccd_effective_pixels":"50.60","zoom_ratio":null,"is_slr":true};
+</script>
+<script type="text/javascript" src="/features/similarity/similarity.js"></script>
+
+<div id="similarity">
+    <div class="btn_row">
+        <span class="similarity_list" id="similarity_list">
+            Similar to the 5DS R <span>but</span>
+        </span>
+
+        <a href="#" class="similarity_btn last similarity_filter" data-limiter="volume" data-limiter_percentage="10">smaller</a>
+        <a href="#" class="similarity_btn similarity_filter" data-limiter="weight_in_grams" data-limiter_percentage="10">lighter</a>
+        <a href="#" class="similarity_btn similarity_filter" data-limiter="-ccd_size_in_decimal" data-limiter_percentage="10">larger sensor</a>
+        <a href="#" class="similarity_btn similarity_filter" data-limiter="pg_avg_price" data-limiter_percentage="-15">cheaper</a>
+
+        <span href="#" class="similarity_btn first design" id="similarity_qualifier">
+            <span>But</span> ...
+        </span>
+    </div>
+    <div class="similarity_loading">
+        <img src="/features/similarity/loading.gif" alt="loading" />
+    </div>
+    <div class="similarity_no_results">
+        No cameras match your search criteria(s)
+    </div>
+    <div class="similarity_match">
+        <a href="#" class="arrow arrow_left"><span>&nbsp;</span></a>
+        <a href="#" class="arrow arrow_right"><span>&nbsp;</span></a>
+        <div class="scroller">
+            <div class="matches">
+                                <div class="match alternate">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/canon-5ds/canon-5dsA.HTM">Canon 5DS</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/canon-5ds/canon-5dsA.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="http://www.imaging-resource.com/PRODS/canon-5ds/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $3813.97
+                                                                                </p>
+                        <p>
+                            50.6 MP
+                                                                                </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        Similar size
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/canon/5ds/vs/canon/5ds-r/" title="Canon 5DS R vs Canon 5DS">5DS R vs 5DS</a>
+                    </p>
+                </div>
+                                <div class="match">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/leica-s-e-typ-006/leica-s-e-typ-006A.HTM">Leica S-E (Typ 006)</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/leica-s-e-typ-006/leica-s-e-typ-006A.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="https://www.imaging-resource.com/PRODS/leica-s-e-typ-006/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $9999.99
+                                                                                        (60% more)
+                                                    </p>
+                        <p>
+                            37.5 MP
+                                                                                        (35% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        12% larger
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/leica/s-e-%28typ-006%29/vs/canon/5ds-r/" title="Canon 5DS R vs Leica S-E (Typ 006)">5DS R vs S-E (Typ 006)</a>
+                    </p>
+                </div>
+                                <div class="match alternate">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/pentax-645z/pentax-645zA.HTM">Pentax 645Z</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/pentax-645z/pentax-645zA.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="https://www.imaging-resource.com/PRODS/pentax-645z/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $7090.96
+                                                                                        (43% more)
+                                                    </p>
+                        <p>
+                            51.4 MP
+                                                                                </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        40% larger
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/pentax/645z/vs/canon/5ds-r/" title="Canon 5DS R vs Pentax 645Z">5DS R vs 645Z</a>
+                    </p>
+                </div>
+                                <div class="match">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/leica-s/leica-sA.HTM">Leica S</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/leica-s/leica-sA.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="http://www.imaging-resource.com/PRODS/leica-s/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $9999.99
+                                                                                        (60% more)
+                                                    </p>
+                        <p>
+                            37.5 MP
+                                                                                        (35% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        12% larger
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/leica/s/vs/canon/5ds-r/" title="Canon 5DS R vs Leica S">5DS R vs S</a>
+                    </p>
+                </div>
+                                <div class="match alternate">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/nikon-d610/nikon-d610A.HTM">Nikon D610</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/nikon-d610/nikon-d610A.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="http://www.imaging-resource.com/PRODS/nikon-d610/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $1543.48
+                                                                                        (160% less)
+                                                    </p>
+                        <p>
+                            24.3 MP
+                                                                                        (108% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        Similar size
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/nikon/d610/vs/canon/5ds-r/" title="Canon 5DS R vs Nikon D610">5DS R vs D610</a>
+                    </p>
+                </div>
+                                <div class="match">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/nikon-d750/nikon-d750A.HTM">Nikon D750</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/nikon-d750/nikon-d750A.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="https://www.imaging-resource.com/PRODS/nikon-d750/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $2059.02
+                                                                                        (95% less)
+                                                    </p>
+                        <p>
+                            24.3 MP
+                                                                                        (108% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        9% smaller
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/nikon/d750/vs/canon/5ds-r/" title="Canon 5DS R vs Nikon D750">5DS R vs D750</a>
+                    </p>
+                </div>
+                                <div class="match alternate">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/sony-a99/sony-a99A.HTM">Sony A99</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/sony-a99/sony-a99A.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="http://www.imaging-resource.com/PRODS/sony-a99/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $2060.10
+                                                                                        (95% less)
+                                                    </p>
+                        <p>
+                            24.3 MP
+                                                                                        (108% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        Similar size
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/sony/a99/vs/canon/5ds-r/" title="Canon 5DS R vs Sony A99">5DS R vs A99</a>
+                    </p>
+                </div>
+                                <div class="match">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/canon-5d-mkiii/canon-5d-mkiiiA.HTM">Canon 5D Mark III</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/canon-5d-mkiii/canon-5d-mkiiiA.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="http://www.imaging-resource.com/PRODS/canon-5d-mkiii/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $2576.67
+                                                                                        (56% less)
+                                                    </p>
+                        <p>
+                            22.3 MP
+                                                                                        (127% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        Similar size
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/canon/5d-mark-iii/vs/canon/5ds-r/" title="Canon 5DS R vs Canon 5D Mark III">5DS R vs 5D Mark III</a>
+                    </p>
+                </div>
+                                <div class="match alternate">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/645D/645DA.HTM">Pentax 645D</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/645D/645DA.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="http://www.imaging-resource.com/PRODS/645D/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $3382.33
+                                                                                        (19% less)
+                                                    </p>
+                        <p>
+                            4 MP
+                                                                                        (27% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        38% larger
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/pentax/645d/vs/canon/5ds-r/" title="Canon 5DS R vs Pentax 645D">5DS R vs 645D</a>
+                    </p>
+                </div>
+                                <div class="match">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/canon-6d/canon-6dA.HTM">Canon 6D</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/canon-6d/canon-6dA.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="https://www.imaging-resource.com/PRODS/canon-6d/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $1442.48
+                                                                                        (179% less)
+                                                    </p>
+                        <p>
+                            20.2 MP
+                                                                                        (150% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        19% smaller
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/canon/6d/vs/canon/5ds-r/" title="Canon 5DS R vs Canon 6D">5DS R vs 6D</a>
+                    </p>
+                </div>
+                                <div class="match alternate">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/sony-a77-ii/sony-a77-iiA.HTM">Sony A77 II</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/sony-a77-ii/sony-a77-iiA.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="http://www.imaging-resource.com/PRODS/sony-a77-ii/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $1029.02
+                                                                                        (291% less)
+                                                    </p>
+                        <p>
+                            24.3 MP
+                                                                                        (108% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        12% smaller
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/sony/a77-ii/vs/canon/5ds-r/" title="Canon 5DS R vs Sony A77 II">5DS R vs A77 II</a>
+                    </p>
+                </div>
+                                <div class="match">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/nikon-df/nikon-dfA.HTM">Nikon Df</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/nikon-df/nikon-dfA.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="http://www.imaging-resource.com/PRODS/nikon-df/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $2832.33
+                                                                                        (42% less)
+                                                    </p>
+                        <p>
+                            16.2 MP
+                                                                                        (212% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        29% smaller
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/nikon/df/vs/canon/5ds-r/" title="Canon 5DS R vs Nikon Df">5DS R vs Df</a>
+                    </p>
+                </div>
+                                <div class="match alternate">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/nikon-d7200/nikon-d7200A.HTM">Nikon D7200</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/nikon-d7200/nikon-d7200A.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="http://www.imaging-resource.com/PRODS/nikon-d7200/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $1131.04
+                                                                                        (255% less)
+                                                    </p>
+                        <p>
+                            24.2 MP
+                                                                                        (109% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        23% smaller
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/canon/5ds-r/vs/nikon/d7200/" title="Canon 5DS R vs Nikon D7200">5DS R vs D7200</a>
+                    </p>
+                </div>
+                                <div class="match">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/nikon-d7100/nikon-d7100A.HTM">Nikon D7100</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/nikon-d7100/nikon-d7100A.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="https://www.imaging-resource.com/PRODS/nikon-d7100/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $796.95
+                                                                                        (404% less)
+                                                    </p>
+                        <p>
+                            24.1 MP
+                                                                                        (110% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        23% smaller
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/nikon/d7100/vs/canon/5ds-r/" title="Canon 5DS R vs Nikon D7100">5DS R vs D7100</a>
+                    </p>
+                </div>
+                                <div class="match alternate">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/canon-t6s/canon-t6sA.HTM">Canon T6s</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/canon-t6s/canon-t6sA.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="https://www.imaging-resource.com/PRODS/canon-t6s/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $875.39
+                                                                                        (359% less)
+                                                    </p>
+                        <p>
+                            24.2 MP
+                                                                                        (109% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        31% smaller
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/canon/t6s/vs/canon/5ds-r/" title="Canon 5DS R vs Canon T6s">5DS R vs T6s</a>
+                    </p>
+                </div>
+                                <div class="match">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/nikon-d5500/nikon-d5500A.HTM">Nikon D5500</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/nikon-d5500/nikon-d5500A.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="http://www.imaging-resource.com/PRODS/nikon-d5500/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $770.17
+                                                                                        (422% less)
+                                                    </p>
+                        <p>
+                            24.2 MP
+                                                                                        (109% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        61% smaller
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/nikon/d5500/vs/canon/5ds-r/" title="Canon 5DS R vs Nikon D5500">5DS R vs D5500</a>
+                    </p>
+                </div>
+                                <div class="match alternate">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/canon-t6i/canon-t6iA.HTM">Canon T6i</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/canon-t6i/canon-t6iA.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="https://www.imaging-resource.com/PRODS/canon-t6i/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $772.28
+                                                                                        (421% less)
+                                                    </p>
+                        <p>
+                            24.2 MP
+                                                                                        (109% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        31% smaller
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/canon/t6i/vs/canon/5ds-r/" title="Canon 5DS R vs Canon T6i">5DS R vs T6i</a>
+                    </p>
+                </div>
+                                <div class="match">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/pentax-k3/pentax-k3A.HTM">Pentax K-3</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/pentax-k3/pentax-k3A.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="http://www.imaging-resource.com/PRODS/pentax-k3/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $661.06
+                                                                                        (508% less)
+                                                    </p>
+                        <p>
+                            24.35 MP
+                                                                                        (108% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        33% smaller
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/pentax/k-3/vs/canon/5ds-r/" title="Canon 5DS R vs Pentax K-3">5DS R vs K-3</a>
+                    </p>
+                </div>
+                                <div class="match alternate">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/canon-1dx/canon-1dxA.HTM">Canon 1D X</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/canon-1dx/canon-1dxA.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="http://www.imaging-resource.com/PRODS/canon-1dx/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $4741.94
+                                                                                        (15% more)
+                                                    </p>
+                        <p>
+                            18.1 MP
+                                                                                        (180% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        37% larger
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/canon/1d-x/vs/canon/5ds-r/" title="Canon 5DS R vs Canon 1D X">5DS R vs 1D X</a>
+                    </p>
+                </div>
+                                <div class="match">
+                    <div class="name">
+                        <a href="http://www.imaging-resource.com/PRODS/nikon-d5300/nikon-d5300A.HTM">Nikon D5300</a>
+                    </div>
+                    <div class="pic">
+                        <a href="http://www.imaging-resource.com/PRODS/nikon-d5300/nikon-d5300A.HTM">
+                                                        <img src="/features/similarity/thumbs-up.png" alt="Dave's pick" class="daves_pick" />
+                                                        <img src="https://www.imaging-resource.com/PRODS/nikon-d5300/ZYFRONT-MD.JPG" />
+                        </a>
+                    </div>
+                    <div class="features">
+                        <p>
+                            $615.50
+                                                                                        (553% less)
+                                                    </p>
+                        <p>
+                            24.2 MP
+                                                                                        (109% less)
+                                                    </p>
+                        <p>
+                                                            Also has viewfinder
+                                                    </p>
+
+                        <p>
+                                                                                        45% smaller
+                                                    </p>
+
+                                            </div>
+                    <p class="read_more">
+                        <a href="/cameras/nikon/d5300/vs/canon/5ds-r/" title="Canon 5DS R vs Nikon D5300">5DS R vs D5300</a>
+                    </p>
+                </div>
+                            </div>
+        </div>
+    </div>
+    <div class="bottom_infos">
+        Suggestion for improvement? Head over <a href="/news/2012/12/07/ir-releases-new-similar-cameras-feature">here</a>.
+    </div>
+</div>
+
+        <h2>Canon 5DS R Review</h2>
+<p><em>by <a href="/about-ir/the-team/william-brawley" rel="author" itemprop="author" target="_blank">William Brawley</a>, <a href="/about-ir/the-team/dave-pardue">Dave   Pardue</a>, <a href="/about-ir/the-team/dave-etchells">Dave Etchells</a> and <a href="/about-ir/the-team/siegfried-weidelich">Zig Weidelich</a><br>
+Posted 02/05/2015</em></p>
+<p><em>Updates:<br />
+  03/20/2015: <a href="/PRODS/canon-5ds-r/canon-5ds-rHIGH_RES.HTM">High Resolution Comparisons: Canon 5DS R vs the world</a></em><br />
+	<a href="#GALLERY"></a><em>
+06/23/2015: <a href="canon-5ds-rA7.HTM">First Shots</a><br />
+07/06/2015: <a href="canon-5ds-rA6.HTM">Performance test results</a> posted</em><br />
+<em>07/09/2015: <a href="/PRODS/canon-5ds-r/canon-5ds-rGALLERY.HTM">Gallery Images</a> added </em><br />
+	<em>08/13/2015: <a href="/PRODS/canon-5ds-r/canon-5ds-r-shooters-report-part-i.htm">Field Test Part I</a> added<br />
+10/02/2015: <a href="/PRODS/canon-5ds-r/canon-5ds-r-field-test-part-ii.htm">Field Test Part II</a> added<br />
+<span itemprop="datePublished">11/03/2015</span>: <a href="/PRODS/canon-5ds-r/canon-5ds-r-image-quality.htm">Image Quality Comparison</a>, <a href="/PRODS/canon-5ds-r/canon-5ds-r-image-quality.htm#print-quality">Print Quality</a> and <a href="/PRODS/canon-5ds-r/canon-5ds-r-conclusion.htm">Review Conclusion</a> posted</em><br />
+</p>
+<div class="photo-nb right" style="width: 400px;">
+<a href="Z-canon-5ds-r-beauty.JPG" target="_blank"><img src="Z-canon-5ds-r-beauty-400.JPG" alt="Canon 5DS R Review -- Product Image" width="400" height="320" border="0"></a></div>
+		<p>---<br />
+Special update: The Canon 5DS R was named <a href="http://www.imaging-resource.com/news/2015/12/17/cameras-of-the-year-best-enthusiast-and-pro-cameras-of-2015" target="_blank">Best Professional  Camera</a> in our 2015 Camera of the Year awards!<br />
+---</p>
+		<p>When a simple 50-megapixel full-frame sensor just won't cut it, Canon introduced a sibling to the <a href="http://www.imaging-resource.com/PRODS/canon-5ds/canon-5dsA.HTM">5DS</a>, called the Canon 5DS R, that uses a special canceled-out optical low-pass filter in order to capture even more sharpness and detail from the massive 50-megapixel sensor. Similar to the design idea of the <a href="http://www.imaging-resource.com/PRODS/nikon-d800e/nikon-d800eA.HTM#lpf">Nikon D800E</a>, the 5DS R sensor's OLPF is effectively cancelled out by using two modified low-pass filters where the second counteracts the effect of the first. </p>
+        <p>However, with great resolution, comes great responsibility, one could say. Traditionally, the optical low-pass filter serves a very useful purpose; that is, helping prevent the appearance of unsightly and potentially image-ruining artifacts in the form of moir&eacute;, &quot;jaggies&quot; and other aliasing artifacts. Often seen in tightly-spaced, repeating patterns such as fabrics, brickwork and meshes, an OLPF introduces a very subtle blurring effect to help avoid these artifacts, though at the expense of some image sharpness.</p>
+<p>For some photographers, especially those who don't photograph subjects with moir&eacute;-inducing patterns, the ability to capture the most detail and sharpness possible outweighs the risk of aliasing and moir&eacute; effects. For example, landscape photographers concerned with getting the sharpest images possible before post-processing, would be interested in the 5DS R as nature and landscapes don't typically include moir&eacute;-inducing patterns. On the other hand, a fashion photographer, who still needs large image files for magazines, might opt for the 5DS as certain fabrics could generate moir&eacute; patterns.</p>
+        <p>Why not just use a sensor without a low-pass filter to begin with? Well, with a normal sensor and its usual set of filters (i.e. IR/UV cut filter and low-pass filter) in front, there is a certain thickness to the sensor assembly. The camera chassis is therefore designed to incorporate this precise thickness to ensure the light coming through the lens hits the sensor at the proper distance. Had Canon chose to use a sensor simply without an OLPF, the sensor assembly would be slightly thinner and would necessitate a different internal construction or the use of shims. With the dual-OLPF cancellation method, Canon was able to keep the thickness of the sensor assembly identical and therefore use the exact same body construction for both models -- and subsequently avoid higher costs of designing and manufacturing two different assemblies. Also, modern lenses are designed with <a href="http://www.lensrentals.com/blog/2014/06/sensor-stack-thickness-when-does-it-matter" target="_blank">filter stacks in mind</a>, yet another reason to go with the cancelling OLPF scheme to keep the optical path identical.</p>
+        <table width="606" border="0" align="center" cellpadding="4" cellspacing="4">
+          <tr>
+            <td><a href="Z-canon-5ds-r-front.JPG" target="_blank"><img src="Z-canon-5ds-r-front-600.JPG" alt="Canon 5DS R Review -- Product Image" width="600" height="475" border="0"></a></td>
+          </tr>
+        </table>
+        <p>Apart from the low-pass filter cancellation feature, the Canon 5DS R is identical in design and specs to the 5DS. The massive 50.6-megapixel, Canon-designed, full-frame sensor makes the 5DS and 5DS R the highest resolution full-frame DSLRs in the world. Combined with dual DIGIC 6 processors like the <a href="http://www.imaging-resource.com/PRODS/canon-7d-mark-ii/canon-7d-mark-iiA.HTM">7D Mark II</a>, this latest full-frame camera offers a substantial increase in sheer resolution over both the <a href="http://www.imaging-resource.com/PRODS/canon-5d-mkiii/canon-5d-mkiiiA.HTM">5D Mark III</a> and the previous <a href="http://www.imaging-resource.com/PRODS/E1DSMK3/E1DSMK3A.HTM">1Ds Mark III</a> cameras. Targeting advanced amateurs and professionals that demand high image quality with a critical eye for out-of-camera sharpness, the 5DS R is also going after a chunk of the medium format market. Not only is the 5DS R smaller and lighter than most digital medium format cameras, but also the vast selection of lenses for the Canon EF mount provides immense creative options.</p>
+        <p>Using a nearly identical body design as the <a href="http://www.imaging-resource.com/PRODS/canon-5d-mkiii/canon-5d-mkiiiA.HTM#WALKAROUND">5D Mark III</a> -- save for the model badging -- the big story lies under-the-hood with both hardware and firmware changes compared to the 5D Mark III. It should be pointed out, however, that the 5DS and 5DS R do not replace the 5D Mark III. Each camera serves very different types of photographers with different use-cases and includes their share of advantages and disadvantages depending on the style of photography.</p>
+        <p>The 5DS R sensor has a pixel pitch of 4.14 microns, whereas the 5D Mark III's sensor has a pixel pitch of 6.25 microns giving the Mark III an advantage in terms of per-pixel noise. Given the massive 50-megapixel resolution is spread over the area of a 35mm full-frame CMOS chip, the pixel pitch of the sensor in the 5DS R is actually comparable to that of the 20-megapixel APS-C&nbsp;7D Mark II. This should give the 5DS R a level of noise performance similar to that of the 7D Mark II. Interestingly, Canon is aware of this potential limitation, and as such, has limited the high ISO of the 5DS R to 6400 (with an expandable high to 12,800 and low of 50).</p>
+        <table width="606" border="0" align="center" cellpadding="4" cellspacing="4">
+          <tr>
+            <td><a href="Z-canon-5ds-r-back.JPG" target="_blank"><img src="Z-canon-5ds-r-back-600.JPG" alt="Canon 5DS R Review -- Product Image" width="600" height="466" border="0"></a></td>
+          </tr>
+        </table>
+        <p>The relatively limited ISO sensitivity range is indicative of the intended use-case of this type of camera, compared to a more general-purpose camera such as the 5D Mark III, which has a much wider ISO range. The Canon 5DS R is designed for maximum performance in high-resolution still images, particularly at lower ISOs. Landscape and architectural photography, where one would often use a tripod, are two primary use-cases for the 5DS R. That being said, Canon states that the noise performance is still superior to that from the 5D Mark II, while the dynamic range performance is on par with the 5D Mark III.</p>
+        <p>The new Canon 5DS R borrow heavily from the 7D Mark II in terms of under-the-hood technological improvements. In addition to the dual DIGIC 6 image processor configuration, the Canon 5DS R utilizes the newer 150,000-pixel RGB + IR metering sensor introduced on the 7D Mark II. This is a notable improvement from the iFCL 63-zone dual-layer metering sensor used on the 5D Mark III (and the 1D X's 100,000-pixel RGB sensor). The new system on the 5DS R recognizes 252-zones, whereas the earlier 5D3 used a 63-zone system.</p>
+        <p>The Canon 5DS R also shares the enhanced iTR AF (aka &quot;Intelligent Tracking &amp; Recognition AF&quot;) from the 7D Mark II. Unlike the 7D Mark II, however, the 5DS uses the same 61-point AF point array as the 5D Mark III and 1D X, yet this is combined with the more robust metering system introduced with the 7D2, which allows for the enhanced iTR AF capabilities. The 5DS R uses the 150K-pixel metering system to combine face detection and color information with the phase-detect AF sensor to help track subject movement.</p>
+        <table width="606" border="0" align="center" cellpadding="4" cellspacing="4">
+          <tr>
+            <td><a href="Z-canon-5ds-r-left.JPG" target="_blank"><img src="Z-canon-5ds-r-left-289.JPG" alt="Canon 5DS R Review -- Product Image" width="289" height="443" border="0"></a></td>
+            <td><a href="Z-canon-5ds-r-right.JPG" target="_blank"><img src="Z-canon-5ds-r-right-300.JPG" alt="Canon 5DS R Review -- Product Image" width="300" height="443" border="0"></a></td>
+          </tr>
+        </table>
+        <p>Given the massive 50-megapixel image files, it's no surprise that continuous burst performance is a bit lower than the more manageable 22.3MP 5D Mark III, for example. The 5DS R can shoot up to five frames-per-second according to Canon (we got between 4.8 and 4.9fps in the lab), whereas the 5D Mark III clocks-in at 6fps. Buffer depth is good at 28 frames when shooting best quality JPEGs, but drops to 15 frames for RAW, and 11 for RAW+JPEG. See our <a href="/PRODS/canon-5ds-r/canon-5ds-rA6.HTM">Performance page</a> for details.</p>
+
+        <p>The 5DS R also introduces a host of new tweaks and improvements over the 5D Mark III, including the creation of timelapse movies in-camera, which itself is a first for the Canon EOS line. Within the menus, you can setup how many frames to capture and the interval between frame capture and the 5DS will produce a movie file right in the camera after all shots are recorded. According to Canon, the timelapse feature ranges from one second and up to a maximum of 99 hours, 59 minutes, 59 seconds. The playback rate of the resulting timelapse video depends on the video mode set in the menu. In NTSC mode, the playback rate  is 29.97fps (30p), while in PAL mode, the playback rate  is 25fps.<em> </em></p>
+        <p>Also, in what we believe is another EOS camera first, Canon has added crop shooting modes for both 1.3x and 1.6x crop factors. It's an interesting addition to a camera that has not been specifically designed for wildlife or sports photography, in which a longer &quot;reach&quot; with the narrower field of view or smaller, quicker-to-write file sizes are potentially advantageous. Nevertheless, for a camera with such a massive resolution, it'll be pumping out huge file sizes -- especially when shooting RAW -- so, for situations were full resolution files are not needed, the option to crop down a bit for smaller files can be very useful. With the 1.3x crop mode -- effectively the FOV of the Canon's unique APS-H sensor size -- the images will be about 30.5-megapixels and the 1.6x crop for an APS-C FOV will be about 19.6-megapixels. As with other Canon EOS cameras, there are also variable quality/resolution sizes for JPEG files as well as M-RAW (28MP) and S-RAW (12.4MP) options.</p>
+ <div class="photo-nb left" style="width: 300px;">
+<a href="Z-canon-5ds-r-ports.JPG" target="_blank"><img src="Z-canon-5ds-r-ports-300.JPG" alt="Canon 5DS R Review -- Product Image" width="300" height="335" border="0"></a></div>
+<p>The Canon 5DS R also adds a USB 3.0 port, a notable improvement to the USB 2.0 port on the 5D3. For studio and other tethered shooting situations, the significantly faster transfer rate that USB 3.0 offers will undoubtedly help speed up workflow with the 5DS R's massive 50MP files. Other connectivity options include an N3-type wired-remote terminal, a flash PC-sync socket, a 3.5mm external stereo microphone jack and a mini (Type-C) HDMI  port. The camera is also compatible with Canon's infrared RC-1, RC-5 and RC-6 remote controllers. There's no built-in Wi-Fi, but the 5DS&nbsp;R does support Eye-Fi cards, as well as Canon's WFT-E7 (Ver.2) Wireless File Transmitter and GP-E2 GPS Receiver.</p>
+<p>The viewfinder itself also get a slight upgrade. While the focusing display with the 61-point AF system remains the same as the 5D Mark III, the 5DS R gains AF point illumination during AI Servo AF like the 1D X and the text display now matches that from the new 7D Mark II. Also with the new crop modes, framing guides will be displayed in the viewfinder to help with composition and framing.</p>
+<p>For landscape photography, long exposures and other types of shots where detail is critical and the reduction of any sort of vibration is crucial, mirror lockup has been a key feature for photographers. The Canon 5DS R, not surprisingly, includes the standard two-press method, in which you press the shutter button once to lock up the mirror and then a second time to capture the photo. However, there could still be some residual vibration in the camera or tripod from the shutter movement and from the photographer physically touching the camera, and so Canon has included a shutter delay feature. You can now set a timed delay between when you press the shutter button to lock up the mirror and when the camera takes the photo. You only have to press the shutter button once and you can allow the vibrations to die down before the photo is captured.</p>
+        
+        <table width="606" border="0" align="center" cellpadding="4" cellspacing="4">
+          <tr>
+            <td><a href="Z-canon-5ds-r-bottom.JPG" target="_blank"><img src="Z-canon-5ds-r-bottom-600.JPG" alt="Canon 5DS R Review -- Product Image" width="600" height="332" border="0"></a></td>
+          </tr>
+</table>        
+        <p>Vibrations are further controlled with a newly designed mirror mechanism. In the 5D Mark III, the mirror mechanism was spring-driven, and as such, it could induce a lot of vibration at the top of its travel. With the 5DS R, however, the mechanism is motor-driven, which allows the speed to be controlled, and the mirror's speed is actually slowed down just before it hits the top of its travel. The chassis of the camera and the tripod socket have also been carefully tweaked for improved stability.</p>
+
+<p>On the firmware side, the Canon 5DS R brings over the flicker detection from the 7D Mark II to help time shots properly to counteract the fluctuating brightness of certain types of artificial lighting. Canon has also improved Auto White Balance performance. Previously, the sensor was limited to color temperatures ranging from around 3000 Kelvin to 7000 Kelvin, and so extreme color temperatures were still captured incorrectly. With the 5DS R, the ability to select ambience priority or white priority, the latter of which will give a much more neutral white balance at extreme color temps.</p>
+<p>Fans of the &quot;Q&quot; Button for Canon's Quick Control interface now gain the ability to customize the layout and what settings and other information is displayed.</p>
+<div class="photo-nb right" style="width: 300px;">
+<a href="Z-canon-5ds-r-batt.JPG" target="_blank"><img src="Z-canon-5ds-r-batt-300.JPG" alt="Canon 5DS R Review -- Product Image" width="300" height="316" border="0"></a></div>
+<p>Canon has also introduced a new Picture Style adjustment option called Fine Detail, which expands the customizability of image sharpness, for both still and video. Essentially functioning similar to Photoshop's Unsharp Mask, you can now tweak and control the strength, fineness and threshold, rather than just having simple 0-7 increments as on Canon's other DSLRs. It works so well that the majority of our lab images were shot with it.</p>
+<p>Speaking of video, this is an area with differs radically between the 5DS R, the <a href="http://www.imaging-resource.com/PRODS/canon-5ds/canon-5dsA.HTM">5DS</a>, and the <a href="http://www.imaging-resource.com/PRODS/canon-5d-mkiii/canon-5d-mkiiiA.HTM">5D Mark III</a>. The short of it is: if you're serious about video or a multimedia producer who needs expanded video options, the 5DS/S R are not the cameras for you. The Canon 5DS R is focused primarily as a still photography tool. And while it does have the ability to record video, the options for movie recording, such as resolution and frame rate, focus and audio recording are very limited compared to Canon's other current line of HD-DSLRs. For example, video resolution is maxed out at 1080/30p, despite the dual DIGIC 6 processors that allow for 1080/60p in cameras like the 7D Mark II. Furthermore, the 50-megapixel sensor is not a Dual Pixel AF sensor, so Movie Servo AF will not be as fast and smooth as on the 7D Mark II and 70D. There is also no headphone jack, but at least there's an external microphone input.</p>
+<div class="photo-nb left" style="width: 300px;">
+<a href="Z-canon-5ds-r-cards.JPG" target="_blank"><img src="Z-canon-5ds-r-cards-300.JPG" alt="Canon 5DS R Review -- Product Image" width="300" height="319" border="0"></a></div>
+<p>Like the 5D Mark III, the 5DS R includes dual card slots -- one CompactFlash (UDMA 7) and one Secure Digital -- however, unlike the Mark III, the SD slot in the 5DS R is UHS-I compliant. Also, given the same body design as the 5D Mark III, all the standard Canon accessories, such as batteries and vertical grip, are compatible with the 5DS R. And as with the 5D Mark III, the estimated shutter durability is rated at 150,000 cycles.</p>
+<p>The Canon 5DS R's battery life is CIPA-rated to 700 shots per charge using the optical viewfinder, and 220 shots when using Live View, and battery life can be doubled with two LP-E6 batteries installed in an optional BG-E11 battery grip. The 5DS&nbsp;R is also compatible with Canon's ACK-E6 AC Adapter kit.</p>
+<p>Available since June 2015, the Canon 5DS R is priced as a body-only configuration at an MSRP of US$3,899, which is a $200 premium over the AA-filtered 5DS.</p>
+        
+<a name="shooting"></a>
+<div class="preview-pod shooting"  onclick="javascript:location.href='canon-5ds-r-shooters-report-part-i.htm'">
+   <div class="preview-header">
+     <div class="icon"></div>
+     <div class="preview-title">
+       <h3>Canon 5DS R Field Test Part I</h3>
+         <h4>Big sensor, big resolution, big responsibility</h4>
+     </div>
+     <div class="preview-meta">
+         by <span class="author">William Brawley |  08/13/2015</span><span class="dateline"></span>
+     </div>
+   </div>
+   <div class="preview-body ghost-it">
+     <p><img src="THUMBS250/Y1C6A5987.JPG" alt="Canon 5DS R shooter's report photo" width="250" align="right"><strong>Canon's niche-market DSLRs.</strong> The Canon 5DS R and 5DS cameras are perhaps two of the most specialized, or niche-market DSLRs that Canon's ever produced (well, perhaps not counting a couple of astrophotography-specific variants of their 20D and 60D). Canon's wide-ranging traditional DSLR models varied along the price scale in terms of size, build and level of features and performance, but were ultimately well-suited for general use and with a variety of subject matter. These two full-frame 50.6-megapixel monsters, on the other hand, with their massive image resolutions as well as limited high ISO performance and video capabilities are focused squarely on a few avenues -- namely, professional-level landscapes, portraiture or other studio-based and/or commercial applications, which all typically demand large print sizes and lots and lots of detail. </p>
+     <p>As a long-time Canon user, needless to say, I was very excited to try out the new Canon 5DS R camera. If you're familiar with Canon's enthusiast-level and prosumer DSLRs, such as the 7D Mark II or better yet, the 5D Mark III, you'll feel right at home with the 5DS R (and standard &quot;S&quot; model as well) since it looks and feels identical to the Mark III.</p>
+   </div>
+   <div class="preview-cta">
+     <h4><a href="canon-5ds-r-shooters-report-part-i.htm" class="target-link">Read our Canon 5DS R Field Test Part I</a></h4>
+  </div>
+</div>
+<a name="shooting2"></a>
+<div class="preview-pod shooting2"  onclick="javascript:location.href='/PRODS/canon-5ds-r/canon-5ds-r-field-test-part-ii.htm'">
+    <div class="preview-header">
+        <div class="icon"></div>
+        <div class="preview-title">
+            <h3>Canon 5DS R Field Test Part II</h3>
+            <h4>Cranking up the ISO and checking out timelapse video</h4>
+        </div>
+        <div class="preview-meta">
+            by<span class="author"> William Brawley |  10/02/2015</span><span class="dateline"></span></div>
+        </div>
+        <div class="preview-body ghost-it">
+            <p>
+                <img src="THUMBS250/Y1C6A7230.JPG" alt="Canon 5DS R field test photo" width="250" align="right"><strong>Big sensor...but small pixels.</strong><br />
+                With the Canon 5DS R's massive allotment of megapixels, its ability to capture lots and lots of detail is no surprise. However, the flip-side to the ultra-high-resolution 50.6MP full-frame sensor is very tiny individual pixels. In what's basically the polar opposite of the low-resolution Sony A7S II, whose full-frame, 12-megapixel sensor has extremely large individual pixels, the Canon 5DS R has rather limited high ISO capabilities as a result-- at least for a full-frame camera.</p>
+            <p>In fact, Canon's even explicitly stated that the pixel pitch of the 5DS R's 50.6MP full-frame sensor is more comparable to the Canon 7D Mark II, with its 20.2MP APS-C sensor, than with the earlier 5D Mark III. With this, the high ISO performance should be similar to the 7D Mark II. Bottom line, though, is that I went into this Field Test with the understanding that the Canon 5DS R probably wouldn't have stunning low-light performance, as it's not designed to for that. Its primary focus is on high-resolution images at lower ISOs; similar to many medium format cameras. Nevertheless, the standard, native range of the camera's ISO scale tops out at 6400, which gives it some decent capabilities in lower light situations.</p>
+        </div>
+        <div class="preview-cta">
+          <h4><a href="/PRODS/canon-5ds-r/canon-5ds-r-field-test-part-ii.htm" class="target-link">Read our Canon 5DS R Field Test Part II</a></h4>
+    </div>
+</div>
+<a name="HIGHRES"></a>
+<div class="preview-pod image-quality"  onclick="javascript:location.href='/PRODS/canon-5ds-r/canon-5ds-rHIGH_RES.HTM'">
+    <div class="preview-header">
+        <div class="icon"></div>
+        <div class="preview-title">
+            <h3>High Resolution Comparisons</h3>
+            <h4>Canon 5DS R versus the world</h4>
+        </div>
+        <div class="preview-meta">
+            by <span class="author">Dave Pardue and Dave Etchells</span>  <span class="separator">|</span>  <span class="dateline">03/20/2015</span>
+        </div>
+        </div>
+        <div class="preview-body ghost-it">
+		<p>
+                <img src="ZE5DSRhSLI00100NR2D-HR250.JPG" alt="Canon 5DS R image quality" width="250" height="250" align="right">While common knowledge to a lot of our readers it bears noting that for a given size sensor, a higher pixel count means higher resolution, but at the expense of smaller pixels and generally poorer high ISO performance. As stated earlier in the overview, the 5D MKIII has pixels with more than twice the area of those in the 5DS and 5DS R (6.25 microns on a side, vs 4.14 microns, a difference in area of 2.28x). While the 5D MKIII's sensor technology is older, that's a pretty dramatic size difference, which helps explain why Canon chose to limit the native ISO for these new models to ISO 6400. (There is an extended setting of ISO 12,800 as well, though, which we'll take a look at below, plus a very welcome multi-shot noise reduction setting.)</p>
+		<p>Given that the biggest focus of the new 5DS/S-R is resolution rather than low light performance, the comparisons below will focus on base ISO performance against the Nikon D810 and medium-format Pentax 645Z. We're also adding a comparison against the special &quot;high res shot&quot; mode on the Olympus E-M5 II which outputs 40mp JPEG files and 64mp (!) RAW files, though only from a tripod while shooting stationary subjects. (That's a significant limitation, yet is precisely how many landscape, architectural and product photographers shoot, so we felt it was a worthwhile comparison to make.) And lastly, we'll show a few comparisons for higher ISO performance against the 5D MK III and the D810 as well as the new 7D MK II, which has essentially the same pixel size.</p>
+	</div>
+        <div class="preview-cta">
+        <h4><a href="/PRODS/canon-5ds-r/canon-5ds-rHIGH_RES.HTM" class="target-link">Click here for our Initial High Resolution Comparisons</a></h4>
+    </div>
+</div>
+<a name="image_quality"></a>
+<div class="preview-pod image-quality"  onclick="javascript:location.href='/PRODS/canon-5ds-r/canon-5ds-r-image-quality.htm'">
+    <div class="preview-header">
+        <div class="icon"></div>
+        <div class="preview-title">
+            <h3>Canon 5DS R Image Quality Comparison</h3>
+            <h4>See how the 5DS R stacks up to other high-res cameras</h4>
+        </div>
+        <div class="preview-meta">
+            by <span class="author">Zig Weidelich</span>  <span class="separator">|</span>  <span class="dateline">11/03/2015</span></div>
+        </div>
+        <div class="preview-body ghost-it">
+            <p>
+                <img src="ZE5DSRhSLI00100NR2D-MOS.JPG" alt="Canon 5DS R image quality" width="250" height="250" align="right">Here we present crops from our laboratory Still Life target comparing the Canon 5DS R's image quality to its OLPF-equipped sibling, the 5DS and to the Canon 5D Mark III, as well as against several of the highest resolution cameras we've tested to date: the Nikon D810, Pentax 645Z and Sony A7R Mark II.</p>
+		<p><em>NOTE: These images are from best quality JPEGs straight out of the camera, at default settings including noise reduction and using the camera's actual base ISO (not extended ISO settings). All cameras in this comparison were shot with our very sharp reference lenses. Clicking any crop will take you to a carrier page where you can click once again to access the full resolution image as delivered straight from the camera. For those interested in working with the RAW files involved: click these links to visit each camera's respective sample image thumbnail page. And remember, you can always go to our world-renowned&nbsp;<a href="http://www.imaging-resource.com/IMCOMP/COMPS01.HTM" target="_blank">Comparometer</a>&nbsp;to compare the Canon 5DS R to any camera we've ever tested!</em></p>
+	</div>
+        <div class="preview-cta">
+        <h4><a href="/PRODS/canon-5ds-r/canon-5ds-r-image-quality.htm" class="target-link">Click here for our standard Image Quality Comparison</a></h4>
+    </div>
+</div>
+
+
+<a name="print_quality"></a>
+<div class="preview-pod print-quality"  onclick="javascript:location.href='/PRODS/canon-5ds-r/canon-5ds-r-image-quality.htm#print-quality'">
+    <div class="preview-header">
+        <div class="icon"></div>
+        <div class="preview-title">
+            <h3>Canon 5DS R Print Quality</h3>
+            <h4>Impressive results on paper!</h4>
+        </div>
+        <div class="preview-meta">
+            by <span class="author">William Brawley</span>  <span class="separator">|</span>  <span class="dateline">11/03/2015</span>
+        </div>
+        </div>
+        <div class="preview-body ghost-it">
+            <p>
+                <img src="/ART/printer-9000e.jpg" alt="Olympus E-PL7 image quality" width="180" height="182" align="right">Print quality and image quality are similar but not identical, because what you see on a print isn't always the same as what you see on the screen. Our print quality analysis answers the important question: "Just how big can I print my photos at higher ISOs?"</p>
+                <p>Wow. Color us impressed. We expected the Canon 5DS R and its OLPF-less 50-megapixel sensor to have a good showing at base ISO, but we weren't expecting the camera to maintain 30 x 40 prints -- the maximum print size we test -- all the way up to ISO 800. Detail is fantastic and noise is practically nowhere to be seen. There's a hint of it in the shadows at ISO 800, but nothing objectionable. Print sizes start to decrease at ISOs beyond 800, but not by much. ISO 1600 tops out at 24 x 36 inches, and ISO 6400 manages a fine 13 x 19 inch print. Even the camera's maximum expanded ISO of 12,800 offers a very usable 8 x 10 inch print. Impressive indeed.
+            </p>
+        </div>
+        <div class="preview-cta">
+        <h4><a href="/PRODS/canon-5ds-r/canon-5ds-r-image-quality.htm#print-quality" class="target-link">Read our Canon 5DS R&nbsp;Print Quality Analysis</a></h4>
+    </div>
+</div>
+<a name="conclusion"></a>
+<div class="preview-pod conclusion"  onclick="javascript:location.href='/PRODS/canon-5ds-r/canon-5ds-r-conclusion.htm'">
+    <div class="preview-header">
+        <div class="icon"></div>
+      <div class="preview-title">
+        <h3>Canon 5DS R Conclusion</h3>
+          <h4>With 50MP, is this the Canon alternative to medium format?</h4>
+        </div>
+        <div class="preview-meta">
+            by <span class="author">William Brawley</span>  <span class="separator">|</span>11/03/2015</div>
+  </div>
+        <div class="preview-body ghost-it">
+            <p><strong>The Canon 5DS R: a specialty EOS camera.</strong><br />
+            Offering a whopping 50 megapixels in resolution, the Canon 5DS R (and its nearly-identical sibling) is one unique Canon DSLR. While other EOS cameras can generally be considered more or less suitable for a wide variety of subjects, with manageable image resolutions, file sizes as well as expansive ISO ranges, the 5DS R, on the other hand, introduces a streak of specialty into the EOS family by going the opposite route.</p>
+            <p>The camera's huge resolution, along with this &quot;R&quot; version's canceled-out optical low-pass filter, makes it particularly well-suited for high-end portraiture work, landscape and other editorial photography tasks which demand the extraordinary image detail -- and are typically shot at lower ISO sensitivities. The 5DS R feels, operates and handles much like any other EOS camera, and it can certainly handle general-use photography despite its niche-market persona. However, given its ultra-high resolution sensor, in a way, the camera blurs the line between a full-frame DSLR and a medium format camera. In a sense, the 5DS R is the &quot;medium-format&quot; camera for those Canon shooters who've invested heavily in Canon lenses and want that familiar, classic Canon EOS operability and size.</p>
+        </div>
+        <div class="preview-cta">
+          <h4><a href="/PRODS/canon-5ds-r/canon-5ds-r-conclusion.htm" class="target-link">Read our Canon 5DS R Conclusion</a></h4>
+  </div>
+</div>
+<p>&nbsp;</p>
+<h2>In the Box</h2>
+<p>The retail package contains the following items:</p>
+<ul>
+	<li>Canon EOS 5DS R camera body<li>EG Eyecup<li>Body cap
+	<li>LP-E6N lithium-ion battery pack
+	<li>LC-E6 battery charger
+	<li>IFC-150U II Interface Cable
+	<li>Cable protector
+	<li>EW-EOS5DSR Wide Neckstrap
+	<li>EOS Digital Solutions Disk
+	<li>Manuals and warranty info
+</ul>
+<p>&nbsp;</p>
+<h2>Recommended Accessories</h2>
+<ul>
+	<li>Large capacity, high-speed&nbsp;<a href="http://www.imaging-resource.com/cgi-bin/m/pl.cgi?memcf" target="_blank">CompactFlash</a>&nbsp;or&nbsp;<a href="http://www.imaging-resource.com/cgi-bin/m/pl.cgi?memsdhc" target="_blank">SDHC/SDXC</a>&nbsp;memory cards
+	<li><a href="http://ir.pricegrabber.com/search_getprod.php/masterid=1663222990" target="_blank">Extra battery pack</a><li>Lenses
+	<li>Flash
+	<li>Large camera bag
+</ul>
+<p>&nbsp;</p>
+
+
+        <div class="affiliate_price_review">
+    <div class="left">
+        <h2>
+            Canon
+            <span class="light">5DS R</span>
+        </h2>
+        <div class="camera_image" style="background-image: url(/PRODS/canon-5ds-r/ZYFRONT-LG.JPG);"></div>
+    </div>
+    <div class="right">
+        <h4>Your purchases support this site</h4>
+                                    <h5>Body Only</h5>
+                                        <ul id="bundle-0" class="affiliate_bundle" >
+                    <li>
+                                                                                
+    <a href="http://www.amazon.com/Canon-Digital-Low-Pass-Filter-Cancellation/dp/B00T3ERT5S?psc=1&amp;SubscriptionId=AKIAJBX6LJVII7QNQNYQ&amp;tag=imgr-reviews-buypod-1.0-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00T3ERT5S" target="_blank" data-link-type="imgr-reviews-buypod-1.0-20">
+                            Buy from             <span class="semibold">Amazon</span>
+                        <span class="price">
+                                            for                     <span class="semibold">$3,899.00</span>
+                                    </span>
+            </a>
+
+                                            </li>
+                    <li>
+                            
+    <a href="http://adorama.evyy.net/c/60095/29622/1036?aadid=ICA5DSR&amp;u=http%3A%2F%2Fwww.adorama.com%2FICA5DSR.html&amp;subid1=imgr-reviews-buypod-1.0&amp;sharedid=imgr-reviews-buypod-1.0" target="_blank" data-link-type="imgr-reviews-buypod-1.0">
+                            Buy from             <span class="semibold">Adorama</span>
+                        <span class="price">
+                                            for                     <span class="semibold">$3,899.00</span>
+                                    </span>
+            </a>
+
+                    </li>
+                    <li>
+                            
+    <a href="http://www.bhphotovideo.com/c/product/1119027-REG/canon_0582c002_eos_5ds_r_dslr.html/BI/771/KBID/1047/SID/imgr-reviews-buypod-1.0" target="_blank" data-link-type="imgr-reviews-buypod-1.0" class="with-giftcard">
+                            Buy from             <span class="semibold">B&amp;H Photo</span>
+                        <span class="price">
+                                            for                     <span class="semibold">$3,899.00</span>
+                                    </span>
+                    <span class="giftcard">
+                                    <span>Purchase from this link to</span> 
+                    <span>enter a monthly drawing for a</span>
+                    <span><span class="sup">$</span>500 B&amp;H Gift Card</span>
+                            </span>
+            </a>
+
+                    </li>
+                </ul>
+                                        <span class="all_deals">
+                <a href="/news/2015/11/12/500-monthly-gift-card-drawing-for-making-a-purchase-on-bh-photo">Drawing Info</a>
+                <a href="/cameras/canon/5ds-r/deals-and-prices">All 5DS R Deals</a>
+            </span>
+            </div>
+</div>
+
+    </div>
+
+        </div>
+        <div class="spacer"></div>
+
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'imgr';
+	    	var disqus_identifier = '/disqus_id/cameras/canon/5ds-r';
+    	    	var disqus_category_id = '2743024';
+    	    	var disqus_url = 'http://www.imaging-resource.com/PRODS/canon-5ds-r/canon-5ds-rA.HTM';
+        function disqus_config() {
+        this.callbacks.onPaginate = [function() {
+            setTimeout(function() {
+                if ( $.isFunction($.waypoints) ) {
+                    $.waypoints('refresh');
+                }
+            }, 3000);
+        }];
+        this.callbacks.onNewComment = [function() {
+            if ( $.isFunction($.waypoints) ) {
+                $.waypoints('refresh');
+            }
+        }];
+        this.callbacks.onReady = [function() {
+            if ( $.isFunction($.waypoints) ) {
+                $.waypoints('refresh');
+            }
+        }];
+    }
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+        
+        <br />
+        <br />
+        <center>
+            <div class="subnav-left">
+                                    <span><a href="/PRODS/canon-5ds-r/canon-5ds-rA.HTM" class="subtab_active">5DS R Overview</a></span>
+
+                        <span><a href="/PRODS/canon-5ds-r/canon-5ds-rHIGH_RES.HTM">High Res Comparison</a></span>
+
+            
+
+
+
+                <div class="jumpform">
+                    <form name="navigation">
+                        <select name="page_to_visit" onchange="window.location.href=this.options[this.selectedIndex].value;">
+                            <option>Navigate Review</option>
+                            <option></option>
+                                                <option value="/PRODS/canon-5ds-r/canon-5ds-rA.HTM">
+        
+        5DS R Overview
+    </option>
+                    <option value="/PRODS/canon-5ds-r/canon-5ds-rHIGH_RES.HTM">
+        &nbsp;&nbsp;&nbsp;
+        High Res Comparison
+    </option>
+        
+
+    
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-rA4.HTM">
+        
+        Optics
+    </option>
+        
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-rA5.HTM">
+        
+        Exposure
+    </option>
+                    <option value="/PRODS/canon-5ds-r/canon-5ds-rHI_ISO_NR.HTM">
+        &nbsp;&nbsp;&nbsp;
+        High ISO NR
+    </option>
+        
+
+    
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-rA6.HTM">
+        
+        Performance
+    </option>
+        
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-rDAT.HTM">
+        
+        Specifications
+    </option>
+        
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-rA7.HTM">
+        
+        Samples
+    </option>
+                    <option value="/PRODS/canon-5ds-r/canon-5ds-rPICS.HTM">
+        &nbsp;&nbsp;&nbsp;
+        Test Shots
+    </option>
+        
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-rTHMB.HTM">
+        &nbsp;&nbsp;&nbsp;
+        Thumbnails
+    </option>
+        
+
+    
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-rGALLERY.HTM">
+        
+        Gallery
+    </option>
+        
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-r-field-test.htm">
+        
+        Field Test
+    </option>
+                    <option value="/PRODS/canon-5ds-r/canon-5ds-r-field-test-part-i.htm">
+        &nbsp;&nbsp;&nbsp;
+        Field Test Part I
+    </option>
+        
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-r-field-test-part-ii.htm">
+        &nbsp;&nbsp;&nbsp;
+        Field Test Part II
+    </option>
+        
+
+    
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-r-image-quality.htm">
+        
+        Image Quality
+    </option>
+        
+
+                <option value="/PRODS/canon-5ds-r/canon-5ds-r-conclusion.htm">
+        
+        Conclusion
+    </option>
+        
+
+                <option value="/cameras/canon/5ds-r/deals-and-prices">
+        
+        Prices
+    </option>
+        
+
+    
+
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="r_navigation_bottom">
+                <ul class="r_navtab">
+            <li class="here">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-rA.HTM">5DS R Overview</a>
+        </li>
+            <li class="optics">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-rA4.HTM">Optics</a>
+        </li>
+            <li class="exposure">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-rA5.HTM">Exposure</a>
+        </li>
+            <li class="perform">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-rA6.HTM">Performance</a>
+        </li>
+            <li class="samples">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-rA7.HTM">Samples</a>
+        </li>
+            <li class="gallery">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-rGALLERY.HTM">Gallery</a>
+        </li>
+            <li class="shooting">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-r-field-test.htm">Field Test</a>
+        </li>
+            <li class="image_quality">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-r-image-quality.htm">Image Quality</a>
+        </li>
+            <li class="conclusion">
+            <a href="/PRODS/canon-5ds-r/canon-5ds-r-conclusion.htm">Conclusion</a>
+        </li>
+            <li class="deals">
+            <a href="/cameras/canon/5ds-r/deals-and-prices">Prices</a>
+        </li>
+    </ul>
+
+            </div>
+
+        </center>
+    </div>
+
+        <div id="mid-col-4">
+                    <!-- BEGIN ADVERTSERVE CODE BLOCK: Region 38 / Keyword CanonPro -->
+<div class="ad" id="avp_zid_38">
+    <script type="text/javascript">
+        _avp.push({ tagid: 'avp_zid_38', alias: '/advertpro', type: 'banner', zid: 38, pid: 0, keywords:'CanonPro' });
+    </script>
+</div>
+<!-- END ADVERTSERVE CODE BLOCK: Region 38 / Keyword CanonPro -->
+
+    <!-- BEGIN ADVERTSERVE CODE BLOCK: Region 111 / Keyword CanonPro -->
+<div class="ad" id="avp_zid_111">
+    <script type="text/javascript">
+        _avp.push({ tagid: 'avp_zid_111', alias: '/advertpro', type: 'banner', zid: 111, pid: 0, keywords:'CanonPro' });
+    </script>
+</div>
+<!-- END ADVERTSERVE CODE BLOCK: Region 111 / Keyword CanonPro -->
+
+    <!-- BEGIN ADVERTSERVE CODE BLOCK: Region 112 / Keyword CanonPro -->
+<div class="ad" id="avp_zid_112">
+    <script type="text/javascript">
+        _avp.push({ tagid: 'avp_zid_112', alias: '/advertpro', type: 'banner', zid: 112, pid: 0, keywords:'CanonPro' });
+    </script>
+</div>
+<!-- END ADVERTSERVE CODE BLOCK: Region 112 / Keyword CanonPro -->
+
+
+    <div id="social_follow">
+    <p>Follow Imaging Resource</p>
+    <ul>
+        <li>
+            <a href="http://www.facebook.com/imagingresource" class="social_button facebook" target="_blank" title="Follow on Facebook">
+                <span class="icon"></span>
+                <span class="label">Facebook</span>
+            </a>
+        </li>
+        <li>
+            <a href="http://twitter.com/IR_Lab" class="social_button twitter" target="_blank" title="Tweet">
+                <span class="icon"></span>
+                <span class="label">Twitter</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://plus.google.com/+imagingresource" class="social_button google" target="_blank" title="Follow on Google">
+                <span class="icon"></span>
+                <span class="label">Google</span>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.youtube.com/user/imagingresource?sub_confirmation=1" class="social_button youtube" target="_blank" title="Follow on YouTube">
+                <span class="icon"></span>
+                <span class="label">YouTube</span>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.imaging-resource.com/rss/news" class="social_button feed" target="_blank" title="Subscribe">
+                <span class="icon"></span>
+                <span class="label">RSS</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+            <div class="ad">
+    <div class="topCameraList">
+        <span class="topCamH2">Top Canon Cameras</span>
+
+                    <div class="topCamera">
+                <span class="topCameraName">
+                    <a href="http://www.imaging-resource.com/PRODS/canon-5d-mkiii/canon-5d-mkiiiA.HTM">Canon 5D Mark III</a>
+                </span>
+            </div>
+                    <div class="topCamera">
+                <span class="topCameraName">
+                    <a href="http://www.imaging-resource.com/PRODS/canon-6d/canon-6dA.HTM">Canon 6D</a>
+                </span>
+            </div>
+                    <div class="topCamera">
+                <span class="topCameraName">
+                    <a href="http://www.imaging-resource.com/PRODS/canon-70d/canon-70dA.HTM">Canon 70D</a>
+                </span>
+            </div>
+                    <div class="topCamera">
+                <span class="topCameraName">
+                    <a href="http://www.imaging-resource.com/PRODS/canon-7d-mark-ii/canon-7d-mark-iiA.HTM">Canon 7D Mark II</a>
+                </span>
+            </div>
+                    <div class="topCamera">
+                <span class="topCameraName">
+                    <a href="http://www.imaging-resource.com/PRODS/canon-g16/canon-g16A.HTM">Canon G16</a>
+                </span>
+            </div>
+                    <div class="topCamera">
+                <span class="topCameraName">
+                    <a href="http://www.imaging-resource.com/PRODS/canon-g3x/canon-g3xA.HTM">Canon G3X</a>
+                </span>
+            </div>
+                    <div class="topCamera">
+                <span class="topCameraName">
+                    <a href="http://www.imaging-resource.com/PRODS/canon-g7x/canon-g7xA.HTM">Canon G7X</a>
+                </span>
+            </div>
+                    <div class="topCamera">
+                <span class="topCameraName">
+                    <a href="http://www.imaging-resource.com/PRODS/canon-s120/canon-s120A.HTM">Canon S120</a>
+                </span>
+            </div>
+                    <div class="topCamera">
+                <span class="topCameraName">
+                    <a href="http://www.imaging-resource.com/PRODS/canon-sl1/canon-sl1A.HTM">Canon SL1</a>
+                </span>
+            </div>
+                    <div class="topCamera">
+                <span class="topCameraName">
+                    <a href="http://www.imaging-resource.com/PRODS/canon-t5/canon-t5A.HTM">Canon T5</a>
+                </span>
+            </div>
+                    <div class="topCamera">
+                <span class="topCameraName">
+                    <a href="http://www.imaging-resource.com/PRODS/canon-t6i/canon-t6iA.HTM">Canon T6i</a>
+                </span>
+            </div>
+                    <div class="topCamera">
+                <span class="topCameraName">
+                    <a href="http://www.imaging-resource.com/PRODS/canon-t6s/canon-t6sA.HTM">Canon T6s</a>
+                </span>
+            </div>
+            </div>
+</div>
+
+    
+    <div class="potd-pod landscape">
+    <div class="photo-container">
+        <a href="http://www.dailydigitalphoto.com/cgi-bin/potd/potd.pl" target="_blank">
+            <img src="http://www.imaging-resource.com/features/potd/images/ir_potd_300.jpg" alt="Photo of the Day from Daily Digital Photo">
+        </a>
+        <span class="potdh3"><a href="http://www.dailydigitalphoto.com/cgi-bin/potd/potd.pl" target="_blank"><span class="todays">Today&rsquo;s</span> <span class="photo">Photo</span> <span class="ofthe">of the</span> <span class="day">Day</span><span class="arrow"></span></a></span>
+    </div>
+    <span class="potdh4"><a href="http://www.dailydigitalphoto.com/potd-images/ir_potd_enter.htm">Enter</a> this month to win:</span>
+
+    <div class="prizes">
+        <p class="first"><em>1</em> $300 Adorama Gift Certificate</p>
+        <p class="second"><em>2</em> $200 Adorama Gift Certificate</p>
+        <p class="third"><em>3</em> $100 Adorama Gift Certificate</p>
+    </div>
+</div>
+
+
+        <div class="ad-scroll-wrap">
+        <!-- BEGIN ADVERTSERVE CODE BLOCK: Region 193 / Keyword CanonPro -->
+<div class="ad ad-scroll" id="avp_zid_193">
+    <script type="text/javascript">
+        _avp.push({ tagid: 'avp_zid_193', alias: '/advertpro', type: 'banner', zid: 193, pid: 0, keywords:'CanonPro' });
+    </script>
+</div>
+<!-- END ADVERTSERVE CODE BLOCK: Region 193 / Keyword CanonPro -->
+
+    </div>
+
+
+    <!-- BEGIN ADVERTSERVE CODE BLOCK: Region 40 / Keyword CanonPro -->
+<div class="ad" id="avp_zid_40">
+    <script type="text/javascript">
+        _avp.push({ tagid: 'avp_zid_40', alias: '/advertpro', type: 'banner', zid: 40, pid: 0, keywords:'CanonPro' });
+    </script>
+</div>
+<!-- END ADVERTSERVE CODE BLOCK: Region 40 / Keyword CanonPro -->
+
+
+        <!-- BEGIN ADVERTSERVE CODE BLOCK: Region 113 / Keyword NULL -->
+<div class="ad-bottom" id="avp_zid_113">
+    <script type="text/javascript">
+        _avp.push({ tagid: 'avp_zid_113', alias: '/advertpro', type: 'banner', zid: 113, pid: 0, keywords:'NULL' });
+    </script>
+</div>
+<!-- END ADVERTSERVE CODE BLOCK: Region 113 / Keyword NULL -->
+
+
+        </div>
+
+        <div class="spacer"></div>
+    </div>
+
+                <!-- BEGIN AVPA CODE BLOCK: Region 177 -->
+<script language="JavaScript" type="text/javascript">
+  document.write('<scr'+'ipt src="//ads.imaging-resource.com/advertpro/servlet/view/pagepeel/javascript/zone?zid=177&pid=0&anchor=wrapper&random='+Math.floor(89999999*Math.random()+10000000)+'&millis='+new Date().getTime()+'&referrer='+encodeURIComponent(document.location)+'" type="text/javascript"></scr'+'ipt>');
+</script>
+<!-- END AVPA CODE BLOCK: Region 177-->
+    
+    <footer>
+    <div class="footer-nav-wrapper">
+        <div class="footer-menu-wrapper">
+            <div class="nav-start">
+                <div class="logo">
+                    <div class="logo-strip"><a href="//www.imaging-resource.com" class="no_decoration"></a></div>
+                    <div class="wordmark"><a href="//www.imaging-resource.com" class="no_decoration"></a></div>
+                </div>
+            </div>
+            <div class="nav-middle">
+                <ul class="footer-menu">
+                    <li><a href="/cameras/reviews/">Camera Reviews</a></li>
+                    <li><a href="/compact-cameras">Compact Cameras</a></li>
+                    <li><a href="/mirrorless-cameras">Mirrorless Cameras</a></li>
+                    <li><a href="/dslr-cameras">DSLR Cameras</a></li>
+                    <li><a href="/cameras/canon/reviews/">Canon Cameras</a></li>
+                    <li><a href="/cameras/nikon/reviews/">Nikon Cameras</a></li>
+                    <li><a href="/cameras/brands/">All Brands</a></li>
+                </ul>
+            </div>
+            <div class="nav-middle">
+                <ul class="footer-menu">
+                    <li><a href="/cameras/compare/"Compare Cameras</a></li>
+                    <li><a href="/IMCOMP/COMPS01.HTM"Compare Images</a></li>
+                    <li><a href="/news"Photo News</a></li>
+                    <li><a href="http://www.dailydigitalphoto.com/cgi-bin/potd/potd.pl" target="_blank">Photo of the Day</a></li>
+                    <li><a href="http://www.slrgear.com">Lens Reviews</a></li>
+                    <li><a href="/PRINT.HTM">Printer Reviews</a></li>
+                    <li><a href="/WB/WB.HTM">Best Cameras</a></li>
+                </ul>
+            </div>
+            <div class="nav-middle">
+                <ul class="footer-menu">
+                    <li><a href="/about-ir">About Us</a></li>
+                    <li><a href="mailto:web@imaging-resource.com" target="_blank">Contact Us</a></li>
+                    <li><a href="/ADINFO.HTM">Advertising</a></li>
+                    <li><a href="/USAGE.HTM">Usage Policy</a></li>
+                    <li><a href="/PRIVACY.HTM">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="nav-end">
+                <ul class="footer-menu">
+                    <li class="facebook"><a href="https://www.facebook.com/imagingresource" target="_blank">Facebook</a></li>
+                    <li class="twitter" target="_blank"><a href="https://twitter.com/IR_Lab" target="_blank">Twitter</a></li>
+                    <li class="google" target="_blank"><a rel="publisher" href="https://plus.google.com/+imagingresource">Google+</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>Imaging Resource &copy; 1998 - 2016. Material on this site may not be reproduced, distributed, transmitted or otherwise used without the prior written consent of The Imaging Resource.</span>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+<script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+        var b=document.getElementsByTagName("script")[0];
+        a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0023/2478.js?"+Math.floor(new Date().getTime()/3600000);
+        a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<!-- Start Quantcast Async Tag Part 2 -->
+<script type="text/javascript">
+    _qevents.push( { qacct:"p-c3GXusZc0TJL4"} );
+</script>
+<noscript>
+    <div style="display: none;">
+        <img src="//pixel.quantserve.com/pixel/p-c3GXusZc0TJL4p-c3GXusZc0TJL4.gif" height="1" width="1" alt="Quantcast"/>
+    </div>
+</noscript>
+<!-- End Quantcast Async Tag Part 2 -->
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ac785adeaa","applicationID":"1644091","transactionName":"M1JRbBNRXUpYUEVRDgoYclsVWVxXFkFUTggBQGxXF1VBT1BWRg==","queueTime":0,"applicationTime":162,"atts":"HxVSGltLTkQ=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-768.min.js"}</script></body>
+</html>

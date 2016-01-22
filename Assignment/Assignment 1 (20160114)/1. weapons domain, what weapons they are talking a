@@ -1,0 +1,20 @@
+1. weapons domain, what weapons they are talking about.
+
+tag all talking about weapon
+
+data 
+
+memex
+dig*2
+
+human trafficing
+zzz
+
+darpamemex/darpamemex
+elasticsearch
+
+curl -u darpamemex:darpmemex -XGET 'https://esc.memexproxy.com/dig-ht-california-ads-trial01-optimized/_search'
+
+curl -u darpamemex -XGET 'https://esc.memexproxy.com/dig-ht-california-ads-trial01-optimized/_search'
+
+postman
