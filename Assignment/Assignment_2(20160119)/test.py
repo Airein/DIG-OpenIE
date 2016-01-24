@@ -7,5 +7,5 @@ if __name__ == '__main__':
     # parse()
     # extract()
 
-    RVIE_load_data()
-
+    # data = RVIE_load_data()
+    RVIE_analyze_data()

@@ -23,4 +23,5 @@ from .api import streams
 from .api import parse
 from .api import extract
 from .api import RVIE_load_data
+from .api import RVIE_analyze_data
 # from .session import ESstreamer
