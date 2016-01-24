@@ -1,6 +1,6 @@
-# ISI
-my direct research and student works at ISI (DIG - Open Information Extraction)
-Worked with Prof. Pedro Szekely on DIG project for Information Extraction
+# DIG-OpenIE
+My direct research and student works at ISI (DIG - Open Information Extraction)
+Worked with Prof. Pedro Szekely on DIG project for Open Information Extraction
 
 ## Task Description
 
@@ -10,6 +10,6 @@ Develop capability to automatically build knowledge graphs and their ontologies 
 ## My works
 
 - Run ReVerb on 7 documents from different websites, list extractions from ReVerb, score extractions as useful or useless, and make a note of information that I think should have been extracted, but wasn't.
-- 
+- Fetch data by elastic search from DIG database, and then use machine learning algorithm to train a classifier to identify real person's name.
 
 
