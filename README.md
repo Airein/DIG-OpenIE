@@ -1,6 +1,6 @@
 # DIG-OpenIE
 
-![openie_logo](./Resources/dig-openie.jpg=1000x400)
+![openie_logo](./Resource/dig-openie.jpg=1000x400)
 
 My direct research and student works at ISI (DIG - Open Information Extraction)
 Worked with Prof. Pedro Szekely on DIG project for Open Information Extraction
