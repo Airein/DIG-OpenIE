@@ -2,28 +2,47 @@
 
 from core import *
 
+streamer = ESstreamer()
+parser = JSparser()
+extractor = RVextractor()
 
 def RVIE_load_data():
     print '+--------------------------------------------------------+'
     print '|                        Load Data                       +'
     print '+--------------------------------------------------------+'
-    streamer = ESstreamer()
-    parser = JSparser()
-    extractor = RVextractor()
+    # streamer = ESstreamer()
+    # parser = JSparser()
+    # extractor = RVextractor()
 
-    ""
     # fetch all names
-    # streamer.fetch_names()
-    names = parser.parseName()
+    names = load_names()
 
     
     # fetch all sentences for each person
-    # for name in names:
-    #     streamer.fetch_sentences(name)
-    # parser.parseSentence()
+    load_sentences()
 
+    # extract data
+    data = rv_extract(names)
+    return data
+
+def load_names():
+    print 'begin to load names'
+    streamer.fetch_names()
+    names = parser.parseName()
+    return names
+
+def load_sentences(names):
+    print 'begin to fetch sentences'
+    for name in names:
+        streamer.fetch_sentences(name)
+    parser.parseSentence()
+
+def rv_extract(names):
+    print 'begin to extract by ReVerb'
     data = extractor.extract(names)
     return data
+
+
 
 
 def RVIE_analyze_data():
@@ -31,23 +50,28 @@ def RVIE_analyze_data():
     print '|                      Analyze Data                      +'
     print '+--------------------------------------------------------+'
     
+    """
     from sklearn import tree
     X = [['My name', 'is', 'Amber'], ['the type of girl', 'be willing as', 'you']]
     Y = [1, 0]
-    clf = tree.DecisionTreeClassifier()
+    clf = tree.DecisionTreeClassifier(criterion='entropy')
     clf = clf.fit(X, Y)
     print clf.predict([['my name', 'is', 'Amber']])
+    """
 
 
+####################################################################
+#                               TEST                               #
+####################################################################
 
 def streams():
     streamer = ESstreamer()
-    streamer.streams()
+    streamer.fetch_names()
 
 def parse():
     parser = JSparser()
-    # parser.parse()
-    parser.parseName()
+    names = parser.parseName()
+    return names
 
 def extract():
     extractor = RVextractor()

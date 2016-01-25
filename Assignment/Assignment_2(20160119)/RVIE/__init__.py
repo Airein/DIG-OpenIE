@@ -22,6 +22,9 @@ __reverb_outputs__ = __data_folder__ + 'reverb/'
 from .api import streams
 from .api import parse
 from .api import extract
+from .api import load_names
+from .api import load_sentences
+from .api import rv_extract
 from .api import RVIE_load_data
 from .api import RVIE_analyze_data
 # from .session import ESstreamer

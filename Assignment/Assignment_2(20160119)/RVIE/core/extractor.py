@@ -19,6 +19,10 @@ class RVextractor(object):
             for name in names:
                 # print name
                 filename_list.append(path + str(name) + '.raw')
+        # for publish
         # self.rv_extractor.lauch_reverb(filename_list)
+        # for test
+        print 'lauch reverb for files list: ' # + str(filename_list)
+        print '... reverb output at ' + __reverb_outputs__ + 'reverb.output'
         self.rv_extractor.lauch_reverb([filename_list[0], filename_list[1]])
         return self.rv_extractor.load_rv_data(__root_dir__ + __reverb_outputs__ + 'reverb.output')

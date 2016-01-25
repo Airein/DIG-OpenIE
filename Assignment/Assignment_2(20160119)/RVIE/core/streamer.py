@@ -20,11 +20,13 @@ class ESstreamer(object):
 
     def fetch_names(self):
         filename = 'names.json'
+        print 'fetch names... output at: ' + __json_outputs__ + filename
         query = api.names_query()
         self.curl_request.fetch2file(NAMESTREAM_URL, query, __json_outputs__ + filename)
 
     def fetch_sentences(self, name=None):
         filename = name + '.json'
+        print 'fetch sentences for name ' + name +'... output at: ' + __json_outputs__ + filename
         query = api.namesentences_query(name)
         self.curl_request.fetch2file(SENTENCESTREAM_URL, query, __json_outputs__ + 'sentences/' + filename)
 

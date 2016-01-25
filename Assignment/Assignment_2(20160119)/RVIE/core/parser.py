@@ -14,6 +14,7 @@ class JSparser(object):
 
     def parseName(self):
         path = __root_dir__ + __json_outputs__
+        print 'parse names from json... output at: ' + __raw_outputs__ + 'names.raw'
         onlyfiles = [f for f in listdir(path) if isfile(join(path, f)) and f.split('.')[-1] == 'json']
         names = []
         for jsf in onlyfiles:
@@ -22,15 +23,11 @@ class JSparser(object):
 
 
     def parseSentence(self):
-        # self.js_parser.es_desc_extractor()
-        # print __root_dir__
         path = __root_dir__ + __json_outputs__ + 'sentences/'
         onlyfiles = [f for f in listdir(path) if isfile(join(path, f)) and f.split('.')[-1] == 'json']
-        # print path
-        # print onlyfiles
         
         for jsf in onlyfiles:
-            # print path + jsf
+            print 'parse sentences for ' + path + jsf
             self.js_parser.es_desc_extractor(path + jsf) 
         
 
