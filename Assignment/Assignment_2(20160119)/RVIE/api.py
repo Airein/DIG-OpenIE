@@ -1,10 +1,12 @@
 # from .session import ESstreamer
 
 from core import *
+from classifier import *
 
 streamer = ESstreamer()
 parser = JSparser()
 extractor = RVextractor()
+classifier = Classifier()
 
 def RVIE_load_data():
     print '+--------------------------------------------------------+'
@@ -58,6 +60,7 @@ def RVIE_analyze_data():
     clf = clf.fit(X, Y)
     print clf.predict([['my name', 'is', 'Amber']])
     """
+    classifier.preprocess()
 
 
 ####################################################################

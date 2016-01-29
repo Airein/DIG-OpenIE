@@ -5,9 +5,9 @@ if __name__ == '__main__':
 
     
 
-    names = load_names()
-    load_sentences(names)
-    rv_extract(names)
+    # names = load_names()
+    # load_sentences(names)
+    # rv_extract(names)
 
 
     # load all data in single function
@@ -22,4 +22,4 @@ if __name__ == '__main__':
     # extract()
 
     # begin to implement
-    # RVIE_analyze_data()
+    RVIE_analyze_data()

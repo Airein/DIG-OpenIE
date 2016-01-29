@@ -4,6 +4,14 @@ Author: Lingzhe Teng
 Date:   Jan. 21, 2016
 
 """
+
+"""
+3d-party library:
+- scikit-learn
+- pycurl
+
+"""
+
 import os
 
 

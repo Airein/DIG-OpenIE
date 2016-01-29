@@ -11,12 +11,15 @@ class JSHelper():
 
     def es_name_extractor(self, filename):
         names = []
+        valid_name = ['a', 'i']
         json_file = open(filename, 'rU')
         data = json.load(json_file) 
         buckets = data['aggregations']['name']['buckets']
         output = open(__root_dir__ + '/' + __raw_outputs__ + 'names.raw', 'wb')
         for bucket in buckets:
             name = bucket['key']
+            if name in valid_name or len(name) == 1:
+                continue
             names.append(name)
             output.write(str(name) + '\n')
         output.close()
@@ -44,5 +47,7 @@ class JSHelper():
             desc_info = desc[0].encode('utf-8').strip()
             output.write(desc_info + '.\n')
         output.close()
+
+        
 
 
