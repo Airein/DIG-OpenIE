@@ -60,7 +60,8 @@ def RVIE_analyze_data():
     clf = clf.fit(X, Y)
     print clf.predict([['my name', 'is', 'Amber']])
     """
-    classifier.preprocess()
+    # classifier.preprocess()
+    classifier.train()
 
 
 ####################################################################

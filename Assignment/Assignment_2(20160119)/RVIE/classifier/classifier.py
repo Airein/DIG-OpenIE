@@ -1,7 +1,7 @@
 from ..plugin import api
 from .. import __json_outputs__, __raw_outputs__, __reverb_outputs__, __root_dir__
 from .utils import *
-
+from .mla import *
 
 """
 Solution:
@@ -18,7 +18,11 @@ class Classifier(object):
         pass
 
     def train(self):
-        pass
+        print 'Begin to train classifier'
+
+        decisionTree = MLDecisionTree()
+        decisionTree.generate()
+
 
     def test(self):
         pass
