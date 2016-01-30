@@ -19,6 +19,11 @@ class MLDataLoader():
     def __init__(self):
         pass
 
+    def load_feature_names(self):
+        dataset_file = open(TRAIN_DATA, 'rU')
+        for line in dataset_file:
+            return line[:-1].split(',')
+
     def load_train_data(self):
         return self.load_dataset(TRAIN_DATA)
 

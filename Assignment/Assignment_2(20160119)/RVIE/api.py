@@ -61,8 +61,9 @@ def RVIE_analyze_data():
     print clf.predict([['my name', 'is', 'Amber']])
     """
     # classifier.preprocess()
-    classifier.train()
-
+    model = classifier.train()
+    predict_label = classifier.test(model)
+    classifier.report(predict_label)
 
 ####################################################################
 #                               TEST                               #
