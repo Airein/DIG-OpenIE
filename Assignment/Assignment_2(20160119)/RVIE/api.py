@@ -2,6 +2,7 @@
 
 from core import *
 from classifier import *
+from .config import *
 
 streamer = ESstreamer()
 parser = JSparser()
@@ -60,10 +61,11 @@ def RVIE_analyze_data():
     clf = clf.fit(X, Y)
     print clf.predict([['my name', 'is', 'Amber']])
     """
-    # classifier.preprocess()
-    model = classifier.train()
-    predict_label = classifier.test(model)
-    classifier.report(predict_label)
+    # # classifier.preprocess()
+    # model = classifier.train()
+    # predict_label = classifier.test(DECISION_TREE)
+    # classifier.report(predict_label)
+    classifier.generate_classifiers()
 
 ####################################################################
 #                               TEST                               #
