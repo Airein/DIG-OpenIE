@@ -22,16 +22,17 @@ class Classifier(object):
         # classifier.report(predict_label)
 
         for mla in MACHINE_LEARNING_ALGORITHMS:
-            self.train(mla)
+            (model, clf) = self.train(mla)
 
-        """
+        # """
         feature_names, testing_dataset = self.dataLoader.load_test_data()
 
         for mla in MACHINE_LEARNING_ALGORITHMS:
             print 'Testing with classifier: ' + mla
             predict_label = self.test(mla, testing_dataset)
             self.report(predict_label)
-        """
+
+        # """
 
 
     def preprocess(self):
@@ -40,15 +41,28 @@ class Classifier(object):
         mldtGenerator.generate()
 
     def train(self, mla=DECISION_TREE):
-        print 'Begin to train classifier'
+        print 'Begin to train classifier for... ' + mla
 
         if mla == DECISION_TREE:
             model = MLDecisionTree()
-        elif RANDOM_FOREST:
-            model = MLDecisionTree()
-
-        model.generate()
-        return model
+        elif mla == RANDOM_FOREST:
+            model = MLRandomForest()
+        elif mla == K_NEIGHBORS:
+            model = MLKNeighbors()
+        elif mla == SVM_SVC:
+            model = MLSVC()
+        elif mla == AdaBoost:
+            model = MLAdaBoost()
+        elif mla == Gaussian_Naive_Bayes:
+            model = MLGaussianNaiveBayes()
+        elif mla == Linear_Discriminant_Analysis:
+            model = MLLinearDiscriminantAnalysis()
+        elif mla == Quadratic_Discriminant_Analysis:
+            model = MLQuadraticDiscriminantAnalysis()
+        else:
+            return None # test
+        clf = model.generate()
+        return (model, clf)
 
 
     def test(self, model_name=DECISION_TREE, testing_dataset=None):
@@ -56,9 +70,14 @@ class Classifier(object):
         if testing_dataset == None:
             feature_names, testing_dataset = self.dataLoader.load_test_data()
         
-        # model = joblib.load(ML_MODEL_PATH + str(model_name) + '.pkl') 
-        model = load_model(model_name)
-        return list(model.predict(testing_dataset))
+        clf = load_model(model_name)
+        predict_label = list(clf.predict(testing_dataset))
+
+        # test_label = self.dataLoader.load_test_label()  # test
+        # feature_names, testing_dataset = self.dataLoader.load_test_data() # test
+        # print clf.score(testing_dataset, test_label # test
+
+        return predict_label
 
     def report(self, predict_label):
         test_label = self.dataLoader.load_test_label()
