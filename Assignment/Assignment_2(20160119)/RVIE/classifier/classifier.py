@@ -21,8 +21,10 @@ class Classifier(object):
         # predict_label = classifier.test(DECISION_TREE)
         # classifier.report(predict_label)
 
+        """
         for mla in MACHINE_LEARNING_ALGORITHMS:
             (model, clf) = self.train(mla)
+        """
 
         # """
         feature_names, testing_dataset = self.dataLoader.load_test_data()
@@ -41,7 +43,7 @@ class Classifier(object):
         mldtGenerator.generate()
 
     def train(self, mla=DECISION_TREE):
-        print 'Begin to train classifier for... ' + mla
+        print 'train classifier for... ' + mla
 
         if mla == DECISION_TREE:
             model = MLDecisionTree()

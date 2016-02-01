@@ -16,6 +16,7 @@ class MLDecisionTree(MLAlgorithm):
     def generate(self):
         classifier = tree.DecisionTreeClassifier()
         super(MLDecisionTree, self).generate(classifier)
+        print 'model for (' + self.ML_NAME + ') has been generated'
         save_model(self.ML_NAME, classifier)
 
         

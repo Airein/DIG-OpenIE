@@ -15,17 +15,19 @@ class FeatureExtractor():
         pass
 
     def extract(self):
-        print 'begin to extract feature from ReVerb output'
+        print 'extract feature from ReVerb output...'
         rv4fe_data = self.load_reverb_data()
         return rv4fe_data
 
     def load_reverb_data(self):
-        reverb_file = open(REVERB_OUTPUT, 'rU')
+        print 'load data from reverb output...'
+        reverb_file = open(REVERB_OUTPUT)
         rv4fe_file = open(FE_RV_DATA, 'wb')
         # rv4fe_index = [13,14,15,16,17]   # index for reverb output
         reverb_data = []
-
+        line_no = 0
         for line in reverb_file:
+            # print 'process line: ' + str(line_no + 1) + ' in reverb output'
             rv4fe_data = self.load_rv4line(line)
             rv4fe_file.write(rv4fe_data + '\n')
             # rv4fe_data = rv4fe_data.split(' ')
@@ -62,6 +64,12 @@ class FeatureExtractor():
         rvd_arg2_val = str(line[17]).replace('.', '')
         rvd_arg2_start_idx = int(line[9])
         rvd_arg2_end_idx = int(line[10])
+
+        # process value
+        # rvd_arg1_val = rvd_arg1_val.replace('[\x00-\x7F]+', '').replace('[\u0000-\u007F]+', '').replace('\d', '')         #.encode('utf-8').strip()
+        # rvd_rel_val = rvd_rel_val.replace('[\x00-\x7F]+', '').replace('[\u0000-\u007F]+', '').replace('\d', '')
+        # rvd_arg2_val = rvd_arg2_val.replace('[\x00-\x7F]+', '').replace('[\u0000-\u007F]+', '').replace('\d', '')
+
 
         # load post and chunk tags
         rvd_arg1_post_tags = rvd_post[rvd_arg1_start_idx:rvd_arg1_end_idx]

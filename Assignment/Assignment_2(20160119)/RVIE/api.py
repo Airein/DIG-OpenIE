@@ -60,12 +60,16 @@ def RVIE_analyze_data():
     clf = tree.DecisionTreeClassifier(criterion='entropy')
     clf = clf.fit(X, Y)
     print clf.predict([['my name', 'is', 'Amber']])
-    """
-    # # classifier.preprocess()
     # model = classifier.train()
     # predict_label = classifier.test(DECISION_TREE)
     # classifier.report(predict_label)
+    """
+
+    # classifier.preprocess()
     classifier.generate_classifiers()
+
+    
+    
 
 ####################################################################
 #                               TEST                               #

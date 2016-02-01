@@ -4,9 +4,13 @@ from ... import __root_dir__, __raw_outputs__, __reverb_outputs__, __data_folder
 from sklearn.feature_extraction.text import CountVectorizer
 from . import FeatureExtractor
 
+import enchant
+import re
+
 REVERB_OUTPUT = __root_dir__ + __reverb_outputs__ + 'reverb.output'
 LABEL_DATA = __root_dir__ + __data_folder__ + 'ml/' + 'label.ml'
 ML_DATA = __root_dir__ + __data_folder__ + 'ml/' + 'dataset.ml'
+ML_FEATURE_NAMES = __root_dir__ + __data_folder__ + 'ml/' + 'feature_names.ml'
 TRAIN_DATA = __root_dir__ + __data_folder__ + 'ml/' + 'train_data.ml'
 TRAIN_LABEL = __root_dir__ + __data_folder__ + 'ml/' + 'train_label.ml'
 TEST_DATA = __root_dir__ + __data_folder__ + 'ml/' + 'test_data.ml'
@@ -26,11 +30,12 @@ class MLDataGenerator():
         return names
 
     def generate(self):
-        # self.generate_dataset()
-        # self.generate_label()
+        self.generate_dataset()
+        self.generate_label()
         self.generate4ml(.8)
 
     def generate4ml(self, train_test_rate=.8):
+        print 'generate datasets for traning and testing...'
         rv4ml_file = open(ML_DATA, 'rU')
         rv4label_file = open(LABEL_DATA, 'rU')
 
@@ -70,8 +75,6 @@ class MLDataGenerator():
             test_data_file.write(dataset[idx] + '\n')
             test_label_file.write(label[idx] + '\n')
 
-        
-
         train_data_file.close()
         train_label_file.close()
         test_data_file.close()
@@ -80,7 +83,10 @@ class MLDataGenerator():
         rv4ml_file.close()
         rv4label_file.close()
 
+    
+
     def generate_dataset(self):
+        print 'generate dataset for machine learning...'
         rv4ml_file = open(ML_DATA, 'wb')
 
         # feature extraction
@@ -88,20 +94,65 @@ class MLDataGenerator():
         fe_data = featureExtractor.extract()
         
         # text feature extraction
-        vectorizer = CountVectorizer()
+        print 'build vector for features...'
+        # vectorizer = CountVectorizer()
+        def my_tokenizer(raw):
+            raw_list = raw.split()
+            result = []
+            # d = enchant.Dict("en_US")
+            # words = [word for word in raw_list if d.check(word)]
+            # print d.check("Hello")
+            # print d.check("Helo")
+            """
+            for line in raw_list:
+                try:
+                    [str(word).replace('^[a-zA-Z0-9_-]', '') for word in line.split(',')]
+                except Exception as e: pass
+            """
+
+            reg_tag = re.compile("^[oOpPsS]4(\w*|\w2\w*)$")
+            tags = [word for word in raw_list if re.match(reg_tag, word)]
+            reg_name = re.compile("^[a-zA-Z]+$")
+            words = [word for word in raw_list if re.match(reg_name, word)]
+            reg_others = re.compile("^[#]+$")
+            others = [word for word in raw_list if re.match(reg_others, word)]
+            result.extend(tags)
+            result.extend(words)
+            result.extend(others)
+            # print 'result'
+            # print result
+            # print 'raw_list'
+            # print raw_list
+            return result
+
+        vectorizer = CountVectorizer(tokenizer=my_tokenizer, min_df=0.0005, max_df=0.5)
+        # vectorizer = CountVectorizer(tokenizer=my_tokenizer, analyzer="word", token_pattern="[a-zA-Z]+")
         # vectorizer = CountVectorizer(analyzer="word", token_pattern="((\"[^\"]+?\")|('[^']+?')|([^\\s]+?))\\s++")
-        vectorizer.get_params()
+        # vectorizer.get_params()
+        # print vectorizer.build_analyzer()(fe_data)
+
         
         dataset = vectorizer.fit_transform(fe_data).toarray()
+
         feature_names = [x.encode('UTF8') for x in vectorizer.get_feature_names()]
 
         # write feature names
+        print 'extract feature names...'
         feature_names = ','.join([name for name in feature_names])
         rv4ml_file.write(feature_names + '\n')
 
+        feature_names_file = open(ML_FEATURE_NAMES, 'wb')
+        # print feature_names
+        for fn in feature_names.split(','):
+            feature_names_file.write(str(fn) + '\n')
+        feature_names_file.close()
+
+        
         # write dataset
+        print 'write raw dataset into disk...'
         for line in dataset:
             line = ','.join([str(digit) for digit in line])
+            # print line
             rv4ml_file.write(line + '\n')
         rv4ml_file.close()
 
@@ -116,6 +167,7 @@ class MLDataGenerator():
 
 
     def generate_label(self):
+        print 'generate label for machine learning...'
         reverb_file = open(REVERB_OUTPUT, 'rU')
         rv4label_file = open(LABEL_DATA, 'wb')
         names = self.load_names()
