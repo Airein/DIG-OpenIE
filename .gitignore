@@ -1,12 +1,10 @@
-
-
 Reading/
-
-
 *.pyc
 *.ml
 *.json
 *.output
 *.raw
 *.npy
+*.pkl
+
 
