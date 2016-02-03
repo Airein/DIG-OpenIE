@@ -1,4 +1,6 @@
-Reading/
+docs/
+assignments/
+backup/
 *.pyc
 *.ml
 *.json
