@@ -2,7 +2,7 @@
 from digoie.core.http.stream.base import stream
 from digoie.core.extractor.reverb import extract
 from digoie.core.ml.dataset.base import generate_dataset
-from digoie.core.ml.classifier.base import *
+from digoie.core.ml.classifier.base import generate_classifier
 
 
 def cmd_hander(opt):
@@ -17,7 +17,7 @@ def cmd_hander(opt):
         extract()
     elif opt['classifier']:
         print 'classifier handler'
-        # X_train, X_test, y_train, y_test = generate_dataset()
-        train()
+        X_train, X_test, y_train, y_test = generate_dataset()
+        generate_classifier(X_train, X_test, y_train, y_test)
     else:
         print(opt)
