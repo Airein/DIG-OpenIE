@@ -1,6 +1,9 @@
 
 import os
 
+# http://scikit-learn.org/stable/modules/generated/sklearn.cross_validation.train_test_split.html
+from sklearn.cross_validation import train_test_split
+
 from digoie.conf.storage import __elastic_search_dir__
 from digoie.core.extractor.reverb import load_data
 from digoie.core.ml.dataset.feature import extract
@@ -11,10 +14,15 @@ def generate_dataset():
 
     
     reverb_data = load_data()
-    print labeling(reverb_data)
-    # featured = extract(reverb_data)
-    # vectorized, feature_names = vectorize(featured)
+    featured = extract(reverb_data)
+    vectorized, feature_names = vectorize(featured)
+    labels = labeling(reverb_data)
 
+    X = vectorized
+    y = labels
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+    return X_train, X_test, y_train, y_test
 
 
 
