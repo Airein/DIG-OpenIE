@@ -6,9 +6,7 @@ Summary: 61055 extractions, 104808 sentences, 496 files, 287 seconds
 
 import os
 import subprocess
-
-from digoie.conf.storage import __root_dir__, __app_res_dir__, __reverb_input_dir__, __reverb_output_dir__, REVERB_INPUT_EXT, REVERB_OUTPUT_EXT, REVERB_RES
-
+from digoie.conf.storage import __root_dir__, __app_res_dir__, __reverb_dir__, __reverb_input_dir__, __reverb_output_dir__, REVERB_INPUT_EXT, REVERB_OUTPUT_EXT, REVERB_RES
 
 ##################################################################
 #                            Extract                             #  
@@ -30,6 +28,27 @@ def lauch(flist, path):
     subprocess.call(argsArray, stdout=rv_output_file)
     rv_output_file.close()
 
+def lauch4String(string):
+    path_string = os.path.join(__reverb_dir__, 'tmp_string')
+    tmp_string_file = open(path_string, 'wb')
+    tmp_string_file.write(string + '.')
+    tmp_string_file.close()
+
+    argsArray = ['java', '-Xmx512m', '-jar', load_executor()]
+    argsArray.extend([path_string])
+    
+    path_output = os.path.join(__reverb_dir__, 'tmp_output')
+    if os.path.isfile(path_output):
+        os.remove(path_output)
+    tmp_output_file = open(path_output, 'a')
+    subprocess.call(argsArray, stdout=tmp_output_file)
+    tmp_output_file.close()
+
+    return load_data(path_output)
+
+
+
+
 def load_executor():
     # REVERB_EXEC = 'reverb.jar' # os.path.join(__root_dir__, 'res', 'reverb.jar')
     reverb = os.path.join(__app_res_dir__, REVERB_RES)
@@ -42,8 +61,8 @@ def load_executor():
 
 def load_data(path=None):
     print 'load data from reverb output...'
-    filename = 'reverb' + REVERB_OUTPUT_EXT
     if path == None:
+        filename = 'reverb' + REVERB_OUTPUT_EXT
         path = os.path.join(__reverb_output_dir__, filename)
     reverb_file = open(path)
     reverb_data = []

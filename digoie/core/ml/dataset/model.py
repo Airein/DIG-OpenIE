@@ -11,7 +11,8 @@ def save_model(model_name, clf):
     path = os.path.join(__ml_models_dir__, model_name)
     if not os.path.exists(path):
         os.makedirs(path)
-    joblib.dump(clf, path + model_name + MODEL_EXT)
+    path = os.path.join(path, model_name + MODEL_EXT)
+    joblib.dump(clf, path)
 
 def load_model(model_name):
     path = os.path.join(__ml_models_dir__, model_name)

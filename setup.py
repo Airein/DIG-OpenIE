@@ -6,6 +6,13 @@
 # https://docs.python.org/2/distutils/setupscript.html
 
 
+"""Setup
+
+sudo python setup.py install --record files.txt
+cat files.txt | sudo xargs rm -rf
+"""
+
+
 from setuptools import setup, find_packages
 
 

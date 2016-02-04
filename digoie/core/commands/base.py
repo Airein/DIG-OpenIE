@@ -11,7 +11,7 @@ Usage:
     digoie stream
     digoie dataset
     digoie classifier
-    digoie test
+    digoie predict
 
 Options:
     -i, --interactive  Interactive Mode
