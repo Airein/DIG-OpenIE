@@ -25,15 +25,9 @@ from digoie.apps.app import *
 from handler import *
 from interactive import *
 
-
-
 app_init()
 opt = docopt(__doc__, sys.argv[1:])
 cmd_hander(opt)
-
-
-
-
 
 
 # def get_command():
