@@ -9,8 +9,7 @@ Usage:
     digoie (-i | --interactive)
     digoie (-h | --help | --version)
     digoie stream
-    digoie parse
-    digoie load
+    digoie dataset
     digoie classifier
     digoie test
 
@@ -22,11 +21,16 @@ Options:
 
 
 from digoie.plugins.docopt import docopt, DocoptExit
+from digoie.apps.app import *
 from handler import *
 from interactive import *
 
+
+
+app_init()
 opt = docopt(__doc__, sys.argv[1:])
 cmd_hander(opt)
+
 
 
 
