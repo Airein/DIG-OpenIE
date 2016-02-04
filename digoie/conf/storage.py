@@ -33,9 +33,9 @@ __reverb_output_dir__ = os.path.join(__reverb_dir__, 'output')
 
 
 # machine learning data
-__machine_learning_dir = os.path.join(__app_data_dir__, 'ml')
-__ml_datasets_dir = os.path.join(__machine_learning_dir, 'datasets')
-__ml_models_dir = os.path.join(__machine_learning_dir, 'models')
+__machine_learning_dir__ = os.path.join(__app_data_dir__, 'ml')
+__ml_datasets_dir__ = os.path.join(__machine_learning_dir__, 'datasets')
+__ml_models_dir__ = os.path.join(__machine_learning_dir__, 'models')
 
 STORAGE_PATH = [
                     __app_dir__,
@@ -45,9 +45,9 @@ STORAGE_PATH = [
                     __reverb_dir__,
                     __reverb_input_dir__,
                     __reverb_output_dir__,
-                    __machine_learning_dir,
-                    __ml_datasets_dir,
-                    __ml_models_dir
+                    __machine_learning_dir__,
+                    __ml_datasets_dir__,
+                    __ml_models_dir__
                 ]
 
 
