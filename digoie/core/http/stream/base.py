@@ -1,5 +1,5 @@
 import os
-from digoie.conf.storage import __reverb_input_dir__, REVERB_INPUT_EXT
+from digoie.conf.storage import __reverb_input_dir__, __elastic_search_dir__, REVERB_INPUT_EXT
 from digoie.core.http.stream.httpclient import HTTPClient
 from digoie.core.http.elasticsearch.query import *
 from digoie.core.http.elasticsearch.url import NAMESTREAM_URL, SENTENCESTREAM_URL
@@ -24,6 +24,13 @@ def fetch_names():
     HTTPClient().fetch2buf(NAMESTREAM_URL, query, buf)
     names_json = buf.getvalue()
     names = [str(name) for name in parse_name(names_json)]
+
+    # write names
+    path = os.path.join(__elastic_search_dir__, 'names')
+    sentence_file = open(path, 'wb')
+    sentence_file.writelines(line + do_newline_symbol() for line in names)
+    sentence_file.close()
+
     return names
 
 def fetch_sentences(name):
