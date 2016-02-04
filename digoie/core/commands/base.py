@@ -10,13 +10,14 @@ Usage:
     digoie (-h | --help | --version)
     digoie stream
     digoie dataset
-    digoie classifier
+    digoie classifier [--mla=<name>]
     digoie predict
 
 Options:
     -i, --interactive  Interactive Mode
     -h, --help  Show this screen and exit.
     --baud=<n>  Baudrate [default: 9600]
+    --mla=<name>  machine learning algorithms [default: decision_tree]
 """
 
 

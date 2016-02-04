@@ -17,15 +17,15 @@ def cmd_hander(opt):
         extract()
     elif opt['classifier']:
         print 'classifier handler'
+        mla = 'decision_tree'
+        if opt['--mla']:
+            mla = opt['--mla']
+
         feature_names, X_train, X_test, y_train, y_test = generate_dataset()
-        clf = generate_classifier(X_train, X_test, y_train, y_test)
+        clf = generate_classifier(X_train, X_test, y_train, y_test, mla)
     elif opt['predict']:
         print 'predict handler'
         test_only = 'My name is Jassica.'
         predict(test_only)
-        
-
-
-
     else:
         print(opt)
