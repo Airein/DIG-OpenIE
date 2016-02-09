@@ -13,6 +13,17 @@ Develop capability to automatically build knowledge graphs and their ontologies 
 ## My works
 
 - Run ReVerb on 7 documents from different websites, list extractions from ReVerb, score extractions as useful or useless, and make a note of information that I think should have been extracted, but wasn't.
-- Fetch data by elastic search from DIG database, and then use machine learning algorithm to train a classifier to identify real person's name.
+- Fetch data by elastic search from DIG database, and run it on ReVerb
+- Implement feature extraction and build feature vectors to generate training and testing datasets for machine learning process based on scikit-learn library
+- Train classifiers, such as decision tree, random forest and svc, to evaluate datasets. The accracy of classifers for decision tree and random forest is around 97%.
+- Test classifers on random datasets, by which gets around 97% accuracy for ada boost classifier.
+
+## To do list
+
+- [ ] conduct the experiment for the phone numbers
+
+
+
+
 
 
