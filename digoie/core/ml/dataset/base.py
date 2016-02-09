@@ -36,6 +36,11 @@ def labeling(reverb_data):
     names_file.close()
     label_list = []
 
+    # used for test
+    custom_names = ['Sophia', 'Katie', 'Holly', 'Daniella', 'Natali', 'Colleen', 'Grace', 'Alina', 'Kylie', 'Lena']
+
+    names.extend(custom_names)
+
     # rv4label_file = open(LABEL_DATA, 'wb')
     for line in reverb_data:
         line = line[:-1]
