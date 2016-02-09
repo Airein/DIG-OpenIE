@@ -37,6 +37,7 @@ __machine_learning_dir__ = os.path.join(__app_data_dir__, 'ml')
 __ml_datasets_dir__ = os.path.join(__machine_learning_dir__, 'datasets')
 __ml_models_dir__ = os.path.join(__machine_learning_dir__, 'models')
 
+
 STORAGE_PATH = [
                     __app_dir__,
                     __app_res_dir__,
