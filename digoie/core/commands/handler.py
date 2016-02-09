@@ -17,12 +17,23 @@ def cmd_hander(opt):
         extract()
     elif opt['classifier']:
         print 'classifier handler'
-        mla = 'decision_tree'
+        # mla = 'decision_tree'
+        min_df = 0.0001
+        max_df = 0.5
+        if opt['--min_df']:
+            min_df = opt['--min_df']
+
+        if opt['--max_df']:
+            max_df = opt['--max_df']
+
+    
+        feature_names, X_train, X_test, y_train, y_test = generate_dataset(min_df, max_df)
+
         if opt['--mla']:
             mla = opt['--mla']
-
-        feature_names, X_train, X_test, y_train, y_test = generate_dataset()
-        clf = generate_classifier(X_train, X_test, y_train, y_test, mla)
+            clf = generate_classifier(X_train, X_test, y_train, y_test, mla)
+        else:
+            clf = generate_classifier(X_train, X_test, y_train, y_test)
     elif opt['predict']:
         print 'predict handler'
         test_only = 'My name is Jassica.'

@@ -12,8 +12,9 @@ from digoie.utils.symbols import do_newline_symbol
 
 def vectorize(raw, my_min_df=0.0005, my_max_df=0.5):
     print 'build vector for features...'
-    
-    vectorizer = CountVectorizer(tokenizer=custom_tokenizer, min_df=my_min_df, max_df=my_max_df)
+    print 'min_df: ' + my_min_df
+    print 'max_df: ' + my_max_df
+    vectorizer = CountVectorizer(tokenizer=custom_tokenizer, min_df=float(my_min_df), max_df=float(my_max_df))
     dataset = vectorizer.fit_transform(raw).toarray()
 
     # write feature names

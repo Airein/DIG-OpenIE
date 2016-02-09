@@ -10,14 +10,14 @@ Usage:
     digoie (-h | --help | --version)
     digoie stream
     digoie dataset
-    digoie classifier [--mla=<name>]
+    digoie classifier [--mla=<name>] [--min_df=<min_percent>] [--max_df=<max_percent>]
     digoie predict
 
 Options:
     -i, --interactive  Interactive Mode
     -h, --help  Show this screen and exit.
     --baud=<n>  Baudrate [default: 9600]
-    --mla=<name>  machine learning algorithms [default: decision_tree]
+    --mla=<name>  machine learning algorithms
 """
 
 

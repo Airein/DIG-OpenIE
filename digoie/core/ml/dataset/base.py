@@ -9,21 +9,41 @@ from digoie.core.extractor.reverb import load_data
 from digoie.core.ml.dataset.feature import extract
 from digoie.core.ml.dataset.vector import vectorize
 
-def generate_dataset():
+# test only
+
+def generate_dataset(min_df, max_df):
     print 'generate dataset for machine learning...'
 
     
     reverb_data = load_data()
     featured = extract(reverb_data)
-    vectorized, feature_names = vectorize(featured)
+    vectorized, feature_names = vectorize(featured, my_min_df=min_df, my_max_df=max_df)
     labels = labeling(reverb_data)
 
     X = vectorized
     y = labels
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-    return feature_names, X_train, X_test, y_train, y_test
+    # print X
+    # print '=========================='
+    # print X_train
 
+    """
+     Test Only
+     - used to analyse results
+    """
+    from digoie.conf.storage import __ml_datasets_dir__
+    from digoie.core.files.file import Xvec2file, yvec2file, features2file
+
+    Xvec2file(X_train, os.path.join(__ml_datasets_dir__, 'X_train'))
+    Xvec2file(X_test, os.path.join(__ml_datasets_dir__, 'X_test'))
+    yvec2file(y_train, os.path.join(__ml_datasets_dir__, 'y_train'))
+    yvec2file(y_test, os.path.join(__ml_datasets_dir__, 'y_test'))
+
+    features2file(X_train, os.path.join(__ml_datasets_dir__, 'X_train_features'), feature_names)
+    features2file(X_test, os.path.join(__ml_datasets_dir__, 'X_test_features'), feature_names)
+
+    return feature_names, X_train, X_test, y_train, y_test
 
 
 def labeling(reverb_data):
@@ -37,7 +57,7 @@ def labeling(reverb_data):
     label_list = []
 
     # used for test
-    custom_names = ['Sophia', 'Katie', 'Holly', 'Daniella', 'Natali', 'Colleen', 'Grace', 'Alina', 'Kylie', 'Lena']
+    custom_names = ['Sophia', 'Katie', 'Holly', 'Daniella', 'Natali', 'Colleen', 'Grace', 'Alina', 'Kylie', 'Lena', 'Monica', 'Hayes', 'Rachell', 'Brittany', 'Kendall', 'Merry', 'Jane', 'Vanessa', 'Ashlee', 'Ashley', 'Roxy', 'julie', 'Becky', 'keke', 'Brook', 'Sasha', 'Kayla', 'Lia', 'Moana', 'Lisa', 'Greek', 'Amoni', 'Jade', 'Juicy', 'sadie', 'Natalie', 'Libby', 'Mimi']
 
     names.extend(custom_names)
 
