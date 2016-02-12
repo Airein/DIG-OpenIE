@@ -79,4 +79,3 @@ def extract(raw):
     return featured
 
 
-

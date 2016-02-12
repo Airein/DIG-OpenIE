@@ -25,7 +25,6 @@ def cmd_hander(opt):
 
         if opt['--max_df']:
             max_df = opt['--max_df']
-
     
         feature_names, X_train, X_test, y_train, y_test = generate_dataset(min_df, max_df)
 
@@ -36,7 +35,13 @@ def cmd_hander(opt):
             clf = generate_classifier(X_train, X_test, y_train, y_test)
     elif opt['predict']:
         print 'predict handler'
-        test_only = 'My name is Jassica.'
-        predict(test_only)
+        # test_only = 'My name is Jassica.'
+        params = {}
+        if opt['--sentence']:
+            sentence_string = opt['--sentence']
+            params['string'] = sentence_string
+        
+        predict(params)
+
     else:
         print(opt)

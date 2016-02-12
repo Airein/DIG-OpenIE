@@ -15,5 +15,5 @@ def save_model(model_name, clf):
     joblib.dump(clf, path)
 
 def load_model(model_name):
-    path = os.path.join(__ml_models_dir__, model_name)
-    return joblib.load(path + model_name + MODEL_EXT) 
+    path = os.path.join(__ml_models_dir__, model_name, model_name + MODEL_EXT)
+    return joblib.load(path) 

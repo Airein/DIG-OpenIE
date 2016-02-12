@@ -15,8 +15,8 @@ Quadratic_Discriminant_Analysis = 'qda'
 MACHINE_LEARNING_ALGORITHMS = [
                                 DECISION_TREE,
                                 RANDOM_FOREST,
-                                K_NEIGHBORS,
-                                SVM_SVC,
+                                # K_NEIGHBORS,
+                                # SVM_SVC,
                                 AdaBoost,
                                 Gaussian_Naive_Bayes
                                 # Linear_Discriminant_Analysis,

@@ -11,7 +11,7 @@ Usage:
     digoie stream
     digoie dataset
     digoie classifier [--mla=<name>] [--min_df=<min_percent>] [--max_df=<max_percent>]
-    digoie predict
+    digoie predict [--sentence=<string>]
 
 Options:
     -i, --interactive  Interactive Mode

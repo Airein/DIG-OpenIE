@@ -33,6 +33,7 @@ def generate_dataset(min_df, max_df):
      Test Only
      - used to analyse results
     """
+    """
     from digoie.conf.storage import __ml_datasets_dir__
     from digoie.core.files.file import Xvec2file, yvec2file, features2file
 
@@ -43,6 +44,7 @@ def generate_dataset(min_df, max_df):
 
     features2file(X_train, os.path.join(__ml_datasets_dir__, 'X_train_features'), feature_names)
     features2file(X_test, os.path.join(__ml_datasets_dir__, 'X_test_features'), feature_names)
+    """
 
     return feature_names, X_train, X_test, y_train, y_test
 
