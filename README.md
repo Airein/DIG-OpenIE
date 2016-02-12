@@ -21,6 +21,9 @@ Develop capability to automatically build knowledge graphs and their ontologies 
 ## To do list
 
 - [ ] conduct the experiment for the phone numbers
+- [ ] in training process, add name dictionary that contains enough names
+- [*] remove names from feature set
+- [ ] improve feature extraction: add reverb accuracy
 
 
 

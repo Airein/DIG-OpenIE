@@ -25,18 +25,18 @@ def label_name(reverb_data):
     names.extend(custom_names)
 
     # rv4label_file = open(LABEL_DATA, 'wb')
-    i = 1
+    # i = 1
     for line in reverb_data:
-        print '--------------- line no: ' + str(i)
-        i+=1
+        # print '--------------- line no: ' + str(i)
+        # i+=1
         line = line[:-1]
         line = line.split('\t')
         rvd_arg1_val = str(line[15]).replace('.', '')
-        print 'rvd_arg1_val: ' + rvd_arg1_val
+        # print 'rvd_arg1_val: ' + rvd_arg1_val
         rvd_arg1_val = rvd_arg1_val.split(' ')
 
         rvd_arg2_val = str(line[17]).replace('.', '')
-        print 'rvd_arg2_val: ' + rvd_arg2_val 
+        # print 'rvd_arg2_val: ' + rvd_arg2_val 
         rvd_arg2_val = rvd_arg2_val.split(' ')
         label = 0
         for name in names:
