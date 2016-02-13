@@ -14,7 +14,8 @@ def vectorize(raw, my_min_df=0.0005, my_max_df=0.5, update_feature_names=True):
     print 'build vector for features...'
     print 'min_df: ' + str(my_min_df)
     print 'max_df: ' + str(my_max_df)
-    vectorizer = CountVectorizer(tokenizer=custom_tokenizer, min_df=float(my_min_df), max_df=float(my_max_df))
+
+    vectorizer = CountVectorizer(tokenizer=custom_tokenizer, min_df=float(my_min_df), max_df=float(my_max_df))#, ngram_range=(1,3))
     dataset = vectorizer.fit_transform(raw).toarray()
 
     # write feature names
@@ -37,7 +38,7 @@ def custom_tokenizer(raw):
     tags = [word for word in raw_list if re.match(reg_tag, word)]
     reg_name = re.compile("^[a-zA-Z]+$")
     words = [word for word in raw_list if re.match(reg_name, word)]
-    reg_others = re.compile("^[#]+$")
+    reg_others = re.compile("^([#]+|conf[0-9])$")
     others = [word for word in raw_list if re.match(reg_others, word)]
     result.extend(tags)
     result.extend(words)

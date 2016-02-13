@@ -1,13 +1,16 @@
 
 import os
 import re
+import math
 from digoie.conf.storage import __elastic_search_dir__, __reverb_input_dir__, REVERB_INPUT_EXT
 
+from digoie.core.files.names import load_names
 
 
 def extract(raw):
     print 'extract features...'
     featured = []
+    names = load_names()
     for line in raw:
         line = line[:-1]
         line = line.split('\t')
@@ -26,6 +29,9 @@ def extract(raw):
         rvd_arg2_val = str(line[17]).replace('.', '')
         rvd_arg2_start_idx = int(line[9])
         rvd_arg2_end_idx = int(line[10])
+
+        confidence = load_confidence_symbol(line[11])
+        # print confidence
 
         # load post and chunk tags
         rvd_arg1_post_tags = rvd_post[rvd_arg1_start_idx:rvd_arg1_end_idx]
@@ -73,13 +79,14 @@ def extract(raw):
         # rvd_arg2_val = remove_names(rvd_arg2_val)
 
         # filter features
-        filter = FeatureFilter()
+        filter = FeatureFilter(names=names)
         rvd_arg1_val = filter.filtering(rvd_arg1_val)
         rvd_rel_val = filter.filtering(rvd_rel_val)
         rvd_arg2_val = filter.filtering(rvd_arg2_val)
         
 
         var_list = [
+                        confidence,
                         rvd_arg1_val, 
                         rvd_arg1_post_tags, 
                         rvd_arg1_ct_tags,
@@ -96,13 +103,17 @@ def extract(raw):
     return featured
 
 
+def load_confidence_symbol(conf):
+    return 'conf' + str(conf)[2]
+    # return 'conf' + str(math.floor(float(conf*10)))
+
+
 class FeatureFilter():
-    def __init__(self):
-        self.names = None
+    def __init__(self, names=None):
+        self.names = names
 
     def filtering(self, sentence):
         result = []
-        self.names = self.load_name()
         word_list = sentence.split(' ')
         for word in word_list:
             word = self.refine_word(word)
@@ -116,16 +127,17 @@ class FeatureFilter():
         return word
 
     def is_valid_word(self, word):
-        result = True
-        if self.is_contain_name(word):
-            result = False
-        if len(word) < 2:
-            result = False
+        
+        # if self.is_contain_name(word):
+        #     return False
 
-        reg = re.compile("^[a_zA-Z]*$")
+        if len(word) < 2:
+            return False
+
+        reg = re.compile("^[a_zA_Z]{2,}$")
         if re.match(reg, word):
-            result = False
-        return result
+            return False
+        return True
 
 
     def is_contain_name(self, word):
@@ -134,12 +146,7 @@ class FeatureFilter():
         else:
             return False
 
-    def load_name(self):
-        path = os.path.join(__elastic_search_dir__, 'names')
-        names_file = open(path, 'rU')
-        names = list([name[:-1] for name in names_file])
-        names_file.close()
-        return names
+
 
 
 

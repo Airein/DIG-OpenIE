@@ -60,6 +60,7 @@ def test(X_test, y_test, mla, clf):
     print 'Classifier: ' + mla
     print classification_report(target_label, predict_label)
     print 'accuracy: ' + str(accuracy_score(target_label, predict_label))
+    print '\n\n'
 
 
 
