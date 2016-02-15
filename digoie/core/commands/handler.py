@@ -18,10 +18,10 @@ def cmd_hander(opt):
     elif opt['classifier']:
         print 'classifier handler'
         # mla = 'decision_tree'
-        # min_df = 0.0001
-        # max_df = 0.5
-        min_df = 0.0
-        max_df = 1.0
+        min_df = 0.0001
+        max_df = 0.5
+        # min_df = 0.0
+        # max_df = 1.0
         if opt['--min_df']:
             min_df = opt['--min_df']
 

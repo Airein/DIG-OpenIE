@@ -84,7 +84,7 @@ def extract(raw):
         rvd_rel_val = filter.filtering(rvd_rel_val)
         rvd_arg2_val = filter.filtering(rvd_arg2_val)
         
-
+        # """
         var_list = [
                         confidence,
                         rvd_arg1_val, 
@@ -97,6 +97,24 @@ def extract(raw):
                         rvd_arg2_post_tags, 
                         rvd_arg2_ct_tags
                     ]
+        """
+        do_separator = 'digoieseparator'
+        var_list = [
+                        confidence,
+                        do_separator,
+                        rvd_arg1_val, 
+                        rvd_rel_val,
+                        rvd_arg2_val, 
+                        do_separator,
+                        rvd_arg1_post_tags, 
+                        rvd_rel_post_tags, 
+                        rvd_arg2_post_tags,
+                        do_separator,
+                        rvd_arg1_ct_tags,
+                        rvd_rel_ct_tags,
+                        rvd_arg2_ct_tags
+                    ]
+        """
 
         rv4fe_data = ' '.join(var_list)
         featured.append(rv4fe_data)
