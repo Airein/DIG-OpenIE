@@ -9,17 +9,18 @@ from digoie.core.extractor.reverb import load_data
 from digoie.core.ml.dataset.feature import extract
 from digoie.core.ml.dataset.vector import vectorize
 from digoie.core.ml.dataset.labeling import labeling
+from digoie.conf.global_settings import TARGET_PERSON_NAME, TARGET_PHONE_NUMBER
 
 # test only
 
-def generate_dataset(min_df, max_df):
+def generate_dataset(min_df, max_df, target=TARGET_PERSON_NAME):
     print 'generate dataset for machine learning...'
 
-    
     reverb_data = load_data()
-    featured = extract(reverb_data)
-    vectorized, feature_names = vectorize(featured, my_min_df=min_df, my_max_df=max_df)
     labels = labeling(reverb_data)
+    featured = extract(reverb_data, target=target)
+    vectorized, feature_names = vectorize(featured, my_min_df=min_df, my_max_df=max_df)
+    
 
     X = vectorized
     y = labels

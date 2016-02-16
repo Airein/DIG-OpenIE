@@ -9,8 +9,6 @@ from operator import itemgetter
 import numpy as np
 
 
-
-
 def vectorize(raw, my_min_df=0.0005, my_max_df=0.5, update_feature_names=True):
     print 'build vector for features...'
     print 'min_df: ' + str(my_min_df)
@@ -18,12 +16,13 @@ def vectorize(raw, my_min_df=0.0005, my_max_df=0.5, update_feature_names=True):
 
     sw = ['digoieseparator']
     max_features = 10000
-    vectorizer = CountVectorizer(analyzer='word', stop_words=sw, tokenizer=custom_tokenizer, min_df=float(my_min_df), max_df=float(my_max_df), max_features=max_features, ngram_range=(2,2))
+    vectorizer = CountVectorizer(analyzer='word', stop_words=sw, tokenizer=custom_tokenizer, min_df=float(my_min_df), max_df=float(my_max_df), max_features=max_features, ngram_range=(1,1))
     dataset = vectorizer.fit_transform(raw).toarray()
 
     # write feature names
-    print 'extract feature names for vector...'
+    # print 'extract feature names for vector...'
     feature_names = [x.encode('UTF8') for x in vectorizer.get_feature_names()]
+    # dataset, feature_names = vectorizer_filter(dataset, feature_names)
     feature_names = ','.join([name for name in feature_names])
 
     if update_feature_names:
