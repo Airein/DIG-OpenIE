@@ -13,9 +13,8 @@ Develop capability to automatically build knowledge graphs and their ontologies 
 
 ## Delivery
 
-- ***[digoie-annotation](https://github.com/ZwEin27/digoie-annotation)***, a python program to annotate person name or phone number based on open information extraction technology. 
-
-
+- **[digoie-annotation](https://github.com/ZwEin27/digoie-annotation)**, a python program to annotate person name or phone number based on open information extraction technology. 
+- **[digoie-extraction](https://github.com/ZwEin27/digoie-extraction)**, A python project to extract useful information for identifying person's description, behavior and relationship. 
 
 
 ## My Progress
