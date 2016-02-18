@@ -1,0 +1,60 @@
++--------------------------------------------------------+
+|                   Classifier Report                    +
++--------------------------------------------------------+
+Classifier: decision_tree
+             precision    recall  f1-score   support
+
+          0       0.99      1.00      1.00     11964
+          1       0.83      0.74      0.78       247
+
+avg / total       0.99      0.99      0.99     12211
+
+accuracy: 0.991646875768
+
+
+
+train random_forest classifier
++--------------------------------------------------------+
+|                   Classifier Report                    +
++--------------------------------------------------------+
+Classifier: random_forest
+             precision    recall  f1-score   support
+
+          0       0.99      1.00      1.00     11964
+          1       0.98      0.64      0.78       247
+
+avg / total       0.99      0.99      0.99     12211
+
+accuracy: 0.992465809516
+
+
+
+train ada_boost classifier
++--------------------------------------------------------+
+|                   Classifier Report                    +
++--------------------------------------------------------+
+Classifier: ada_boost
+             precision    recall  f1-score   support
+
+          0       0.98      1.00      0.99     11964
+          1       0.60      0.24      0.34       247
+
+avg / total       0.98      0.98      0.98     12211
+
+accuracy: 0.981410203915
+
+
+
+train gaussian_nb classifier
++--------------------------------------------------------+
+|                   Classifier Report                    +
++--------------------------------------------------------+
+Classifier: gaussian_nb
+             precision    recall  f1-score   support
+
+          0       0.99      0.66      0.80     11964
+          1       0.05      0.79      0.09       247
+
+avg / total       0.97      0.67      0.78     12211
+
+accuracy: 0.667431004832

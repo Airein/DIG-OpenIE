@@ -1,0 +1,55 @@
+#################################################################
+#            decision_tree report
+#################################################################
+/Users/ZwEin/Library/Python/2.7/lib/python/site-packages/sklearn/metrics/classification.py:1074: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+             precision    recall  f1-score   support
+
+          0       0.96      1.00      0.98        46
+          1       0.00      0.00      0.00         2
+
+avg / total       0.92      0.96      0.94        48
+
+accuracy: 0.958333333333
+
+
+
+#################################################################
+#            random_forest report
+#################################################################
+             precision    recall  f1-score   support
+
+          0       0.98      1.00      0.99        46
+          1       1.00      0.50      0.67         2
+
+avg / total       0.98      0.98      0.98        48
+
+accuracy: 0.979166666667
+
+
+
+#################################################################
+#            ada_boost report
+#################################################################
+             precision    recall  f1-score   support
+
+          0       0.96      1.00      0.98        46
+          1       0.00      0.00      0.00         2
+
+avg / total       0.92      0.96      0.94        48
+
+accuracy: 0.958333333333
+
+
+
+#################################################################
+#            gaussian_nb report
+#################################################################
+             precision    recall  f1-score   support
+
+          0       1.00      0.76      0.86        46
+          1       0.15      1.00      0.27         2
+
+avg / total       0.96      0.77      0.84        48
+
+accuracy: 0.770833333333
