@@ -52,6 +52,7 @@ def label_phone_number(reverb_data):
 
 def has_phone_number(string):
     reg = re.compile("\d{3}[+-._=:,\s]*\d{3}[+-._=:,\s]*\d{4}")
+    # reg = re.compile('(zero|one|two|three|four|five|six|seven|eight|nine|\d|.){9}')
     return 1 if re.search(reg, string) else 0
 
 
@@ -71,7 +72,9 @@ def label_phone_number(reverb_data):
 """
 
 # test = 'Daniela please call 818.430.2219 P.S. i dont check.'
-test = 'If you like Please ? ? ? ? 818-399-0398 ss.'
+# test = 'If you like Please ? ? ? ? two.one.three.s'
+
+test = '8.1.8.6.9.4.six.zero.four.eight.'
 
 print 1 if has_phone_number(test) else 0
 
